@@ -1,5 +1,6 @@
 ---
-title: Finesst
+title: Solar wind discontinuities
+subtitle: FINESST23 Proposal
 authors:
   - name: Zijin Zhang
     email: zijin@ucla.edu
@@ -11,12 +12,32 @@ authors:
     email: aartemyev@igpp.ucla.edu
     orcid: 0000-0001-8823-4474
     affiliation: University of California, Los Angeles
-bibliography: references.bib
+  - name: Vassilis Angelopoulos
+    orcid: 0000-0001-7024-1561
+    affiliation: University of California, Los Angeles
+  - name: Xiaofei Shi
+    orcid: 0000-0003-3367-5074
+    affiliation: University of California, Los Angeles
+  - name: Ivan Vasko
+    orcid: 0000-0002-4974-4786
+    affiliation: University of California, Berkeley
+date: last-modified
 ---
 
 ::: {.content-visible when-format="html"}
-- [Typst read-only link](https://typst.app/project/rcdOBrTQmyYMywRvZtZvlQ)
-- [Zotero]()
+# Background
+
+Future Investigators in NASA Earth and Space Science and Technology (FINESST) is a program element in Research Opportunities in Space and Earth Sciences (ROSES).
+
+-   [FINESST23 - NSPIRES](https://go.nasa.gov/FINESST23)
+-   [Research Opportunities in Space and Earth Sciences 2023 (ROSES-2023) - NSPIRES](https://nspires.nasaprs.com/external/solicitations/summary!init.do?solId=%7B274C8365-A038-339F-A3AE-8F5BFE178312%7D)
+-   [Heliophysics Research Program Overview](https://nspires.nasaprs.com/external/viewrepositorydocument?cmdocumentid=912460&solicitationId=%7B1FE03DBA-61BD-B248-316B-60ECB612CF2F%7D)
+
+Heliophysics Research Program key objectives are:
+
+-   Explore and characterize the physical processes in the space environment from the Sun to the heliopause and throughout the universe
+-   Advance our understanding of the Sun’s activity, and the connections between solar variability and Earth and planetary space environments, the outer reaches of our solar system, and the interstellar medium
+-   Develop the knowledge and capability to detect and predict extreme conditions in space to protect life and society and to safeguard human and robotic explorers beyond Earth
 :::
 
 # Scientific/Technical/Management
@@ -44,30 +65,52 @@ Parker Solar Probe (PSP) is a NASA mission to study the Sun's corona and inner h
 
 PSP timeline:
 
-- 2018-08-12: Launch
-- 2018-10-03: First Venus flyby
-- 2018-11-05: First perihelion
-- 2019-01-19: First aphehion
-- ...
+-   2018-08-12: Launch
+-   2018-10-03: First Venus flyby
+-   2018-11-05: First perihelion
+-   2019-01-19: First aphehion
+-   ...
 
+::: {.column-page layout-ncol="2"}
 ![Parker Solar Probe orbits](images/PSP_01_orbit.png)
 
 ![Multiple satellites orbits](images/paste-1.png)
+:::
 
-<!-- ![Juno orbit](https://www.nasa.gov/wp-content/uploads/2023/03/575573main_Juno20110727-3-43_full.jpg) -->
+::: {.column-page layout-ncol="2"}
+![Juno orbit](https://www.nasa.gov/wp-content/uploads/2023/03/575573main_Juno20110727-3-43_full.jpg)
 
+![Juno orbit using `poliastro`](https://docs.poliastro.space/en/stable/_images/examples_Going_to_Jupiter_with_Python_using_Jupyter_and_poliastro_24_2.png)
+:::
 
 ## Discontinuities observed by different spacecrafts
 
 Juno, Parker Solar Probe, Wind and Stereo.
 
+::: {.column-page layout-ncol="4"}
+![A RD detected by PSP at 0.126 AU from @liu2022](https://agupubs.onlinelibrary.wiley.com/cms/asset/8e244339-32cf-4703-9101-c1d9b4a3fa7c/jgra57047-fig-0002-m.jpg){fig-alt="The properties of a rotational discontinuity (RD) detected at 0.126 AU on 28 January 2020. (a) The magnetic field magnitude and three components in Radial‐Tangential‐Normal (RTN) coordinate system, (b) the magnetic field in local magnetic normal (LMN) coordinate system, (c and d) the proton velocity in RTN and LMN coordinate systems, (e) the proton density, (f) the proton thermal pressure, the magnetic pressure and the sum, (g) the tangential components of the electric field in LMN coordinate system in the RD rest frame, (h) the position, orientation, and motion of the RD, (i–k) the distributions of BL, JM, and J · E across the RD, (l and m) the jump conditions across the RD. In (h), the cyan plane and arrow represent the RD and its motion vector, and the yellow curve shows the PSP orbit. In (j), both the colors and the curve correspond to the values of JM, and two vertical dashed lines indicate the area of |JM|>13max|JM| $\\vert {J}_{M}\\vert > \\frac{1}{3}\\text{max}\\left(\\vert {J}_{M}\\vert \\right)$ whose width is defined as the half thickness of the discontinuity. In (m), the solid lines present the actual upstream and downstream velocities, while the dashed lines show the theoretical downstream velocity to satisfy the Walén relation."}
+
+![A RD detected by Juno](images/paste-2.png)
+
+![A RD detected by Stereos at 1 AU from @malaspina2012](https://agupubs.onlinelibrary.wiley.com/cms/asset/837d691e-c062-4bde-95ec-8b3e7b095dfe/jgra21804-fig-0003.png){fig-alt="2.5 min of Bx, By, and Bz GSE data from STA (darker trace, black online) and STB (lighter trace, red online). STB data are plotted shifted in time to show the DD match between STA and STB, found at a spacecraft separation of ∼7.5 × 103 km. Vertical lines indicate the start and end of the DD as identified using the STA Bx data."}
+
+![A RD detected by ARTEMIS at 1 AU from @artemyev2019](https://agupubs.onlinelibrary.wiley.com/cms/asset/0be15a8d-39e0-4617-8018-239f22962bea/jgra54962-fig-0001-m.jpg){fig-alt="The example of solar wind discontinuities observed by ARTEMIS in 27 March 2012. Panel (a) shows the magnetic field in the local coordinate system and the tangential plasma velocity, vl. Panel (b) shows the electron density and the ion and electron temperatures. Panel (c) shows the ion and electron β, and the current density, jm (the inserted figure shows jm vs. the spatial coordinate rn/di). Panels (d) and (e) show electron flux pitch-angle (α) spectrograms for two energy ranges. Panel (f) shows the electron flux anisotropy as function of energy and time (see text for details)."}
+
+Rotational discontinuities (RDs) detected by PSP, Juno, Stereo and near-Earth satellite.
+:::
+
 ## Occurrence rate of discontinuities
+
+![](https://raw.githubusercontent.com/Beforerr/ids_finder/1b9830d558470d730a3adbb6667b9b2ca66a6425/notebooks/figures/ocr/ocr_time_cleaned.png)
 
 ## Model validation
 
 <!-- ![PSP orbits](https://blogs.nasa.gov/parkersolarprobe/wp-content/uploads/sites/274/2021/01/Parker-Orbit7Geometry-scaled.jpg) -->
 
 ## Solar wind properties
+
+![Current sheet thickness](https://beforerr.github.io/ids_finder/figures/thickness/thickness_mn_dist.png)
+
 
 # References
 
@@ -102,9 +145,9 @@ Juno, Parker Solar Probe, Wind and Stereo.
 ::: {.content-visible when-format="html"}
 ::: column-margin
 -   General
-    -   Please explain in words what is being purchased and why it is reasonable. See the Guidebook for Proposers
+    -   [ ] Please explain in words what is being purchased and why it is reasonable. See the Guidebook for Proposers
 -   Required
-    -   Budget Narrative: justify each proposed component of cost, including subcontracts/subawards, consultants, other direct costs (including travel), and facilities and equipment. Give the "basis of estimate;" quotes need not be provided, but the proposal should indicate that the cost was based upon a quote, prior experience, etc.
+    -   [ ] Budget Narrative: justify each proposed component of cost, including subcontracts/subawards, consultants, other direct costs (including travel), and facilities and equipment. Give the "basis of estimate;" quotes need not be provided, but the proposal should indicate that the cost was based upon a quote, prior experience, etc.
 :::
 :::
 
