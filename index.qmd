@@ -88,6 +88,7 @@ PSP timeline:
 -   2019-01-19: First aphehion
 -   ...
 
+
 ::: {.column-page layout-ncol="2"}
 ![Parker Solar Probe orbits](images/PSP_01_orbit.png)
 
@@ -141,6 +142,8 @@ We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.ed
 ## Demonstration of Project Approaches
 
 ### Dataset and spacecraft instruments
+
+
 
 ## Relevance to Heliophysics Overarching Goals
 
