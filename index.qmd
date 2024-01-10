@@ -35,9 +35,10 @@ code-links:
 
 Future Investigators in NASA Earth and Space Science and Technology (FINESST) is a program element in Research Opportunities in Space and Earth Sciences (ROSES).
 
--   [FINESST23 - NSPIRES](https://go.nasa.gov/FINESST23)
--   [Research Opportunities in Space and Earth Sciences 2023 (ROSES-2023) - NSPIRES](https://nspires.nasaprs.com/external/solicitations/summary!init.do?solId=%7B274C8365-A038-339F-A3AE-8F5BFE178312%7D)
--   [Heliophysics Research Program Overview](https://nspires.nasaprs.com/external/viewrepositorydocument?cmdocumentid=912460&solicitationId=%7B1FE03DBA-61BD-B248-316B-60ECB612CF2F%7D)
+- [FINESST23 - NSPIRES](https://go.nasa.gov/FINESST23)
+  - [F.5 FINESST as clarified January 4, 2024 (.pdf)](https://nspires.nasaprs.com/external/viewrepositorydocument?cmdocumentid=918319&solicitationId={2CA37D02-F6A7-9746-68C1-8B681D7532EA})
+- [Research Opportunities in Space and Earth Sciences 2023 (ROSES-2023) - NSPIRES](https://nspires.nasaprs.com/external/solicitations/summary!init.do?solId=%7B274C8365-A038-339F-A3AE-8F5BFE178312%7D)
+- [Heliophysics Research Program Overview](https://nspires.nasaprs.com/external/viewrepositorydocument?cmdocumentid=912460&solicitationId=%7B1FE03DBA-61BD-B248-316B-60ECB612CF2F%7D)
 
 Heliophysics Research Program key objectives are:
 
@@ -49,6 +50,16 @@ Heliophysics Research Program key objectives are:
 # Scientific/Technical/Management
 
 ::: {.content-visible when-format="html"}
+::: column-margin
+This section describes the proposed research project and should be self-contained without relying on other sections of the proposal, such as the Research Readiness Statement or Budget Narrative. Proposers may include figures and tables as appropriate. This section, excluding citations, may total no more than six (6) pages conforming to formatting requirements detailed above. The S/T/M Section should include the following elements:
+
+- A well-defined problem with a justification of its scientific significance and a detailed approach for its resolution.
+- A statement describing the relevance of the proposed work to the appropriate SMD Division and a program within that division. If the research is relevant to more than one division/program, please identify the other division(s).
+- A description of the approach to be taken to address the chosen problem. A period of performance for the proposed project describing anticipated accomplishments and major milestones, including planned publications. In cases when the PI already has an ongoing research award from NASA, the research proposed under FINESST may address a similar topic, but the proposal should make clear how the proposed research goes beyond what NASA has already funded or selected for funding.
+:::
+:::
+
+<!-- ::: {.content-visible when-format="html"}
 ::: column-margin
 -   Content
     -   [ ] Discuss objectives and their significance.
@@ -63,7 +74,7 @@ Heliophysics Research Program key objectives are:
 -   Special Content
     -   [ ] Provide other special requirements of program element, e.g., special statements for participating scientists, team leads, etc.
 :::
-:::
+::: -->
 
 ## Overview
 
@@ -89,13 +100,12 @@ PSP timeline:
 ![Juno orbit using `poliastro`](https://docs.poliastro.space/en/stable/_images/examples_Going_to_Jupiter_with_Python_using_Jupyter_and_poliastro_24_2.png)
 :::
 
-## Discontinuities observed by different spacecrafts
+### Discontinuities observed by different spacecrafts
 
 Juno, Parker Solar Probe, Wind and Stereo.
 
 ::: {.column-page layout-ncol="4"}
-![A RD detected by PSP at 0.126 AU from @liu2022](https://agupubs.onlinelibrary.wiley.com/cms/asset/8e244339-32cf-4703-9101-c1d9b4a3fa7c/
-jgra57047-fig-0002-m.jpg){fig-alt="The properties of a rotational discontinuity (RD) detected at 0.126 AU on 28 January 2020. (a) The magnetic field magnitude and three components in Radial‐Tangential‐Normal (RTN) coordinate system, (b) the magnetic field in local magnetic normal (LMN) coordinate system, (c and d) the proton velocity in RTN and LMN coordinate systems, (e) the proton density, (f) the proton thermal pressure, the magnetic pressure and the sum, (g) the tangential components of the electric field in LMN coordinate system in the RD rest frame, (h) the position, orientation, and motion of the RD, (i–k) the distributions of BL, JM, and J · E across the RD, (l and m) the jump conditions across the RD. In (h), the cyan plane and arrow represent the RD and its motion vector, and the yellow curve shows the PSP orbit. In (j), both the colors and the curve correspond to the values of JM, and two vertical dashed lines indicate the area of |JM|>13max|JM| $\\vert {J}_{M}\\vert > \\frac{1}{3}\\text{max}\\left(\\vert {J}_{M}\\vert \\right)$ whose width is defined as the half thickness of the discontinuity. In (m), the solid lines present the actual upstream and downstream velocities, while the dashed lines show the theoretical downstream velocity to satisfy the Walén relation."}
+![A RD detected by PSP at 0.126 AU from @liu2022](https://agupubs.onlinelibrary.wiley.com/cms/asset/8e244339-32cf-4703-9101-c1d9b4a3fa7c/%20jgra57047-fig-0002-m.jpg){fig-alt="The properties of a rotational discontinuity (RD) detected at 0.126 AU on 28 January 2020. (a) The magnetic field magnitude and three components in Radial‐Tangential‐Normal (RTN) coordinate system, (b) the magnetic field in local magnetic normal (LMN) coordinate system, (c and d) the proton velocity in RTN and LMN coordinate systems, (e) the proton density, (f) the proton thermal pressure, the magnetic pressure and the sum, (g) the tangential components of the electric field in LMN coordinate system in the RD rest frame, (h) the position, orientation, and motion of the RD, (i–k) the distributions of BL, JM, and J · E across the RD, (l and m) the jump conditions across the RD. In (h), the cyan plane and arrow represent the RD and its motion vector, and the yellow curve shows the PSP orbit. In (j), both the colors and the curve correspond to the values of JM, and two vertical dashed lines indicate the area of |JM|>13max|JM| $\\vert {J}_{M}\\vert > \\frac{1}{3}\\text{max}\\left(\\vert {J}_{M}\\vert \\right)$ whose width is defined as the half thickness of the discontinuity. In (m), the solid lines present the actual upstream and downstream velocities, while the dashed lines show the theoretical downstream velocity to satisfy the Walén relation."}
 
 ![A RD detected by Juno](images/paste-2.png)
 
@@ -106,24 +116,37 @@ jgra57047-fig-0002-m.jpg){fig-alt="The properties of a rotational discontinuity 
 Rotational discontinuities (RDs) detected by PSP, Juno, Stereo and near-Earth satellite.
 :::
 
-## Occurrence rate of discontinuities
+### Occurrence rate of discontinuities
 
 ![](https://raw.githubusercontent.com/Beforerr/ids_finder/1b9830d558470d730a3adbb6667b9b2ca66a6425/notebooks/figures/ocr/ocr_time_cleaned.png)
 
-## Model validation
+### Model validation
 
 <!-- ![PSP orbits](https://blogs.nasa.gov/parkersolarprobe/wp-content/uploads/sites/274/2021/01/Parker-Orbit7Geometry-scaled.jpg) -->
 
-## Solar wind properties
+We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.edu/MSWIM2D/), which models the solar wind propagation in 2D using the BATSRUS MHD solver. [@keebler2022]
+
+![Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind](images/paste-3.png){fig-alt="Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind (black) for 2012–2019. (a) Proton number density per cubic centimeter, with the highest resolution in gray and the 10 day running average in black. (b) Solar wind bulk flow speed in kilometers per second. (c) Model thermal pressure and New Horizons SWAP total (PUI plus solar wind) pressure. The blue vertical dashed line marks the Pluto flyby on 2015 July 14. Note the dual horizontal axis, providing both date and radial coordinate in astronomical units."}
+
+### Solar wind properties
 
 ![Current sheet thickness](https://beforerr.github.io/ids_finder/figures/thickness/thickness_mn_dist.png)
 
 {{< pagebreak >}}
 
+## Significance of Investigation & Expected Impact
+
+## Science Objectives and Methodology
+
+## Demonstration of Project Approaches
+
+### Dataset and spacecraft instruments
+
+## Relevance to Heliophysics Overarching Goals
+
 ## Project Schedule
 
 ## Management
-
 
 # References
 
@@ -132,34 +155,29 @@ Rotational discontinuities (RDs) detected by PSP, Juno, Stereo and near-Earth sa
 {{< pagebreak >}}
 
 <!-- # Open Science and Data Management Plan (OSDMP) -->
-{{< include comps/_03_osdmp.qmd >}}
-{{< pagebreak >}}
+
+{{< include comps/_03_osdmp.qmd >}} {{< pagebreak >}}
+
+<!-- # Research Readiness Statement -->
+
+{{< include comps/_04_rrs.qmd >}} {{< pagebreak >}}
 
 <!-- # Biographical Sketches/Curriculum Vitae (CVs) -->
-{{< include comps/_04_cv.qmd >}}
-{{< pagebreak >}}
 
-<!-- # Table of Personnel and Work Effort -->
-{{< include comps/_05_personnel_and_work_effort.qmd >}}
-{{< pagebreak >}}
+{{< include comps/_05_cv.qmd >}} {{< pagebreak >}}
 
 <!-- # Current and Pending Support -->
-{{< include comps/_06_support.qmd >}}
-{{< pagebreak >}}
 
-# Statements of Commitment and Letters of Support, Feasibility and Endorsement
+{{< include comps/_06_support.qmd >}} {{< pagebreak >}}
 
-# Budget
+<!-- # Statements of Commitment and Letters of Resource Support -->
 
-## Budget Narrative (Budget Justification)
+{{< include comps/_07_commitment.qmd >}} {{< pagebreak >}}
 
-::: {.content-visible when-format="html"}
-::: column-margin
--   General
-    -   [ ] Please explain in words what is being purchased and why it is reasonable. See the Guidebook for Proposers
--   Required
-    -   [ ] Budget Narrative: justify each proposed component of cost, including subcontracts/subawards, consultants, other direct costs (including travel), and facilities and equipment. Give the "basis of estimate;" quotes need not be provided, but the proposal should indicate that the cost was based upon a quote, prior experience, etc.
-:::
-:::
+<!-- # Mentoring Plan or Agreement -->
 
-## Budget Details
+{{< include comps/_08_mentoring.qmd >}} {{< pagebreak >}}
+
+<!-- # Budget -->
+  
+{{< include comps/_09_budget.qmd >}} {{< pagebreak >}}

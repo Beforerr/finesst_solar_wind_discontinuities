@@ -1,0 +1,12 @@
+## Budget Narrative (Budget Justification)
+
+::: {.content-visible when-format="html"}
+::: column-margin
+-   General
+    -   [ ] Please explain in words what is being purchased and why it is reasonable. See the Guidebook for Proposers
+-   Required
+    -   [ ] Budget Narrative: justify each proposed component of cost, including subcontracts/subawards, consultants, other direct costs (including travel), and facilities and equipment. Give the "basis of estimate;" quotes need not be provided, but the proposal should indicate that the cost was based upon a quote, prior experience, etc.
+:::
+:::
+
+## Budget Details
