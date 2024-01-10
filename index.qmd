@@ -1,0 +1,111 @@
+---
+title: Finesst
+authors:
+  - name: Zijin Zhang
+    email: zijin@ucla.edu
+    orcid: 0000-0002-9968-067X
+    affiliation: University of California, Los Angeles
+    roles: writing
+    corresponding: true
+  - name: Anton V. Artemyev
+    email: aartemyev@igpp.ucla.edu
+    orcid: 0000-0001-8823-4474
+    affiliation: University of California, Los Angeles
+bibliography: references.bib
+---
+
+::: {.content-visible when-format="html"}
+- [Typst read-only link](https://typst.app/project/rcdOBrTQmyYMywRvZtZvlQ)
+- [Zotero]()
+:::
+
+# Scientific/Technical/Management
+
+::: {.content-visible when-format="html"}
+::: column-margin
+-   Content
+    -   [ ] Discuss objectives and their significance.
+    -   [ ] Discuss perceived impact of the work.
+    -   [ ] Discuss relevance of the work to the program element. See V(a)
+    -   [ ] Explain the technical approach and methodology.
+    -   [ ] Discuss potential sources of uncertainty
+    -   [ ] Present mitigation strategy or alternate approach given obstacles
+    -   [ ] Discuss roles of all team members so it’s clear what they are doing
+    -   [ ] Present a work plan, with milestones, management structure
+    -   [ ] Present a data sharing and/or archiving plan in the S/T/M section only if it is required by program element, see Section II.(c). Special
+-   Special Content
+    -   [ ] Provide other special requirements of program element, e.g., special statements for participating scientists, team leads, etc.
+:::
+:::
+
+## Overview
+
+Parker Solar Probe (PSP) is a NASA mission to study the Sun's corona and inner heliosphere.
+
+PSP timeline:
+
+- 2018-08-12: Launch
+- 2018-10-03: First Venus flyby
+- 2018-11-05: First perihelion
+- 2019-01-19: First aphehion
+- ...
+
+![Parker Solar Probe orbits](images/PSP_01_orbit.png)
+
+![Multiple satellites orbits](images/paste-1.png)
+
+<!-- ![Juno orbit](https://www.nasa.gov/wp-content/uploads/2023/03/575573main_Juno20110727-3-43_full.jpg) -->
+
+
+## Discontinuities observed by different spacecrafts
+
+Juno, Parker Solar Probe, Wind and Stereo.
+
+## Occurrence rate of discontinuities
+
+## Model validation
+
+<!-- ![PSP orbits](https://blogs.nasa.gov/parkersolarprobe/wp-content/uploads/sites/274/2021/01/Parker-Orbit7Geometry-scaled.jpg) -->
+
+## Solar wind properties
+
+# References
+
+-   [Parker Solar Probe: The Mission](https://parkersolarprobe.jhuapl.edu/The-Mission/index.php)
+
+# Open Science and Data Management Plan (OSDMP)
+
+# Biographical Sketches/Curriculum Vitae (CVs)
+
+::: {.content-visible when-format="html"}
+::: column-margin
+-   Length restriction
+    -   [ ] CV for a PI (or Science PI) - up to two pages, unless otherwise specified.
+    -   [ ] CVs for anyone other than a PI are limited to one page
+:::
+:::
+
+## Zijin's CV
+
+## Anton's CV
+
+# Table of Personnel and Work Effort
+
+# Current and Pending Support
+
+# Statements of Commitment and Letters of Support, Feasibility and Endorsement
+
+# Budget
+
+## Budget Narrative (Budget Justification)
+
+::: {.content-visible when-format="html"}
+::: column-margin
+-   General
+    -   Please explain in words what is being purchased and why it is reasonable. See the Guidebook for Proposers
+-   Required
+    -   Budget Narrative: justify each proposed component of cost, including subcontracts/subawards, consultants, other direct costs (including travel), and facilities and equipment. Give the "basis of estimate;" quotes need not be provided, but the proposal should indicate that the cost was based upon a quote, prior experience, etc.
+:::
+:::
+
+## Budget Details
