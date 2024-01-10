@@ -524,7 +524,7 @@ columns: (25.0%, 25.0%, 25.0%, 25.0%), gutter: 1em, rows: 1,
 #figure([
 ],
   rect(stroke: none, width: 100%)[
-#image("https://agupubs.onlinelibrary.wiley.com/cms/asset/8e244339-32cf-4703-9101-c1d9b4a3fa7c/jgra57047-fig-0002-m.jpg")
+#image("https://agupubs.onlinelibrary.wiley.com/cms/asset/8e244339-32cf-4703-9101-c1d9b4a3fa7c/%20jgra57047-fig-0002-m.jpg")
 ],
   rect(stroke: none, width: 100%)[
 ], caption: figure.caption(
@@ -747,12 +747,15 @@ supplement: "Figure",
 )
 
 
+#pagebreak()
 = References
 <references>
 - #link("https://parkersolarprobe.jhuapl.edu/The-Mission/index.php")[Parker Solar Probe: The Mission]
 
+#pagebreak()
 = Open Science and Data Management Plan \(OSDMP)
 <open-science-and-data-management-plan-osdmp>
+#pagebreak()
 = Biographical Sketches/Curriculum Vitae \(CVs)
 <biographical-sketchescurriculum-vitae-cvs>
 == Zijin’s CV

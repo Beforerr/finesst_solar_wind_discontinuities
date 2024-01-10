@@ -7,15 +7,10 @@ manuscript:
     - notebook: notebooks/00_orbits.ipynb
     - notebook: notebooks/01_ids_example.ipynb
     - notebook: notebooks/02_ids_detection.ipynb
-  code-links: 
-    - repo
-    - href: https://www.overleaf.com/project/656949cbd97a7857413f247c
-      text: Overleaf
-    - href: https://typst.app/project/rcdOBrTQmyYMywRvZtZvlQ
-      text: Typst
 
 format:
   html: default
+  # pdf: default
   typst: default
 
 bibliography: files/references.bib
