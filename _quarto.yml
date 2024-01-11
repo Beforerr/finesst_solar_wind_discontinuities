@@ -9,7 +9,9 @@ manuscript:
     - notebook: notebooks/02_ids_detection.ipynb
 
 format:
-  html: default
+  html:
+    comments:
+      hypothesis: true
   # pdf: default
   typst: default
 

@@ -1,0 +1,17 @@
+panels:
+  - satellite: "THEMIS"
+    probe: "b"
+    instrument: "FGM"
+    start: "2012-03-27T12:03:30"
+    end: "2012-03-27T12:05:00"
+    tplot:
+      tvar: "thb_fgs_gse"
+      trans:
+        - "mva"
+
+output:
+  path: "images/examples/artemis_id_example"
+  formats:
+    - "png"
+    - "svg"
+  display: True

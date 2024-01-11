@@ -1,0 +1,15 @@
+panels:
+  - satellite: "PSP"
+    instrument: "FIELDS"
+    start: "2020-01-28T16:35:27"
+    end: "2020-01-28T16:35:30"
+    datatype: "mag_rtn"
+    tplot:
+      tvar: "psp_fld_l2_mag_RTN"
+      trans:
+        - "mva"
+output:
+  path: "images/examples/psp_id_example"
+  formats:
+    - "png"
+    - "svg"

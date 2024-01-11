@@ -1,0 +1,20 @@
+panels:
+  - satellite: "STEREO"
+    probe: "a"
+    instrument: "MAG"
+    start: "2016-06-28T11:46:20"
+    end: "2016-06-28T11:46:50"
+    # start: "2016-06-29T16:37:00"
+    # end: "2016-06-29T16:38:00"
+    tplot:
+      tvar: "BFIELD"
+      trans:
+        - "slice-3"
+        - "mva"
+
+output:
+  path: "images/examples/stereo_id_example"
+  formats:
+    - "png"
+    - "svg"
+  display: True
