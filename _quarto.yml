@@ -1,5 +1,7 @@
 project:
   type: manuscript
+  preview: 
+    port: 4001
 
 manuscript:
   article: index.qmd

@@ -1,5 +1,5 @@
 panels:
-- satellite: "PSP"
+- satellite: "JUNO"
   instrument: "FIELDS"
   start: "2020-01-28T16:35:27"
   end: "2020-01-28T16:35:30"
