@@ -13,3 +13,4 @@ output:
   formats:
     - "png"
     - "svg"
+  # display: True

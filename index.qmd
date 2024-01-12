@@ -108,13 +108,13 @@ Juno, Parker Solar Probe, Wind and Stereo.
 
 
 ::: {#fig-ids layout-ncol="2"}
-![A RD detected by PSP at 0.126 AU](./images/examples/psp_id_example)
+![A RD detected by PSP at 0.126 AU](./images/examples/fig-psp_id_example)
 
-![A RD detected by Juno at 4 AU](images/examples/juno_id_example.png)
+![A RD detected by Juno at 4 AU](https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/examples/fig-juno_id_example.png?raw=true)
 
-![A RD detected by ARTEMIS at 1 AU near Earth](./images/examples/artemis_id_example)
+![A RD detected by ARTEMIS at 1 AU near Earth](./images/examples/fig-artemis_id_example)
 
-![A RD detected by STEREO at 1 AU at different solar longitudes](./images/examples/stereo_id_example)
+![A RD detected by STEREO at 1 AU at different solar longitudes](./images/examples/fig-stereo_id_example)
 
 Rotational discontinuities (RDs) detected by PSP, Juno, Stereo and near-Earth satellite at different radial distances and solar longitudes.
 :::
@@ -143,7 +143,7 @@ Rotational discontinuities (RDs) detected by PSP, Stereo and near-Earth satellit
 
 We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.edu/MSWIM2D/), which models the solar wind propagation in 2D using the BATSRUS MHD solver. [@keebler2022]
 
-![Time-series comparison of MSWIM2D (red) and Juno-observed solar wind](images/juno_model_validation.png)
+![Time-series comparison of MSWIM2D (red) and Juno-observed solar wind](https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/model/juno_model_validation.png?raw=true)
 
 ::: column-margin
 ![Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind](images/paste-3.png){fig-alt="Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind (black) for 2012–2019. (a) Proton number density per cubic centimeter, with the highest resolution in gray and the 10 day running average in black. (b) Solar wind bulk flow speed in kilometers per second. (c) Model thermal pressure and New Horizons SWAP total (PUI plus solar wind) pressure. The blue vertical dashed line marks the Pluto flyby on 2015 July 14. Note the dual horizontal axis, providing both date and radial coordinate in astronomical units."}

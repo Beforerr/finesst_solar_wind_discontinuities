@@ -17,4 +17,4 @@ output:
   formats:
     - "png"
     - "svg"
-  display: True
+  # display: True
