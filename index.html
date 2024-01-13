@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-01-12">
+<meta name="dcterms.date" content="2024-01-13">
 
 <title>Solar wind discontinuities</title>
 <style>
@@ -54,6 +54,8 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -71,16 +73,24 @@ div.csl-indent {
 <meta name="citation_author" content="Vassilis Angelopoulos">
 <meta name="citation_author" content="Xiaofei Shi">
 <meta name="citation_author" content="Ivan Vasko">
-<meta name="citation_publication_date" content="2024-01-12">
-<meta name="citation_cover_date" content="2024-01-12">
+<meta name="citation_publication_date" content="2024-01-13">
+<meta name="citation_cover_date" content="2024-01-13">
 <meta name="citation_year" content="2024">
-<meta name="citation_online_date" content="2024-01-12">
+<meta name="citation_online_date" content="2024-01-13">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=Literate programming;,citation_author=Donald E. Knuth;,citation_publication_date=1984-05;,citation_cover_date=1984-05;,citation_year=1984;,citation_fulltext_html_url=https://doi.org/10.1093/comjnl/27.2.97;,citation_issue=2;,citation_doi=10.1093/comjnl/27.2.97;,citation_issn=0010-4620;,citation_volume=27;,citation_journal_title=Comput. J.;,citation_publisher=Oxford University Press, Inc.;">
 <meta name="citation_reference" content="citation_title=Categorizing MHD discontinuities in the inner heliosphere by utilizing the PSP mission;,citation_author=Y. Y. Liu;,citation_author=H. S. Fu;,citation_author=J. B. Cao;,citation_author=Y. Yu;,citation_author=C. M. Liu;,citation_author=Z. Wang;,citation_author=Z. Z. Guo;,citation_author=R. J. He;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_fulltext_html_url=https://onlinelibrary.wiley.com/doi/abs/10.1029/2021JA029983;,citation_issue=3;,citation_doi=10.1029/2021JA029983;,citation_volume=127;,citation_language=en-US;,citation_journal_title=Journal of Geophysical Research: Space Physics;">
 <meta name="citation_reference" content="citation_title=Two spacecraft observations of magnetic discontinuities in the solar wind with STEREO;,citation_author=David M. Malaspina;,citation_author=J. T. Gosling;,citation_publication_date=2012;,citation_cover_date=2012;,citation_year=2012;,citation_fulltext_html_url=https://onlinelibrary.wiley.com/doi/abs/10.1029/2011JA017375;,citation_issue=A4;,citation_doi=10.1029/2011JA017375;,citation_volume=117;,citation_language=en;,citation_journal_title=Journal of Geophysical Research: Space Physics;">
 <meta name="citation_reference" content="citation_title=Kinetic Properties of Solar Wind Discontinuities at 1 AU Observed by ARTEMIS;,citation_author=A. V. Artemyev;,citation_author=V. Angelopoulos;,citation_author=I. Y. Vasko;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_fulltext_html_url=https://onlinelibrary.wiley.com/doi/abs/10.1029/2019JA026597;,citation_issue=6;,citation_doi=10.1029/2019JA026597;,citation_volume=124;,citation_language=en;,citation_journal_title=Journal of Geophysical Research: Space Physics;">
 <meta name="citation_reference" content="citation_title=MSWIM2D: Two-dimensional Outer Heliosphere Solar Wind Modeling;,citation_author=Timothy B. Keebler;,citation_author=Gábor Tóth;,citation_author=Bertalan Zieger;,citation_author=Merav Opher;,citation_publication_date=2022-06;,citation_cover_date=2022-06;,citation_year=2022;,citation_fulltext_html_url=https://dx.doi.org/10.3847/1538-4365/ac67eb;,citation_issue=2;,citation_doi=10.3847/1538-4365/ac67eb;,citation_volume=260;,citation_language=en;,citation_journal_title=The Astrophysical Journal Supplement Series;">
+<meta name="citation_reference" content="citation_title=The Juno Magnetic Field Investigation;,citation_author=J. E. P. Connerney;,citation_author=M. Benn;,citation_author=J. B. Bjarno;,citation_author=T. Denver;,citation_author=J. Espley;,citation_author=J. L. Jorgensen;,citation_author=P. S. Jorgensen;,citation_author=P. Lawton;,citation_author=A. Malinnikova;,citation_author=J. M. Merayo;,citation_author=S. Murphy;,citation_author=J. Odom;,citation_author=R. Oliversen;,citation_author=R. Schnurr;,citation_author=D. Sheppard;,citation_author=E. J. Smith;,citation_publication_date=2017-11-01;,citation_cover_date=2017-11-01;,citation_year=2017;,citation_fulltext_html_url=https://doi.org/10.1007/s11214-017-0334-z;,citation_issue=1;,citation_doi=10.1007/s11214-017-0334-z;,citation_volume=213;,citation_language=en;,citation_journal_title=Space Science Reviews;">
+<meta name="citation_reference" content="citation_title=Solar Wind Electrons Alphas and Protons (SWEAP) Investigation: Design of the Solar Wind and Coronal Plasma Instrument Suite for Solar Probe Plus;,citation_author=Justin C. Kasper;,citation_author=Robert Abiad;,citation_author=Gerry Austin;,citation_author=Marianne Balat-Pichelin;,citation_author=Stuart D. Bale;,citation_author=John W. Belcher;,citation_author=Peter Berg;,citation_author=Henry Bergner;,citation_author=Matthieu Berthomier;,citation_author=Jay Bookbinder;,citation_author=Etienne Brodu;,citation_author=David Caldwell;,citation_author=Anthony W. Case;,citation_author=Benjamin D. G. Chandran;,citation_author=Peter Cheimets;,citation_author=Jonathan W. Cirtain;,citation_author=Steven R. Cranmer;,citation_author=David W. Curtis;,citation_author=Peter Daigneau;,citation_author=Greg Dalton;,citation_author=Brahmananda Dasgupta;,citation_author=David DeTomaso;,citation_author=Millan Diaz-Aguado;,citation_author=Blagoje Djordjevic;,citation_author=Bill Donaskowski;,citation_author=Michael Effinger;,citation_author=Vladimir Florinski;,citation_author=Nichola Fox;,citation_author=Mark Freeman;,citation_author=Dennis Gallagher;,citation_author=S. Peter Gary;,citation_author=Tom Gauron;,citation_author=Richard Gates;,citation_author=Melvin Goldstein;,citation_author=Leon Golub;,citation_author=Dorothy A. Gordon;,citation_author=Reid Gurnee;,citation_author=Giora Guth;,citation_author=Jasper Halekas;,citation_author=Ken Hatch;,citation_author=Jacob Heerikuisen;,citation_author=George Ho;,citation_author=Qiang Hu;,citation_author=Greg Johnson;,citation_author=Steven P. Jordan;,citation_author=Kelly E. Korreck;,citation_author=Davin Larson;,citation_author=Alan J. Lazarus;,citation_author=Gang Li;,citation_author=Roberto Livi;,citation_author=Michael Ludlam;,citation_author=Milan Maksimovic;,citation_author=James P. McFadden;,citation_author=William Marchant;,citation_author=Bennet A. Maruca;,citation_author=David J. McComas;,citation_author=Luciana Messina;,citation_author=Tony Mercer;,citation_author=Sang Park;,citation_author=Andrew M. Peddie;,citation_author=Nikolai Pogorelov;,citation_author=Matthew J. Reinhart;,citation_author=John D. Richardson;,citation_author=Miles Robinson;,citation_author=Irene Rosen;,citation_author=Ruth M. Skoug;,citation_author=Amanda Slagle;,citation_author=John T. Steinberg;,citation_author=Michael L. Stevens;,citation_author=Adam Szabo;,citation_author=Ellen R. Taylor;,citation_author=Chris Tiu;,citation_author=Paul Turin;,citation_author=Marco Velli;,citation_author=Gary Webb;,citation_author=Phyllis Whittlesey;,citation_author=Ken Wright;,citation_author=S. T. Wu;,citation_author=Gary Zank;,citation_publication_date=2016-12-01;,citation_cover_date=2016-12-01;,citation_year=2016;,citation_fulltext_html_url=https://doi.org/10.1007/s11214-015-0206-3;,citation_issue=1;,citation_doi=10.1007/s11214-015-0206-3;,citation_volume=204;,citation_language=en;,citation_journal_title=Space Science Reviews;">
+<meta name="citation_reference" content="citation_title=The FIELDS Instrument Suite for Solar Probe Plus;,citation_author=S. D. Bale;,citation_author=K. Goetz;,citation_author=P. R. Harvey;,citation_author=P. Turin;,citation_author=J. W. Bonnell;,citation_author=T. Dudok&nbsp;de&nbsp;Wit;,citation_author=R. E. Ergun;,citation_author=R. J. MacDowall;,citation_author=M. Pulupa;,citation_author=M. Andre;,citation_author=M. Bolton;,citation_author=J.-L. Bougeret;,citation_author=T. A. Bowen;,citation_author=D. Burgess;,citation_author=C. A. Cattell;,citation_author=B. D. G. Chandran;,citation_author=C. C. Chaston;,citation_author=C. H. K. Chen;,citation_author=M. K. Choi;,citation_author=J. E. Connerney;,citation_author=S. Cranmer;,citation_author=M. Diaz-Aguado;,citation_author=W. Donakowski;,citation_author=J. F. Drake;,citation_author=W. M. Farrell;,citation_author=P. Fergeau;,citation_author=J. Fermin;,citation_author=J. Fischer;,citation_author=N. Fox;,citation_author=D. Glaser;,citation_author=M. Goldstein;,citation_author=D. Gordon;,citation_author=E. Hanson;,citation_author=S. E. Harris;,citation_author=L. M. Hayes;,citation_author=J. J. Hinze;,citation_author=J. V. Hollweg;,citation_author=T. S. Horbury;,citation_author=R. A. Howard;,citation_author=V. Hoxie;,citation_author=G. Jannet;,citation_author=M. Karlsson;,citation_author=J. C. Kasper;,citation_author=P. J. Kellogg;,citation_author=M. Kien;,citation_author=J. A. Klimchuk;,citation_author=V. V. Krasnoselskikh;,citation_author=S. Krucker;,citation_author=J. J. Lynch;,citation_author=M. Maksimovic;,citation_author=D. M. Malaspina;,citation_author=S. Marker;,citation_author=P. Martin;,citation_author=J. Martinez-Oliveros;,citation_author=J. McCauley;,citation_author=D. J. McComas;,citation_author=T. McDonald;,citation_author=N. Meyer-Vernet;,citation_author=M. Moncuquet;,citation_author=S. J. Monson;,citation_author=F. S. Mozer;,citation_author=S. D. Murphy;,citation_author=J. Odom;,citation_author=R. Oliverson;,citation_author=J. Olson;,citation_author=E. N. Parker;,citation_author=D. Pankow;,citation_author=T. Phan;,citation_author=E. Quataert;,citation_author=T. Quinn;,citation_author=S. W. Ruplin;,citation_author=C. Salem;,citation_author=D. Seitz;,citation_author=D. A. Sheppard;,citation_author=A. Siy;,citation_author=K. Stevens;,citation_author=D. Summers;,citation_author=A. Szabo;,citation_author=M. Timofeeva;,citation_author=A. Vaivads;,citation_author=M. Velli;,citation_author=A. Yehle;,citation_author=D. Werthimer;,citation_author=J. R. Wygant;,citation_publication_date=2016-12-01;,citation_cover_date=2016-12-01;,citation_year=2016;,citation_fulltext_html_url=https://doi.org/10.1007/s11214-016-0244-5;,citation_issue=1;,citation_doi=10.1007/s11214-016-0244-5;,citation_volume=204;,citation_language=en;,citation_journal_title=Space Science Reviews;">
+<meta name="citation_reference" content="citation_title=The solar probe plus mission: humanity’s first visit to our star;,citation_author=N. J. Fox;,citation_author=M. C. Velli;,citation_author=S. D. Bale;,citation_author=R. Decker;,citation_author=A. Driesman;,citation_author=R. A. Howard;,citation_author=J. C. Kasper;,citation_author=J. Kinnison;,citation_author=M. Kusterer;,citation_author=D. Lario;,citation_author=M. K. Lockwood;,citation_author=D. J. McComas;,citation_author=N. E. Raouafi;,citation_author=A. Szabo;,citation_publication_date=2016-12-01;,citation_cover_date=2016-12-01;,citation_year=2016;,citation_fulltext_html_url=https://doi.org/10.1007/s11214-015-0211-6;,citation_issue=1;,citation_doi=10.1007/s11214-015-0211-6;,citation_volume=204;,citation_language=en;,citation_journal_title=Space Science Reviews;">
+<meta name="citation_reference" content="citation_title=A journey to touch the sun;,citation_author=Nour E. Raouafi;,citation_publication_date=2022-11-01;,citation_cover_date=2022-11-01;,citation_year=2022;,citation_fulltext_html_url=https://doi.org/10.1063/PT.3.5120;,citation_issue=11;,citation_doi=10.1063/PT.3.5120;,citation_volume=75;,citation_language=en;,citation_journal_title=Physics Today;">
+<meta name="citation_reference" content="citation_title=Magnetic field directional discontinuities: Characteristics between 0.46 and 1.0 AU;,citation_author=R. P. Lepping;,citation_author=K. W. Behannon;,citation_publication_date=1986;,citation_cover_date=1986;,citation_year=1986;,citation_fulltext_html_url=https://onlinelibrary.wiley.com/doi/abs/10.1029/JA091iA08p08725;,citation_issue=A8;,citation_doi=10.1029/JA091iA08p08725;,citation_volume=91;,citation_language=en-US;,citation_journal_title=Journal of Geophysical Research: Space Physics;">
+<meta name="citation_reference" content="citation_title=The WIND magnetic field investigation;,citation_author=R. P. Lepping;,citation_author=M. H. Acũna;,citation_author=L. F. Burlaga;,citation_author=W. M. Farrell;,citation_author=J. A. Slavin;,citation_author=K. H. Schatten;,citation_author=F. Mariani;,citation_author=N. F. Ness;,citation_author=F. M. Neubauer;,citation_author=Y. C. Whang;,citation_author=J. B. Byrnes;,citation_author=R. S. Kennon;,citation_author=P. V. Panetta;,citation_author=J. Scheifele;,citation_author=E. M. Worley;,citation_publication_date=1995-02-01;,citation_cover_date=1995-02-01;,citation_year=1995;,citation_fulltext_html_url=https://doi.org/10.1007/BF00751330;,citation_issue=1;,citation_doi=10.1007/BF00751330;,citation_volume=71;,citation_language=en;,citation_journal_title=Space Science Reviews;">
+<meta name="citation_reference" content="citation_title=Understanding the origins of the heliosphere: integrating observations and measurements from parker solar probe, solar orbiter, and other space- and ground-based observatories;,citation_author=M. Velli;,citation_author=L. K. Harra;,citation_author=A. Vourlidas;,citation_author=N. Schwadron;,citation_author=O. Panasenco;,citation_author=P. C. Liewer;,citation_author=D. Müller;,citation_author=I. Zouganelis;,citation_author=O. C. St Cyr;,citation_author=H. Gilbert;,citation_author=T. Nieves-Chinchilla;,citation_author=F. Auchère;,citation_author=D. Berghmans;,citation_author=A. Fludra;,citation_author=T. S. Horbury;,citation_author=R. A. Howard;,citation_author=S. Krucker;,citation_author=M. Maksimovic;,citation_author=C. J. Owen;,citation_author=J. Rodríguez-Pacheco;,citation_author=M. Romoli;,citation_author=S. K. Solanki;,citation_author=R. F. Wimmer-Schweingruber;,citation_author=S. Bale;,citation_author=J. Kasper;,citation_author=D. J. McComas;,citation_author=N. Raouafi;,citation_author=V. Martinez-Pillet;,citation_author=A. P. Walsh;,citation_author=A. De Groof;,citation_author=D. Williams;,citation_publication_date=2020-10-01;,citation_cover_date=2020-10-01;,citation_year=2020;,citation_fulltext_html_url=https://www.aanda.org/articles/aa/abs/2020/10/aa38245-20/aa38245-20.html;,citation_doi=10.1051/0004-6361/202038245;,citation_volume=642;,citation_language=en;,citation_journal_title=Astronomy and Astrophysics;">
 </head>
 
 <body>
@@ -147,7 +157,7 @@ div.csl-indent {
                 <div>
             <div class="quarto-title-meta-heading">Published</div>
             <div class="quarto-title-meta-contents">
-              <p class="date">January 12, 2024</p>
+              <p class="date">January 13, 2024</p>
             </div>
           </div>
           
@@ -255,23 +265,27 @@ Note
 </div>
 </div>
 </div>
-<!-- ::: {.content-visible when-format="html"}
-::: column-margin
--   Content
-    -   [ ] Discuss objectives and their significance.
-    -   [ ] Discuss perceived impact of the work.
-    -   [ ] Discuss relevance of the work to the program element. See V(a)
-    -   [ ] Explain the technical approach and methodology.
-    -   [ ] Discuss potential sources of uncertainty
-    -   [ ] Present mitigation strategy or alternate approach given obstacles
-    -   [ ] Discuss roles of all team members so it’s clear what they are doing
-    -   [ ] Present a work plan, with milestones, management structure
-    -   [ ] Present a data sharing and/or archiving plan in the S/T/M section only if it is required by program element, see Section II.(c). Special
--   Special Content
-    -   [ ] Provide other special requirements of program element, e.g., special statements for participating scientists, team leads, etc.
-:::
-::: -->
-<section id="overview" class="level2 page-columns page-full">
+
+<div class="no-row-height column-margin column-container"><div class="">
+<ul>
+<li>Content
+<ul class="task-list">
+<li><label><input type="checkbox">Discuss objectives and their significance.</label></li>
+<li><label><input type="checkbox">Discuss perceived impact of the work.</label></li>
+<li><label><input type="checkbox">Discuss relevance of the work to the program element. See V(a)</label></li>
+<li><label><input type="checkbox">Explain the technical approach and methodology.</label></li>
+<li><label><input type="checkbox">Discuss potential sources of uncertainty</label></li>
+<li><label><input type="checkbox">Present mitigation strategy or alternate approach given obstacles</label></li>
+<li><label><input type="checkbox">Discuss roles of all team members so it’s clear what they are doing</label></li>
+<li><label><input type="checkbox">Present a work plan, with milestones, management structure</label></li>
+<li><label><input type="checkbox">Present a data sharing and/or archiving plan in the S/T/M section only if it is required by program element, see Section II.(c). Special</label></li>
+</ul></li>
+<li>Special Content
+<ul class="task-list">
+<li><label><input type="checkbox">Provide other special requirements of program element, e.g., special statements for participating scientists, team leads, etc.</label></li>
+</ul></li>
+</ul>
+</div></div><section id="overview" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>Parker Solar Probe (PSP) is a NASA mission to study the Sun’s corona and inner heliosphere.</p>
 <p>PSP timeline:</p>
@@ -290,13 +304,13 @@ Note
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <figure class="figure">
-<p><a href="images/PSP_01_orbit.png" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-1" title="Parker Solar Probe orbits"><img src="images/PSP_01_orbit.png" class="img-fluid figure-img" alt="Parker Solar Probe orbits"></a></p>
+<p><a href="images/PSP_01_orbit.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-description="" title="Parker Solar Probe orbits"><img src="images/PSP_01_orbit.png" class="img-fluid figure-img" alt="Parker Solar Probe orbits"></a></p>
 <figcaption>Parker Solar Probe orbits</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <figure class="figure">
-<p><a href="https://www.nasa.gov/wp-content/uploads/2023/03/575573main_Juno20110727-3-43_full.jpg" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-2" title="Juno orbit"><img src="https://www.nasa.gov/wp-content/uploads/2023/03/575573main_Juno20110727-3-43_full.jpg" class="img-fluid figure-img" alt="Juno orbit"></a></p>
+<p><a href="https://www.nasa.gov/wp-content/uploads/2023/03/575573main_Juno20110727-3-43_full.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-description="" title="Juno orbit"><img src="https://www.nasa.gov/wp-content/uploads/2023/03/575573main_Juno20110727-3-43_full.jpg" class="img-fluid figure-img" alt="Juno orbit"></a></p>
 <figcaption>Juno orbit</figcaption>
 </figure>
 </div>
@@ -308,7 +322,7 @@ Note
 </div>
 </div></div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/orbits/juno_psp_orbit_v2.png" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-3" title="Orbits"><img src="images/orbits/juno_psp_orbit_v2.png" class="img-fluid figure-img" alt="Orbits"></a></p>
+<p><a href="images/orbits/juno_psp_orbit_v2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-description="" title="Orbits"><img src="images/orbits/juno_psp_orbit_v2.png" class="img-fluid figure-img" alt="Orbits"></a></p>
 <figcaption>Orbits</figcaption>
 </figure>
 </div>
@@ -316,7 +330,7 @@ Note
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://docs.poliastro.space/en/stable/_images/examples_Going_to_Jupiter_with_Python_using_Jupyter_and_poliastro_24_2.png" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-4" title="Previous Juno orbit using poliastro"><img src="https://docs.poliastro.space/en/stable/_images/examples_Going_to_Jupiter_with_Python_using_Jupyter_and_poliastro_24_2.png" class="img-fluid figure-img" alt="Previous Juno orbit using poliastro"></a></p>
+<p><a href="https://docs.poliastro.space/en/stable/_images/examples_Going_to_Jupiter_with_Python_using_Jupyter_and_poliastro_24_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-description="" title="Previous Juno orbit using poliastro"><img src="https://docs.poliastro.space/en/stable/_images/examples_Going_to_Jupiter_with_Python_using_Jupyter_and_poliastro_24_2.png" class="img-fluid figure-img" alt="Previous Juno orbit using poliastro"></a></p>
 <figcaption>Previous Juno orbit using <code>poliastro</code></figcaption>
 </figure>
 </div>
@@ -329,13 +343,13 @@ Note
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <figure class="figure">
-<p><a href="./images/examples/fig-psp_id_example.png" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-5" title="A RD detected by PSP at 0.126&nbsp;AU"><img src="./images/examples/fig-psp_id_example.png" class="img-fluid figure-img"></a></p>
+<p><a href="./images/examples/fig-psp_id_example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-description="" title="A RD detected by PSP at 0.126&nbsp;AU"><img src="./images/examples/fig-psp_id_example.png" class="img-fluid figure-img"></a></p>
 <figcaption>A RD detected by PSP at 0.126&nbsp;AU</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <figure class="figure">
-<p><a href="https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/examples/fig-juno_id_example.png?raw=true" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-6" title="A RD detected by Juno at 4 AU"><img src="https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/examples/fig-juno_id_example.png?raw=true" class="img-fluid figure-img"></a></p>
+<p><a href="https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/examples/fig-juno_id_example.png?raw=true" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-description="" title="A RD detected by Juno at 4 AU"><img src="https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/examples/fig-juno_id_example.png?raw=true" class="img-fluid figure-img"></a></p>
 <figcaption>A RD detected by Juno at 4 AU</figcaption>
 </figure>
 </div>
@@ -343,13 +357,13 @@ Note
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <figure class="figure">
-<p><a href="./images/examples/fig-artemis_id_example.png" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-7" title="A RD detected by ARTEMIS at 1 AU near Earth"><img src="./images/examples/fig-artemis_id_example.png" class="img-fluid figure-img"></a></p>
+<p><a href="./images/examples/fig-artemis_id_example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-description="" title="A RD detected by ARTEMIS at 1 AU near Earth"><img src="./images/examples/fig-artemis_id_example.png" class="img-fluid figure-img"></a></p>
 <figcaption>A RD detected by ARTEMIS at 1 AU near Earth</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <figure class="figure">
-<p><a href="./images/examples/fig-stereo_id_example.png" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-8" title="A RD detected by STEREO at 1 AU at different solar longitudes"><img src="./images/examples/fig-stereo_id_example.png" class="img-fluid figure-img"></a></p>
+<p><a href="./images/examples/fig-stereo_id_example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-description="" title="A RD detected by STEREO at 1 AU at different solar longitudes"><img src="./images/examples/fig-stereo_id_example.png" class="img-fluid figure-img"></a></p>
 <figcaption>A RD detected by STEREO at 1 AU at different solar longitudes</figcaption>
 </figure>
 </div>
@@ -368,19 +382,19 @@ Figure&nbsp;1: Rotational discontinuities (RDs) detected by PSP, Juno, Stereo an
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
 <figure class="figure">
-<p><a href="https://agupubs.onlinelibrary.wiley.com/cms/asset/8e244339-32cf-4703-9101-c1d9b4a3fa7c/%20jgra57047-fig-0002-m.jpg" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-9" title="A RD detected by PSP at 0.126&nbsp;AU from @liu2022"><img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/8e244339-32cf-4703-9101-c1d9b4a3fa7c/%20jgra57047-fig-0002-m.jpg" class="img-fluid figure-img" alt="The properties of a rotational discontinuity (RD) detected at 0.126&nbsp;AU on 28 January 2020. (a) The magnetic field magnitude and three components in Radial‐Tangential‐Normal (RTN) coordinate system, (b) the magnetic field in local magnetic normal (LMN) coordinate system, (c and d) the proton velocity in RTN and LMN coordinate systems, (e) the proton density, (f) the proton thermal pressure, the magnetic pressure and the sum, (g) the tangential components of the electric field in LMN coordinate system in the RD rest frame, (h) the position, orientation, and motion of the RD, (i–k) the distributions of BL, JM, and J&nbsp;·&nbsp;E across the RD, (l and m) the jump conditions across the RD. In (h), the cyan plane and arrow represent the RD and its motion vector, and the yellow curve shows the PSP orbit. In (j), both the colors and the curve correspond to the values of JM, and two vertical dashed lines indicate the area of |JM|>13max|JM| $\vert {J}_{M}\vert > \frac{1}{3}\text{max}\left(\vert {J}_{M}\vert \right)$ whose width is defined as the half thickness of the discontinuity. In (m), the solid lines present the actual upstream and downstream velocities, while the dashed lines show the theoretical downstream velocity to satisfy the Walén relation."></a></p>
+<p><a href="https://agupubs.onlinelibrary.wiley.com/cms/asset/8e244339-32cf-4703-9101-c1d9b4a3fa7c/%20jgra57047-fig-0002-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-description="" title="A RD detected by PSP at 0.126&nbsp;AU from @liu2022"><img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/8e244339-32cf-4703-9101-c1d9b4a3fa7c/%20jgra57047-fig-0002-m.jpg" class="img-fluid figure-img" alt="The properties of a rotational discontinuity (RD) detected at 0.126&nbsp;AU on 28 January 2020. (a) The magnetic field magnitude and three components in Radial‐Tangential‐Normal (RTN) coordinate system, (b) the magnetic field in local magnetic normal (LMN) coordinate system, (c and d) the proton velocity in RTN and LMN coordinate systems, (e) the proton density, (f) the proton thermal pressure, the magnetic pressure and the sum, (g) the tangential components of the electric field in LMN coordinate system in the RD rest frame, (h) the position, orientation, and motion of the RD, (i–k) the distributions of BL, JM, and J&nbsp;·&nbsp;E across the RD, (l and m) the jump conditions across the RD. In (h), the cyan plane and arrow represent the RD and its motion vector, and the yellow curve shows the PSP orbit. In (j), both the colors and the curve correspond to the values of JM, and two vertical dashed lines indicate the area of |JM|>13max|JM| $\vert {J}_{M}\vert > \frac{1}{3}\text{max}\left(\vert {J}_{M}\vert \right)$ whose width is defined as the half thickness of the discontinuity. In (m), the solid lines present the actual upstream and downstream velocities, while the dashed lines show the theoretical downstream velocity to satisfy the Walén relation."></a></p>
 <figcaption>A RD detected by PSP at 0.126&nbsp;AU from <span class="citation" data-cites="liu2022">Liu et al. (<a href="#ref-liu2022" role="doc-biblioref">2022</a>)</span></figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
 <figure class="figure">
-<p><a href="https://agupubs.onlinelibrary.wiley.com/cms/asset/837d691e-c062-4bde-95ec-8b3e7b095dfe/jgra21804-fig-0003.png" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-10" title="A RD detected by Stereos at 1 AU from @malaspina2012"><img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/837d691e-c062-4bde-95ec-8b3e7b095dfe/jgra21804-fig-0003.png" class="img-fluid figure-img" alt="2.5 min of Bx, By, and Bz GSE data from STA (darker trace, black online) and STB (lighter trace, red online). STB data are plotted shifted in time to show the DD match between STA and STB, found at a spacecraft separation of ∼7.5 × 103 km. Vertical lines indicate the start and end of the DD as identified using the STA Bx data."></a></p>
+<p><a href="https://agupubs.onlinelibrary.wiley.com/cms/asset/837d691e-c062-4bde-95ec-8b3e7b095dfe/jgra21804-fig-0003.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-description="" title="A RD detected by Stereos at 1 AU from @malaspina2012"><img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/837d691e-c062-4bde-95ec-8b3e7b095dfe/jgra21804-fig-0003.png" class="img-fluid figure-img" alt="2.5 min of Bx, By, and Bz GSE data from STA (darker trace, black online) and STB (lighter trace, red online). STB data are plotted shifted in time to show the DD match between STA and STB, found at a spacecraft separation of ∼7.5 × 103 km. Vertical lines indicate the start and end of the DD as identified using the STA Bx data."></a></p>
 <figcaption>A RD detected by Stereos at 1 AU from <span class="citation" data-cites="malaspina2012">Malaspina and Gosling (<a href="#ref-malaspina2012" role="doc-biblioref">2012</a>)</span></figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
 <figure class="figure">
-<p><a href="https://agupubs.onlinelibrary.wiley.com/cms/asset/0be15a8d-39e0-4617-8018-239f22962bea/jgra54962-fig-0001-m.jpg" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-11" title="A RD detected by ARTEMIS at 1 AU from @artemyev2019"><img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/0be15a8d-39e0-4617-8018-239f22962bea/jgra54962-fig-0001-m.jpg" class="img-fluid figure-img" alt="The example of solar wind discontinuities observed by ARTEMIS in 27 March 2012. Panel (a) shows the magnetic field in the local coordinate system and the tangential plasma velocity, vl. Panel (b) shows the electron density and the ion and electron temperatures. Panel (c) shows the ion and electron β, and the current density, jm (the inserted figure shows jm vs. the spatial coordinate rn/di). Panels (d) and (e) show electron flux pitch-angle (α) spectrograms for two energy ranges. Panel (f) shows the electron flux anisotropy as function of energy and time (see text for details)."></a></p>
+<p><a href="https://agupubs.onlinelibrary.wiley.com/cms/asset/0be15a8d-39e0-4617-8018-239f22962bea/jgra54962-fig-0001-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" data-description="" title="A RD detected by ARTEMIS at 1 AU from @artemyev2019"><img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/0be15a8d-39e0-4617-8018-239f22962bea/jgra54962-fig-0001-m.jpg" class="img-fluid figure-img" alt="The example of solar wind discontinuities observed by ARTEMIS in 27 March 2012. Panel (a) shows the magnetic field in the local coordinate system and the tangential plasma velocity, vl. Panel (b) shows the electron density and the ion and electron temperatures. Panel (c) shows the ion and electron β, and the current density, jm (the inserted figure shows jm vs. the spatial coordinate rn/di). Panels (d) and (e) show electron flux pitch-angle (α) spectrograms for two energy ranges. Panel (f) shows the electron flux anisotropy as function of energy and time (see text for details)."></a></p>
 <figcaption>A RD detected by ARTEMIS at 1 AU from <span class="citation" data-cites="artemyev2019">Artemyev, Angelopoulos, and Vasko (<a href="#ref-artemyev2019" role="doc-biblioref">2019</a>)</span></figcaption>
 </figure>
 </div>
@@ -402,7 +416,7 @@ Figure&nbsp;2: Rotational discontinuities (RDs) detected by PSP, Stereo and near
 <p>We are using <a href="http://csem.engin.umich.edu/MSWIM2D/">Michigan Solar WInd Model 2D (MSWIM2D)</a>, which models the solar wind propagation in 2D using the BATSRUS MHD solver. <span class="citation" data-cites="keebler2022">(<a href="#ref-keebler2022" role="doc-biblioref">Keebler et al. 2022</a>)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/model/juno_model_validation.png?raw=true" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-13" title="Time-series comparison of MSWIM2D (red) and Juno-observed solar wind"><img src="https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/model/juno_model_validation.png?raw=true" class="img-fluid figure-img" alt="Time-series comparison of MSWIM2D (red) and Juno-observed solar wind"></a></p>
+<p><a href="https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/model/juno_model_validation.png?raw=true" class="lightbox" data-gallery="quarto-lightbox-gallery-13" data-description="" title="Time-series comparison of MSWIM2D (red) and Juno-observed solar wind"><img src="https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/model/juno_model_validation.png?raw=true" class="img-fluid figure-img" alt="Time-series comparison of MSWIM2D (red) and Juno-observed solar wind"></a></p>
 <figcaption>Time-series comparison of MSWIM2D (red) and Juno-observed solar wind</figcaption>
 </figure>
 </div>
@@ -410,7 +424,7 @@ Figure&nbsp;2: Rotational discontinuities (RDs) detected by PSP, Stereo and near
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/paste-3.png" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-14" title="Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind"><img src="images/paste-3.png" class="img-fluid figure-img" alt="Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind (black) for 2012–2019. (a) Proton number density per cubic centimeter, with the highest resolution in gray and the 10 day running average in black. (b) Solar wind bulk flow speed in kilometers per second. (c) Model thermal pressure and New Horizons SWAP total (PUI plus solar wind) pressure. The blue vertical dashed line marks the Pluto flyby on 2015 July 14. Note the dual horizontal axis, providing both date and radial coordinate in astronomical units."></a></p>
+<p><a href="images/paste-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" data-description="" title="Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind"><img src="images/paste-3.png" class="img-fluid figure-img" alt="Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind (black) for 2012–2019. (a) Proton number density per cubic centimeter, with the highest resolution in gray and the 10 day running average in black. (b) Solar wind bulk flow speed in kilometers per second. (c) Model thermal pressure and New Horizons SWAP total (PUI plus solar wind) pressure. The blue vertical dashed line marks the Pluto flyby on 2015 July 14. Note the dual horizontal axis, providing both date and radial coordinate in astronomical units."></a></p>
 <figcaption>Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind</figcaption>
 </figure>
 </div>
@@ -419,7 +433,7 @@ Figure&nbsp;2: Rotational discontinuities (RDs) detected by PSP, Stereo and near
 <h3 class="anchored" data-anchor-id="solar-wind-properties">Solar wind properties</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://beforerr.github.io/ids_finder/figures/thickness/thickness_mn_dist.png" class="lightbox" data-description="" data-gallery="quarto-lightbox-gallery-15" title="Current sheet thickness"><img src="https://beforerr.github.io/ids_finder/figures/thickness/thickness_mn_dist.png" class="img-fluid figure-img" alt="Current sheet thickness"></a></p>
+<p><a href="https://beforerr.github.io/ids_finder/figures/thickness/thickness_mn_dist.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" data-description="" title="Current sheet thickness"><img src="https://beforerr.github.io/ids_finder/figures/thickness/thickness_mn_dist.png" class="img-fluid figure-img" alt="Current sheet thickness"></a></p>
 <figcaption>Current sheet thickness</figcaption>
 </figure>
 </div>
@@ -432,11 +446,49 @@ Figure&nbsp;2: Rotational discontinuities (RDs) detected by PSP, Stereo and near
 <section id="science-objectives-and-methodology" class="level2">
 <h2 class="anchored" data-anchor-id="science-objectives-and-methodology">Science Objectives and Methodology</h2>
 </section>
-<section id="demonstration-of-project-approaches" class="level2">
+<section id="demonstration-of-project-approaches" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="demonstration-of-project-approaches">Demonstration of Project Approaches</h2>
-<section id="dataset-and-spacecraft-instruments" class="level3">
+<section id="dataset-and-spacecraft-instruments" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="dataset-and-spacecraft-instruments">Dataset and spacecraft instruments</h3>
-</section>
+<p>Synergistic observations <span class="citation" data-cites="velli2020">(<a href="#ref-velli2020" role="doc-biblioref">Velli et al. 2020</a>)</span> advance our understanding of the solar wind</p>
+<ul>
+<li>Juno
+<ul>
+<li>Magnetic Field investigation (MAG) <span class="citation" data-cites="connerney2017">(<a href="#ref-connerney2017" role="doc-biblioref">Connerney et al. 2017</a>)</span>
+<ul>
+<li>About:: The Juno Magnetic Field investigation (MAG) characterizes Jupiter’s planetary magnetic field and magnetosphere, providing the first globally distributed and proximate measurements of the magnetic field of Jupiter. The magnetic field instrumentation consists of two independent magnetometer sensor suites, each consisting of a tri-axial Fluxgate Magnetometer (FGM) sensor and a pair of co-located imaging sensors mounted on an ultra-stable optical bench.</li>
+<li>Links: <a href="https://www.wikiwand.com/en/Magnetometer_(Juno)">Wikipedia</a>, <a href="https://doi.org/10.1007/s11214-017-0334-z">DOI</a></li>
+</ul></li>
+</ul></li>
+<li>Parker Solar Probe (PSP) <span class="citation" data-cites="fox2016 raouafi2022">(<a href="#ref-fox2016" role="doc-biblioref">Fox et al. 2016</a>; <a href="#ref-raouafi2022" role="doc-biblioref">Raouafi 2022</a>)</span>
+<ul>
+<li>FIELDS <span class="citation" data-cites="bale2016">(<a href="#ref-bale2016" role="doc-biblioref">Bale et al. 2016</a>)</span> FIELDS Instrument Suite
+<ul>
+<li>About:: The FIELDS investigation will make direct measurements of electric and magnetic fields, the properties of in situ plasma waves, electron density and temperature profiles, and interplanetary radio emissions, amongst other things. The FIELDS instrument suite consists of two fluxgate magnetometers (MAG), three electric field antennas (EFS), and a waveform capture system (WAVES) that records the high frequency electric and magnetic waveforms at 16 samples per second.</li>
+</ul></li>
+<li>Solar Wind Electrons Alphas and Protons (SWEAP) Investigation <span class="citation" data-cites="kasper2016">(<a href="#ref-kasper2016" role="doc-biblioref">Kasper et al. 2016</a>)</span>
+<ul>
+<li>About:: a four sensor instrument suite that provides complete measurements of the electrons and ionized helium and hydrogen that constitute the bulk of solar wind and coronal plasma.</li>
+</ul></li>
+<li>Links: <a href="https://www.wikiwand.com/en/Parker_Solar_Probe">Wikipedia</a></li>
+</ul></li>
+<li>Wind
+<ul>
+<li>About:: Comprehensive Solar Wind Laboratory for Long-Term Solar Wind Measurements</li>
+<li>Instruments:
+<ul>
+<li>Magnetic Field Investigation (MFI) <span class="citation" data-cites="lepping1995">(<a href="#ref-lepping1995" role="doc-biblioref">Lepping et al. 1995</a>)</span></li>
+<li>Solar Wind Experiment (SWE) <span class="citation" data-cites="ogilvie1995">(<a href="#ref-ogilvie1995" role="doc-biblioref"><strong>ogilvie1995?</strong></a>)</span></li>
+</ul></li>
+</ul></li>
+<li>Stereo</li>
+<li>ARTEMIS</li>
+</ul>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://psp-gateway.jhuapl.edu/website/Home/psp_hci.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://psp-gateway.jhuapl.edu/website/Home/psp_hgmag.mp4"></video></div>
+</div></div></section>
 </section>
 <section id="relevance-to-heliophysics-overarching-goals" class="level2">
 <h2 class="anchored" data-anchor-id="relevance-to-heliophysics-overarching-goals">Relevance to Heliophysics Overarching Goals</h2>
@@ -532,14 +584,35 @@ Figure&nbsp;2: Rotational discontinuities (RDs) detected by PSP, Stereo and near
 <div id="ref-artemyev2019" class="csl-entry" role="listitem">
 Artemyev, A. V., V. Angelopoulos, and I. Y. Vasko. 2019. <span>“Kinetic Properties of Solar Wind Discontinuities at 1 AU Observed by ARTEMIS.”</span> <em>Journal of Geophysical Research: Space Physics</em> 124 (6): 3858–70. <a href="https://doi.org/10.1029/2019JA026597">https://doi.org/10.1029/2019JA026597</a>.
 </div>
+<div id="ref-bale2016" class="csl-entry" role="listitem">
+Bale, S. D., K. Goetz, P. R. Harvey, P. Turin, J. W. Bonnell, T. Dudok&nbsp;de&nbsp;Wit, R. E. Ergun, et al. 2016. <span>“The FIELDS Instrument Suite for Solar Probe Plus.”</span> <em>Space Science Reviews</em> 204 (1): 49–82. <a href="https://doi.org/10.1007/s11214-016-0244-5">https://doi.org/10.1007/s11214-016-0244-5</a>.
+</div>
+<div id="ref-connerney2017" class="csl-entry" role="listitem">
+Connerney, J. E. P., M. Benn, J. B. Bjarno, T. Denver, J. Espley, J. L. Jorgensen, P. S. Jorgensen, et al. 2017. <span>“The Juno Magnetic Field Investigation.”</span> <em>Space Science Reviews</em> 213 (1): 39–138. <a href="https://doi.org/10.1007/s11214-017-0334-z">https://doi.org/10.1007/s11214-017-0334-z</a>.
+</div>
+<div id="ref-fox2016" class="csl-entry" role="listitem">
+Fox, N. J., M. C. Velli, S. D. Bale, R. Decker, A. Driesman, R. A. Howard, J. C. Kasper, et al. 2016. <span>“The Solar Probe Plus Mission: Humanity<span>’</span>s First Visit to Our Star.”</span> <em>Space Science Reviews</em> 204 (1): 7–48. <a href="https://doi.org/10.1007/s11214-015-0211-6">https://doi.org/10.1007/s11214-015-0211-6</a>.
+</div>
+<div id="ref-kasper2016" class="csl-entry" role="listitem">
+Kasper, Justin C., Robert Abiad, Gerry Austin, Marianne Balat-Pichelin, Stuart D. Bale, John W. Belcher, Peter Berg, et al. 2016. <span>“Solar Wind Electrons Alphas and Protons (SWEAP) Investigation: Design of the Solar Wind and Coronal Plasma Instrument Suite for Solar Probe Plus.”</span> <em>Space Science Reviews</em> 204 (1): 131–86. <a href="https://doi.org/10.1007/s11214-015-0206-3">https://doi.org/10.1007/s11214-015-0206-3</a>.
+</div>
 <div id="ref-keebler2022" class="csl-entry" role="listitem">
 Keebler, Timothy B., Gábor Tóth, Bertalan Zieger, and Merav Opher. 2022. <span>“MSWIM2D: Two-Dimensional Outer Heliosphere Solar Wind Modeling.”</span> <em>The Astrophysical Journal Supplement Series</em> 260 (2): 43. <a href="https://doi.org/10.3847/1538-4365/ac67eb">https://doi.org/10.3847/1538-4365/ac67eb</a>.
+</div>
+<div id="ref-lepping1995" class="csl-entry" role="listitem">
+Lepping, R. P., M. H. Acũna, L. F. Burlaga, W. M. Farrell, J. A. Slavin, K. H. Schatten, F. Mariani, et al. 1995. <span>“The WIND Magnetic Field Investigation.”</span> <em>Space Science Reviews</em> 71 (1): 207–29. <a href="https://doi.org/10.1007/BF00751330">https://doi.org/10.1007/BF00751330</a>.
 </div>
 <div id="ref-liu2022" class="csl-entry" role="listitem">
 Liu, Y. Y., H. S. Fu, J. B. Cao, Y. Yu, C. M. Liu, Z. Wang, Z. Z. Guo, and R. J. He. 2022. <span>“Categorizing MHD Discontinuities in the Inner Heliosphere by Utilizing the PSP Mission.”</span> <em>Journal of Geophysical Research: Space Physics</em> 127 (3): e2021JA029983. <a href="https://doi.org/10.1029/2021JA029983">https://doi.org/10.1029/2021JA029983</a>.
 </div>
 <div id="ref-malaspina2012" class="csl-entry" role="listitem">
 Malaspina, David M., and J. T. Gosling. 2012. <span>“Two Spacecraft Observations of Magnetic Discontinuities in the Solar Wind with STEREO.”</span> <em>Journal of Geophysical Research: Space Physics</em> 117 (A4). <a href="https://doi.org/10.1029/2011JA017375">https://doi.org/10.1029/2011JA017375</a>.
+</div>
+<div id="ref-raouafi2022" class="csl-entry" role="listitem">
+Raouafi, Nour E. 2022. <span>“A Journey to Touch the Sun.”</span> <em>Physics Today</em> 75 (11): 28–34. <a href="https://doi.org/10.1063/PT.3.5120">https://doi.org/10.1063/PT.3.5120</a>.
+</div>
+<div id="ref-velli2020" class="csl-entry" role="listitem">
+Velli, M., L. K. Harra, A. Vourlidas, N. Schwadron, O. Panasenco, P. C. Liewer, D. Müller, et al. 2020. <span>“Understanding the Origins of the Heliosphere: Integrating Observations and Measurements from Parker Solar Probe, Solar Orbiter, and Other Space- and Ground-Based Observatories.”</span> <em>Astronomy and Astrophysics</em> 642 (October): A4. <a href="https://doi.org/10.1051/0004-6361/202038245">https://doi.org/10.1051/0004-6361/202038245</a>.
 </div>
 </div></section></div></main>
 <!-- /main column -->
@@ -941,7 +1014,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":false,"openEffect":"zoom","closeEffect":"zoom"});</script>
+<script>videojs(video_shortcode_videojs_video1);</script>
+<script>videojs(video_shortcode_videojs_video2);</script>
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","loop":false,"selector":".lightbox","descPosition":"bottom"});</script>
 
 
 
