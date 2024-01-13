@@ -5,6 +5,9 @@ project:
 
 manuscript:
   article: index.qmd
+  resources:
+    - files/references.bib
+    - files/references.qmd
   notebooks:
     - notebook: notebooks/00_orbits.ipynb
     - notebook: notebooks/01_ids_example.ipynb
