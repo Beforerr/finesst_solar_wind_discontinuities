@@ -165,29 +165,52 @@ We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.ed
 
 Synergistic observations [@velli2020] advance our understanding of the solar wind
 
+::: {.panel-tabset}
 
-- Juno
-  - Magnetic Field investigation (MAG) [@connerney2017]
-    - About:: The Juno Magnetic Field investigation (MAG) characterizes Jupiter’s planetary magnetic field and magnetosphere, providing the first globally distributed and proximate measurements of the magnetic field of Jupiter. The magnetic field instrumentation consists of two independent magnetometer sensor suites, each consisting of a tri-axial Fluxgate Magnetometer (FGM) sensor and a pair of co-located imaging sensors mounted on an ultra-stable optical bench.
-    - Links: [Wikipedia](https://www.wikiwand.com/en/Magnetometer_(Juno)), [DOI](https://doi.org/10.1007/s11214-017-0334-z)
-- Parker Solar Probe (PSP) [@fox2016; @raouafi2022]
-  - FIELDS [@bale2016] FIELDS Instrument Suite
-    - About:: The FIELDS investigation will make direct measurements of electric and magnetic fields, the properties of in situ plasma waves, electron density and temperature profiles, and interplanetary radio emissions, amongst other things. The FIELDS instrument suite consists of two fluxgate magnetometers (MAG), three electric field antennas (EFS), and a waveform capture system (WAVES) that records the high frequency electric and magnetic waveforms at 16 samples per second.
-  - Solar Wind Electrons Alphas and Protons (SWEAP) Investigation [@kasper2016]
-    - About:: a four sensor instrument suite that provides complete measurements of the electrons and ionized helium and hydrogen that constitute the bulk of solar wind and coronal plasma.
-  - Links: [Wikipedia](https://www.wikiwand.com/en/Parker_Solar_Probe)
-- Wind
-  - About:: Comprehensive Solar Wind Laboratory for Long-Term Solar Wind Measurements
-  - Instruments:
-    - Magnetic Field Investigation (MFI) [@lepping1995]
-    - Solar Wind Experiment (SWE) [@ogilvie1995]
-- Stereo
-- ARTEMIS
+#### Parker Solar Probe (PSP)
+
+- Links: [Wikipedia](https://www.wikiwand.com/en/Parker_Solar_Probe)
+- [@fox2016; @raouafi2022]
+- FIELDS [@bale2016] FIELDS Instrument Suite
+  - About:: The FIELDS investigation will make direct measurements of electric and magnetic fields, the properties of in situ plasma waves, electron density and temperature profiles, and interplanetary radio emissions, amongst other things. The FIELDS instrument suite consists of two fluxgate magnetometers (MAG), three electric field antennas (EFS), and a waveform capture system (WAVES) that records the high frequency electric and magnetic waveforms at 16 samples per second.
+    - > The FIELDS experiment (Bale et al. 2016) measures magnetic and electric fields and their fluctuations in situ, and indirectly determines the electron density via plasma quasi-thermal noise spectroscopy. The investigation comprises two fluxgate magnetometers (MAG), a search coil magnetometer (SCM), and five electric antennas.
+- Solar Wind Electrons Alphas and Protons (SWEAP) Investigation [@kasper2016]
+  - About:: a four sensor instrument suite that provides complete measurements of the electrons and ionized helium and hydrogen that constitute the bulk of solar wind and coronal plasma.
 
 ::: {.column-margin}
 {{< video https://psp-gateway.jhuapl.edu/website/Home/psp_hci.mp4 >}}
 
 {{< video https://psp-gateway.jhuapl.edu/website/Home/psp_hgmag.mp4 >}}
+:::
+
+#### Juno
+
+[@bolton2017]
+
+- Magnetic Field investigation (MAG) [@connerney2017]
+  - About:: The Juno Magnetic Field investigation (MAG) characterizes Jupiter’s planetary magnetic field and magnetosphere, providing the first globally distributed and proximate measurements of the magnetic field of Jupiter. The magnetic field instrumentation consists of two independent magnetometer sensor suites, each consisting of a tri-axial Fluxgate Magnetometer (FGM) sensor and a pair of co-located imaging sensors mounted on an ultra-stable optical bench.
+  - Links: [Wikipedia](https://www.wikiwand.com/en/Magnetometer_(Juno)), [DOI](https://doi.org/10.1007/s11214-017-0334-z)
+
+#### Solar Orbiter (SO)
+
+@müller2020
+
+- In-situ instruments:
+  – Magnetometer (MAG, Horbury et al. 2020a) 
+  – Energetic Particle Detector (EPD, Rodríguez-Pacheco et al. 2020)
+  – Radio and Plasma Wave analyser (RPW, Maksimovic et al. 2020a) – Solar Wind Analyser (SWA, Owen et al. 2020)
+
+#### Wind
+
+- About:: Comprehensive Solar Wind Laboratory for Long-Term Solar Wind Measurements
+- Instruments:
+  - Magnetic Field Investigation (MFI) [@lepping1995]
+  - Solar Wind Experiment (SWE) [@ogilvie1995]
+
+#### Stereo
+
+#### ARTEMIS
+
 :::
 
 
@@ -201,6 +224,9 @@ Synergistic observations [@velli2020] advance our understanding of the solar win
 # References
 
 -   [Parker Solar Probe: The Mission](https://parkersolarprobe.jhuapl.edu/The-Mission/index.php)
+
+::: {#refs}
+:::
 
 {{< pagebreak >}}
 

@@ -17,8 +17,9 @@ format:
   html:
     comments:
       hypothesis: true
-  # pdf: default
-  typst: default
+  # pdf:
+    # keep-tex: true
+  # typst: default
 
 bibliography: files/references.bib
 
