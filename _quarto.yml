@@ -17,6 +17,7 @@ format:
   html:
     comments:
       hypothesis: true
+  latex: default
   # pdf:
     # keep-tex: true
   # typst: default

@@ -1,4 +1,4 @@
-## Budget Narrative (Budget Justification)
+# Budget Narrative (Budget Justification)
 
 ::: {.content-visible when-format="html"}
 ::: column-margin

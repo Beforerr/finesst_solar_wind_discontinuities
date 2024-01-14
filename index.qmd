@@ -30,22 +30,14 @@ code-links:
     text: Typst
 ---
 
-::: {.content-visible when-format="html"}
-# Background
+<!-- # Background -->
 
-Future Investigators in NASA Earth and Space Science and Technology (FINESST) is a program element in Research Opportunities in Space and Earth Sciences (ROSES).
+{{< include comps/_00_background.qmd >}} {{< pagebreak >}}
 
--   [FINESST23 - NSPIRES](https://go.nasa.gov/FINESST23)
-    -   [F.5 FINESST as clarified January 4, 2024 (.pdf)](https://nspires.nasaprs.com/external/viewrepositorydocument?cmdocumentid=918319&solicitationId=%7B2CA37D02-F6A7-9746-68C1-8B681D7532EA%7D)
--   [Research Opportunities in Space and Earth Sciences 2023 (ROSES-2023) - NSPIRES](https://nspires.nasaprs.com/external/solicitations/summary!init.do?solId=%7B274C8365-A038-339F-A3AE-8F5BFE178312%7D)
--   [Heliophysics Research Program Overview](https://nspires.nasaprs.com/external/viewrepositorydocument?cmdocumentid=912460&solicitationId=%7B1FE03DBA-61BD-B248-316B-60ECB612CF2F%7D)
+<!-- # Science -->
 
-Heliophysics Research Program key objectives are:
+{{< include comps/_01_science.qmd >}} {{< pagebreak >}}
 
--   Explore and characterize the physical processes in the space environment from the Sun to the heliopause and throughout the universe
--   Advance our understanding of the Sun’s activity, and the connections between solar variability and Earth and planetary space environments, the outer reaches of our solar system, and the interstellar medium
--   Develop the knowledge and capability to detect and predict extreme conditions in space to protect life and society and to safeguard human and robotic explorers beyond Earth
-:::
 
 # Scientific/Technical/Management
 
