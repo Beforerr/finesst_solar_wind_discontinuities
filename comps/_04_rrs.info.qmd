@@ -1,0 +1,10 @@
+::: {.callout-note collapse="false"}
+This section consists of a research readiness statement of up to one page authored by the FI that must include (a) and (b) conforming to formatting requirements (line spacing, etc.) described above.
+
+a. State and describe how the FI’s undergraduate and/or graduate degree program and interactions with the mentor(s) prepare, or will prepare, the FI for the proposed research. Some possible questions to address include (but are not limited to): has the FI’s past, current, and/or planned coursework and selfdirected study given the FI a good foundational understanding of the general subject area related to the proposed research? If a particular computer programming language, statistical analysis tool, experimental technique is required for the proposed project, is the FI proficient or has a plan to become proficient? 
+b. Provide a graduate study timeline that states i) the degree type (Ph.D., Master’s, both, or other type of graduate degree, e.g., M.D.); ii) the subject area, iii) how long the FI has been (or if not yet admitted, expects to be) enrolled in the program, and iv) the estimated graduation date in Month/Year format. 
+
+Part (c) should be included as appropriate, and should conform to formatting requirements (line spacing, etc.) described above: 
+
+c. State and describe other experiences and/or self-directed learning activities that are relevant to the proposed research. This includes, but is not limited to, short courses offered at conferences, summer/winter schools, independent research projects, internships, work experience, volunteer experience, or teaching experience.
+:::

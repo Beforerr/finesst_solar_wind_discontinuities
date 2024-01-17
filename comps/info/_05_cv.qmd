@@ -1,0 +1,7 @@
+::: {.content-visible when-format="html"}
+::: column-margin
+-   Length restriction
+    -   [ ] CV for a PI (or Science PI) - up to two pages, unless otherwise specified.
+    -   [ ] CVs for anyone other than a PI are limited to one page
+:::
+:::
