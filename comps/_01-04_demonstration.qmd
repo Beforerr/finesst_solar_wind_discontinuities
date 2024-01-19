@@ -1,6 +1,4 @@
-```         
 ### Dataset, spacecraft instruments, and solar wind model
-```
 
 Synergistic observations [@velli2020] advance our understanding of the solar wind.
 
