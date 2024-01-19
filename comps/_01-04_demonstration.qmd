@@ -28,12 +28,10 @@ We use the following data collected by Wind: magnetic ﬁelds with a ∼1/11 s r
 
 The hourly solar wind model data from the Two-Dimensional Outer Heliosphere Solar Wind Modeling (MSWIM2D) [@keebler2022] were employed to determine the ion bulk velocity $v$ and plasma density $n$ at the location of the Juno mission. Utilizing the BATSRUS MHD solver, this model is capable of simulating the propagation of the solar wind from 1 to 75 astronomical units (AU) in the ecliptic plane, effectively encompassing the region of interest for our study.
 
-![Time-series comparison of MSWIM2D (red) and Juno-observed solar wind](images/juno_model_validation.png)
+![Time-series comparison of MSWIM2D (red) and Juno-observed solar wind](figures/juno_model_validation.png)
 
 ### Determination of discontinuities
 
 We use [@liu2022a] method to identify IDs, which has better compatibility for the IDs with minor field changes, and is more robust to the situtaion encountered in the outer heliosphere.
 
 In Liu's method : The first two conditions guarantee that the field changes of the IDs identiﬁed are large enough to be distinguished from the stochastic fluctuations on magnetic fields, while the third is a supplementary condition to reduce the uncertainty of recognition.
-
-![Rotational discontinuities (RDs) detected by PSP, Juno, Stereo and near-Earth satellite at different radial distances and solar longitudes.](images/fig-examples)
