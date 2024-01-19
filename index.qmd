@@ -102,7 +102,7 @@ Juno, Parker Solar Probe, Wind and Stereo.
 ::: {#fig-ids layout-ncol="2"}
 ![A RD detected by PSP at 0.126 AU](./images/examples/fig-psp_id_example)
 
-![A RD detected by Juno at 4 AU](https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/examples/fig-juno_id_example.png?raw=true)
+![A RD detected by Juno at 4 AU](./images/examples/fig-juno_id_example)
 
 ![A RD detected by ARTEMIS at 1 AU near Earth](./images/examples/fig-artemis_id_example)
 
@@ -135,8 +135,6 @@ Rotational discontinuities (RDs) detected by PSP, Stereo and near-Earth satellit
 
 We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.edu/MSWIM2D/), which models the solar wind propagation in 2D using the BATSRUS MHD solver. [@keebler2022]
 
-![Time-series comparison of MSWIM2D (red) and Juno-observed solar wind](https://github.com/Beforerr/ids_finder/blob/main/notebooks/figures/model/juno_model_validation.png?raw=true)
-
 ::: column-margin
 ![Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind](images/paste-3.png){fig-alt="Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind (black) for 2012–2019. (a) Proton number density per cubic centimeter, with the highest resolution in gray and the 10 day running average in black. (b) Solar wind bulk flow speed in kilometers per second. (c) Model thermal pressure and New Horizons SWAP total (PUI plus solar wind) pressure. The blue vertical dashed line marks the Pluto flyby on 2015 July 14. Note the dual horizontal axis, providing both date and radial coordinate in astronomical units."}
 :::
@@ -162,13 +160,6 @@ We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.ed
 
 ## Management
 
-# References
-
--   [Parker Solar Probe: The Mission](https://parkersolarprobe.jhuapl.edu/The-Mission/index.php)
-
-::: {#refs}
-:::
-
 {{< pagebreak >}}
 
 # Open Science and Data Management Plan (OSDMP)
@@ -184,7 +175,6 @@ We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.ed
 # Biographical Sketches/Curriculum Vitae (CVs)
 
 {{< include comps/info/_05_cv.qmd >}}
-{{< include comps/_05_cv.qmd >}} {{< pagebreak >}}
 {{< include comps/_05_cv_Zijin.qmd >}} {{< pagebreak >}}
 
 # Current and Pending Support
@@ -193,12 +183,21 @@ We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.ed
 
 # Statements of Commitment and Letters of Resource Support
 
-{{< include comps/info/_07_commitment.qmd >}} {{< pagebreak >}}
+{{< include comps/info/_07_commitment.qmd >}}
+{{< include comps/_07_commitment.qmd >}} {{< pagebreak >}}
 
-<!-- # Mentoring Plan or Agreement -->
+# Mentoring Plan or Agreement
 
+{{< include comps/info/_08_mentoring.qmd >}}
 {{< include comps/_08_mentoring.qmd >}} {{< pagebreak >}}
 
-<!-- # Budget -->
+# Budget Narrative (Budget Justification)
 
-{{< include comps/_09_budget.qmd >}} {{< pagebreak >}}
+{{< include comps/info/_09_budget.qmd >}} {{< pagebreak >}}
+
+# References
+
+-   [Parker Solar Probe: The Mission](https://parkersolarprobe.jhuapl.edu/The-Mission/index.php)
+
+::: {#refs}
+:::

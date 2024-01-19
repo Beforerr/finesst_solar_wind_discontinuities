@@ -10,8 +10,9 @@ panels:
         - "mva"
 
 output:
-  path: "images/examples/artemis_id_example"
+  path: "figures/examples/artemis_id_example"
   formats:
-    - "png"
-    - "svg"
+    # - "png"
+    # - "svg"
+    - "csv"
   # display: True

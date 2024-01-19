@@ -1,0 +1,9 @@
+::: {.callout-note collapse="false"}
+
+This section should not exceed two pages, except in the exception noted below. The Mentoring Plan/Agreement’s purpose is to provide the FI with a holistic plan for developing skills and acquiring knowledge and experience necessary to complete the research project and/or personal professional development. This plan is reviewed under the research readiness criterion from Section 5.1. This mentoring plan does not need to re-state information provided in response to Sections 4.1.1 - 4.1.4. The mentor(s) may explain in the mentoring plan why they have agreed to support this FI’s research. See also Section 12.20. 
+
+Both the FI and mentor(s) prepare this agreement. It may include more than one mentor; however, having additional mentors does not extend the page limit. Non-PI mentors do not have to be at the submitting institution. It is optional to include mentors beyond the PI, but if they are named, they must be added to the NSPIRES cover page as team members and must confirm their participation via NSPIRES. 
+
+The content, format, and organization of the mentoring plan are at the discretion of the PI-FI team.
+
+:::

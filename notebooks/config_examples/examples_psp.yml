@@ -9,8 +9,9 @@ panels:
       trans:
         - "mva"
 output:
-  path: "images/examples/psp_id_example"
+  path: "figures/examples/psp_id_example"
   formats:
-    - "png"
-    - "svg"
+    # - "png"
+    # - "svg"
+    - "csv"
   # display: True

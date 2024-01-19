@@ -13,8 +13,9 @@ panels:
         - "mva"
 
 output:
-  path: "images/examples/stereo_id_example"
+  path: "figures/examples/stereo_id_example"
   formats:
-    - "png"
-    - "svg"
+    # - "png"
+    # - "svg"
+    - "csv"
   # display: True

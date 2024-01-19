@@ -1,4 +1,8 @@
+
 ::: {.content-visible when-format="html"}
+
+The PI's and FI's Curriculum Vitae (CV) or resume are **mandatory**.
+
 ::: column-margin
 -   Length restriction
     -   [ ] CV for a PI (or Science PI) - up to two pages, unless otherwise specified.

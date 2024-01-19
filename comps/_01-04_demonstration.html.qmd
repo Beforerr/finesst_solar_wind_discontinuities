@@ -1,55 +1,92 @@
 ### Dataset, spacecraft instruments, and solar wind model
 
-Synergistic observations [@velli2020] advance our understanding of the solar wind
+Synergistic observations [@velli2020] advance our understanding of the solar wind.
 
-::: {.panel-tabset}
+::: panel-tabset
+#### Juno
+
+We use the following data collected by Juno: magnetic ﬁelds with a ∼1s resolution by the Juno Fluxgate Magnetometer (MAG) [@connerney2017], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution from solar wind model (see below).
+
+-   References:: [@bolton2017]
+-   Magnetic Field investigation (MAG) [@connerney2017]
+    -   About:: The Juno Magnetic Field investigation (MAG) characterizes Jupiter’s planetary magnetic field and magnetosphere, providing the first globally distributed and proximate measurements of the magnetic field of Jupiter. The magnetic field instrumentation consists of two independent magnetometer sensor suites, each consisting of a tri-axial Fluxgate Magnetometer (FGM) sensor and a pair of co-located imaging sensors mounted on an ultra-stable optical bench.
+    -   Links: [Wikipedia](https://www.wikiwand.com/en/Magnetometer_(Juno)), [DOI](https://doi.org/10.1007/s11214-017-0334-z)
 
 #### Parker Solar Probe (PSP)
 
-- Links: [Wikipedia](https://www.wikiwand.com/en/Parker_Solar_Probe)
-- [@fox2016; @raouafi2022]
-- FIELDS [@bale2016] FIELDS Instrument Suite
-  - About:: The FIELDS investigation will make direct measurements of electric and magnetic fields, the properties of in situ plasma waves, electron density and temperature profiles, and interplanetary radio emissions, amongst other things. The FIELDS instrument suite consists of two fluxgate magnetometers (MAG), three electric field antennas (EFS), and a waveform capture system (WAVES) that records the high frequency electric and magnetic waveforms at 16 samples per second.
-    - > The FIELDS experiment (Bale et al. 2016) measures magnetic and electric fields and their fluctuations in situ, and indirectly determines the electron density via plasma quasi-thermal noise spectroscopy. The investigation comprises two fluxgate magnetometers (MAG), a search coil magnetometer (SCM), and five electric antennas.
-- Solar Wind Electrons Alphas and Protons (SWEAP) Investigation [@kasper2016]
-  - About:: a four sensor instrument suite that provides complete measurements of the electrons and ionized helium and hydrogen that constitute the bulk of solar wind and coronal plasma.
+We use the following data collected by PSP: magnetic ﬁelds by the FIELDS experiment [@bale2016], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution by the Solar Wind Electrons Alphas and Protons (SWEAP) Investigation [@kasper2016].
 
-::: {.column-margin}
+-   Links:: [Wikipedia](https://www.wikiwand.com/en/Parker_Solar_Probe)
+
+-   References::[@fox2016; @raouafi2022]
+
+-   Instruments
+
+    -   FIELDS [@bale2016] FIELDS Instrument Suite
+
+        -   About:: The FIELDS investigation will make direct measurements of electric and magnetic fields, the properties of in situ plasma waves, electron density and temperature profiles, and interplanetary radio emissions, amongst other things. The FIELDS instrument suite consists of two fluxgate magnetometers (MAG), three electric field antennas (EFS), and a waveform capture system (WAVES) that records the high frequency electric and magnetic waveforms at 16 samples per second.
+        -   The FIELDS experiment (Bale et al. 2016) measures magnetic and electric fields and their fluctuations in situ, and indirectly determines the electron density via plasma quasi-thermal noise spectroscopy. The investigation comprises two fluxgate magnetometers (MAG), a search coil magnetometer (SCM), and five electric antennas.
+
+-   Solar Wind Electrons Alphas and Protons (SWEAP) Investigation [@kasper2016]
+
+    -   About:: a four sensor instrument suite that provides complete measurements of the electrons and ionized helium and hydrogen that constitute the bulk of solar wind and coronal plasma.
+
+::: column-margin
 {{< video https://psp-gateway.jhuapl.edu/website/Home/psp_hci.mp4 >}}
 
 {{< video https://psp-gateway.jhuapl.edu/website/Home/psp_hgmag.mp4 >}}
 :::
 
-#### Juno
+#### ARTEMIS
 
-[@bolton2017]
+We use the following data collected by ARTEMIS: magnetic ﬁelds with a ∼1s resolution by the Fluxgate Magnetometer [@auster2008], the ion bulk velocity $v$, and the plasma density $n$ calculated from velocity distribution by the Electrostatic Analyzer [@mcfadden2009].
 
-- Magnetic Field investigation (MAG) [@connerney2017]
-  - About:: The Juno Magnetic Field investigation (MAG) characterizes Jupiter’s planetary magnetic field and magnetosphere, providing the first globally distributed and proximate measurements of the magnetic field of Jupiter. The magnetic field instrumentation consists of two independent magnetometer sensor suites, each consisting of a tri-axial Fluxgate Magnetometer (FGM) sensor and a pair of co-located imaging sensors mounted on an ultra-stable optical bench.
-  - Links: [Wikipedia](https://www.wikiwand.com/en/Magnetometer_(Juno)), [DOI](https://doi.org/10.1007/s11214-017-0334-z)
+-   About: ARTEMIS is designed to address heliophysics goals: particle acceleration in the magnetotail, the solar wind, and the lunar wake - using the moon as an anchor. From distances of hundreds of kilometers to 120,000 km, the probes will observe varying solar wind conditions as the Moon moves in and out of the Earth's magnetotail.
+
+-   Instruments:
+
+    -   Fluxgate Magnetometer (FGM) [@auster2008]
+    -   Electrostatic Analyzer (ESA) [@mcfadden2009]
+
+#### STEREO
+
+-   References:: [@kaiser2008]
+-   Instruments
+    -   In-situ Measurements of Particles and CME Transients (IMPACT) [@luhmann2008]
+        -   magnetic field experiment [@acuña2008]
+    -   Plasma and Suprathermal Ion Composition (PLASTIC) [@galvin2008]
+
+We use the following data collected by STEREO: magnetic ﬁelds with a ∼1/8 s resolution by the magnetic ﬁeld experiment [@acuña2008] on In-situ Measurements of Particles and CME Transients (IMPACT) [@luhmann2008], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution by the Plasma and Suprathermal Ion Composition (PLASTIC) [@galvin2008].
+
+#### Wind
+
+We use the following data collected by Wind: magnetic ﬁelds with a ∼1/11 s resolution by the Magnetic Field Investigation (MFI) [@lepping1995], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution by the Solar Wind Experiment (SWE) [@ogilvie1995].
+
+-   About:: Comprehensive Solar Wind Laboratory for Long-Term Solar Wind Measurements
+-   Instruments:
+    -   Magnetic Field Investigation (MFI) [@lepping1995]
+    -   Solar Wind Experiment (SWE) [@ogilvie1995]
 
 #### Solar Orbiter (SO)
 
 @müller2020
 
-- In-situ instruments:
-  – Magnetometer (MAG, Horbury et al. 2020a) 
-  – Energetic Particle Detector (EPD, Rodríguez-Pacheco et al. 2020)
-  – Radio and Plasma Wave analyser (RPW, Maksimovic et al. 2020a) – Solar Wind Analyser (SWA, Owen et al. 2020)
-
-#### Wind
-
-- About:: Comprehensive Solar Wind Laboratory for Long-Term Solar Wind Measurements
-- Instruments:
-  - Magnetic Field Investigation (MFI) [@lepping1995]
-  - Solar Wind Experiment (SWE) [@ogilvie1995]
-
-#### Stereo
-
-#### ARTEMIS
-
+-   In-situ instruments: – Magnetometer (MAG, Horbury et al. 2020a) – Energetic Particle Detector (EPD, Rodríguez-Pacheco et al. 2020) – Radio and Plasma Wave analyser (RPW, Maksimovic et al. 2020a) – Solar Wind Analyser (SWA, Owen et al. 2020)
 :::
+
+#### Solar wind model
+
+-   About::
+-   References:: Two-Dimensional Outer Heliosphere Solar Wind Modeling (MSWIM2D) [@keebler2022]
+
+The hourly solar wind model data from the Two-Dimensional Outer Heliosphere Solar Wind Modeling (MSWIM2D) [@keebler2022] were employed to determine the ion bulk velocity $v$ and plasma density $n$ at the location of the Juno mission. Utilizing the BATSRUS MHD solver, this model is capable of simulating the propagation of the solar wind from 1 to 75 astronomical units (AU) in the ecliptic plane, effectively encompassing the region of interest for our study.
+
+![Time-series comparison of MSWIM2D (red) and Juno-observed solar wind](images/juno_model_validation.png)
 
 ### Determination of discontinuities
 
-Figures
+We use [@liu2022a] method to identify IDs, which has better compatibility for the IDs with minor field changes, and is more robust to the situtaion encountered in the outer heliosphere.
+
+In Liu's method : The first two conditions guarantee that the field changes of the IDs identiﬁed are large enough to be distinguished from the stochastic fluctuations on magnetic fields, while the third is a supplementary condition to reduce the uncertainty of recognition.
+
+![Rotational discontinuities (RDs) detected by PSP, Juno, Stereo and near-Earth satellite at different radial distances and solar longitudes.](images/fig-examples)

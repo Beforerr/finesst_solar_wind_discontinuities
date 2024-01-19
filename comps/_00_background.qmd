@@ -7,6 +7,7 @@ Future Investigators in NASA Earth and Space Science and Technology (FINESST) is
     -   [F.5 FINESST as clarified January 4, 2024 (.pdf)](https://nspires.nasaprs.com/external/viewrepositorydocument?cmdocumentid=918319&solicitationId=%7B2CA37D02-F6A7-9746-68C1-8B681D7532EA%7D)
 -   [Research Opportunities in Space and Earth Sciences 2023 (ROSES-2023) - NSPIRES](https://nspires.nasaprs.com/external/solicitations/summary!init.do?solId=%7B274C8365-A038-339F-A3AE-8F5BFE178312%7D)
 -   [Heliophysics Research Program Overview](https://nspires.nasaprs.com/external/viewrepositorydocument?cmdocumentid=912460&solicitationId=%7B1FE03DBA-61BD-B248-316B-60ECB612CF2F%7D)
+-   [NASA Proposer’s Guide (2023)](https://www.nasa.gov/wp-content/uploads/2023/09/2023-nasa-proposers-guide-final.pdf?emrc=7b5d89)
 
 Heliophysics Research Program key objectives are:
 
