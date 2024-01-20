@@ -24,6 +24,7 @@ export:
    awk '/\\begin\{document\}/ {flag=1; next} /\\bibliography/ {flag=0} flag' comps/_01-04_demonstration.tex > overleaf/sections/_01-04_demonstration.tex
    rm comps/_01-04_demonstration.tex
 
+sync:
    rsync images/ overleaf/images/ -r
    rsync figures/ overleaf/figures/ -r
    rsync files/ overleaf/files/ -r
