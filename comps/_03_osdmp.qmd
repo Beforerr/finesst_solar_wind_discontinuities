@@ -1,0 +1,34 @@
+#### I. Data products
+
+This project will produce one data product and one modeling software.
+
+Data product of statistics of solar wind discontinuities
+
+(a) *The work will generate statistics of in-situ satellite measurements*, including event lists (ASCII files) and related parameters of solar wind discontinuities for two datasets: Juno observations (2011-2015) in combination with $1$AU observations, and PSP observations in combination with $1$AU observations. We will also store figures (npg format) and tables (ASCII files), which will contain detailed information of solar wind velocity and density reconstructed for the Juno location.
+(b) *Scientific importance of the product*: this dataset will allow first quantification of solar wind discontinuity evolution with the radial distance.
+
+(c) Type of data: ASCII files, png files illustrating events
+(d) Estimated data volume: $<$10 GB
+(e) Planned documentation: we will include the selection criteria for solar wind discontinuities and details of used spacecraft measurements.
+(f) Expected delivery time: The third year of the project
+(g) Ways to archive: these data products will be published in supporting information of the papers devoted to the solar wind discontinuity characteristics at the different radial distances; we will also upload this dataset into the open archive \url{https://zenodo.org/}.
+
+#### II. Modeling software to be produced
+
+This project will produce a set of routines for solar wind analysis and discontinuity identification.
+
+(a) *A short description of the routines*: Interactive Data Language (IDL) routines can be used to reproduce and analyze solar wind magnetic field data from different spacecraft missions. We will also provide the same set of subroutines in python.
+(b) Scientific importance of the routines: this set of routines will allow reproducing occurrence rate of solar wind discontinuities and radial evolution of this rate.
+(c) Type of data: IDL files, python files
+(d) Estimated data volume: $<$10 MB
+(e) Planned documentation: description of the subroutines and examples on how to use them for the provided examples of solar wind discontinuities
+(f) Expected delivery time: the third year of the project
+(g) Ways to archive/release: IDL subroutines will be incorporated into the Space Physics Environment Data Analysis Software (SPEDAS; \cite{Angelopoulos19}) framework, which is an open-access software under MIT license terms (details can be found at \url{https://spedas.org/blog/}). The python subroutines will be included in the pySPEDAS framework. We also will upload this software and documentation into the open archive \url{https://zenodo.org/}.
+
+#### III. Roles and responsibilities of team members for data management
+
+The project FI, with assistance and guidance of PI, will be responsible for releasing and archiving all datasets produced within this project.
+
+#### IV. Publication of results
+
+We expect to produce 2-3 peer-reviewed manuscripts in J. Geophys. Res./Geophys. Res. Lett. Each manuscript will contain a supplementary dataset (see details in I. Data products) that can be used to reproduce the results, and we will use the project fund to make these publications open access.

@@ -1,12 +1,14 @@
 #### Professional preparation
 
-Zijin Zhang has taken fundamental physics courses (Electromagnetic Theory, Plasma Physics, etc.) and space physics courses (Introduction to Space Physics, Space Plasma Physics, and Solar System Magnetohydrodynamics, etc.). He has conducted studies about... These courses and previous experience provide a good fundamental understanding of the solar system and plasma waves. He is able to analyze satellite data using IDL (SPEDAS), MATLAB, and Python. 
+Zijin Zhang has taken fundamental physics courses (Electromagnetic Theory, Plasma Physics, etc.) and space physics courses (Introduction to Space Physics, Space Plasma Physics, and Solar System Magnetohydrodynamics, etc.). 
+He has conducted studies about... These courses and previous experience provide a good fundamental understanding of the solar system and plasma physics. 
+He is able to analyze mission data (Juno, PSP and THEMIS) using Python (PySPEDAS, PlanetaryPy, Astropy, Plasmapy), IDL (SPEDAS, CDAS), Julia, and Mathematica. 
 
 #### Graduate study timeline
 
-i) Degree type: 
-ii) Admitted date: 
-iii) Time enrolled in the program: 3 years. 
-iv) Estimated graduation date: 
+i) Degree type: both Master's and Ph.D. degree in space science.
+ii) Admitted date: Sep/2022. 
+iii) Time enrolled in the program: 2 years. 
+iv) Estimated graduation date: Aug/2026.
 
 #### Research experiences

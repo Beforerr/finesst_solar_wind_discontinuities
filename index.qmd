@@ -154,11 +154,20 @@ We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.ed
 {{< include comps/_01-04_demonstration.html.qmd >}} {{< pagebreak >}}
 <!-- {{< include comps/_01-04_demonstration.qmd >}} {{< pagebreak >}} -->
 
+
 ## Relevance to Heliophysics Overarching Goals
+
+This project focuses on investigation of the solar wind discontinuities, the key element of magnetic field turbulence and the primary interface of charged particle acceleration. Thus, the project contributes to NASA Heliophysics' overarching goal to: *"Explore and characterize the physical processes in the space environment from the Sun to the heliopause and throughout the universe”* and its specific objectives to: *"Explore the physical processes at work in the space environment from the Sun to Earth and throughout the solar system"*.
+
 
 ## Project Schedule
 
-## Management
+In this three-year project, each year is devoted to a stated project objective: in the **first year** we will focus on collection and analysis of Juno observations of solar wind discontinuities, supplemented by the solar wind model and observations of $1$AU missions (STEREO, ARTEMIS, WIND); in the **second year** the same analysis of solar wind discontinuities with performed for PSP, with the supplementary dataset from $1$AU missions. In the **third year** we will analyze specific discontinuity characteristics (spatial scales, current density, etc.) for two datasets and compare radial evolution of these characteristics with predictions of expectations from solar wind adiabatic expansion.
+
+#### Management
+
+of this project is fully performed by **FI**, Zijin Zhang, who will also be responsible for the assembly and analysis of the observational dataset, and generation of a combined Juno/solar wind model dataset. Project **PI**, Prof. Vassilis Angelopoulos, and group members Dr. Anton Artemyev and Dr. Chen Shi, will contribute to discussions and the education and training of Zijin Zhang. Expertise of Prof. V. Angelopoulos in spacecraft measurement techniques and data analysis \cite{Angelopoulos19,Angelopoulos11:ARTEMIS}, Dr. A. Artemyev in solar wind discontinuity observation and modeling \citep{Artemyev18:apj,Artemyev19:jgr:solarwind}, and Dr. Chen Shi in solar wind observations and simulations \citep{ChenShi21:a&a,ChenShi22:apj,ChenShi23:apj} guarantees that Z. Zhang will receive all necessary mentorship, advice and support, and thus will successfully complete the thesis project.
+
 
 {{< pagebreak >}}
 

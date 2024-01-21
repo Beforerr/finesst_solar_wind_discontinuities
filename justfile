@@ -18,6 +18,7 @@ export:
 
    quarto pandoc comps/_01-04_demonstration.qmd -o overleaf/sections/_01-04_demonstration.tex -f markdown
 
+
    cp files/references.bib overleaf/files/
 
    quarto render comps/_01-04_demonstration.qmd --to latex -M cite-method:natbib -M bibliography:files/references.bib -M filter:quarto
