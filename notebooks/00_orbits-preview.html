@@ -156,6 +156,9 @@
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
      <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -205,6 +208,7 @@
    
   <ul>
   <li><a href="#juno" id="toc-juno" class="nav-link active" data-scroll-target="#juno">Juno</a></li>
+  <li><a href="#juno-with-parker-solar-probe" id="toc-juno-with-parker-solar-probe" class="nav-link" data-scroll-target="#juno-with-parker-solar-probe">Juno with Parker Solar Probe</a></li>
   <li><a href="#parker-solar-probe" id="toc-parker-solar-probe" class="nav-link" data-scroll-target="#parker-solar-probe">Parker Solar Probe</a></li>
   </ul>
 </nav>
@@ -217,7 +221,7 @@
 <ul>
 <li><a href="https://docs.poliastro.space/en/stable/examples/Going%20to%20Jupiter%20with%20Python%20using%20Jupyter%20and%20poliastro.html">Going to Jupiter with Python using Jupyter and poliastro — poliastro documentation</a></li>
 </ul>
-<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="cell-1" class="cell" data-execution_count="1">
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="cell-1" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> astropy.time <span class="im">import</span> Time</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> poliastro.bodies <span class="im">import</span> Mercury, Venus, Earth, Mars, Jupiter</span>
@@ -229,113 +233,180 @@
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.rc(<span class="st">'savefig'</span>, dpi<span class="op">=</span><span class="dv">300</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [20]:</pre></div><div id="cell-2" class="cell" data-execution_count="20">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>periods <span class="op">=</span> <span class="dv">75</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="cell-2" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>periods <span class="op">=</span> <span class="dv">75</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>background_color <span class="op">=</span> <span class="st">'white'</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># background_color = 'dark'</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">format</span> <span class="op">=</span> <span class="st">'svg'</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>path00 <span class="op">=</span> <span class="ss">f'../figures/orbits/juno_orbit_</span><span class="sc">{</span>background_color<span class="sc">}</span><span class="ss">.</span><span class="sc">{</span><span class="bu">format</span><span class="sc">}</span><span class="ss">'</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>path01 <span class="op">=</span> <span class="ss">f'../figures/orbits/juno_psp_orbit_</span><span class="sc">{</span>background_color<span class="sc">}</span><span class="ss">.</span><span class="sc">{</span><span class="bu">format</span><span class="sc">}</span><span class="ss">'</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>path02 <span class="op">=</span> <span class="ss">f'../figures/orbits/psp_orbit_</span><span class="sc">{</span>background_color<span class="sc">}</span><span class="ss">.</span><span class="sc">{</span><span class="bu">format</span><span class="sc">}</span><span class="ss">'</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>alpha <span class="op">=</span> <span class="fl">0.77</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div id="cell-3" class="cell markdown">
+<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="cell-3" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> background_color <span class="op">==</span> <span class="st">'dark'</span>:</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    dark <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    jno_color <span class="op">=</span> <span class="st">'white'</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    dark <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    jno_color <span class="op">=</span> <span class="va">None</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div id="cell-4" class="cell markdown">
 <section id="juno" class="level2">
 <h2 class="anchored" data-anchor-id="juno">Juno</h2>
 </section>
 </div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [21]:</pre></div><div id="cell-4" class="cell" data-execution_count="21">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Main dates</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>juno_date_launch <span class="op">=</span> Time(<span class="st">"2011-08-06"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>date_flyby <span class="op">=</span> Time(<span class="st">"2012-09-03 19:21"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>juno_date_arrival <span class="op">=</span> Time(<span class="st">"2016-07-05 03:18"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="cell-5" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Main dates</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>juno_date_launch <span class="op">=</span> Time(<span class="st">"2011-08-06"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>date_flyby <span class="op">=</span> Time(<span class="st">"2012-09-03 19:21"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>juno_date_arrival <span class="op">=</span> Time(<span class="st">"2016-07-05 03:18"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [22]:</pre></div><div id="cell-5" class="cell" data-execution_count="22">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>juno_traj <span class="op">=</span> Ephem.from_horizons(</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Juno (spacecraft)"</span>,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    epochs<span class="op">=</span>time_range(juno_date_launch, end<span class="op">=</span>juno_date_arrival, periods<span class="op">=</span>periods),</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    plane<span class="op">=</span>Planes.EARTH_ECLIPTIC,</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="cell-6" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>juno_traj <span class="op">=</span> Ephem.from_horizons(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Juno (spacecraft)"</span>,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    epochs<span class="op">=</span>time_range(juno_date_launch, end<span class="op">=</span>juno_date_arrival, periods<span class="op">=</span>periods),</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    plane<span class="op">=</span>Planes.EARTH_ECLIPTIC,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div id="cell-6" class="cell markdown">
+<div class="cell-container"><div class="cell-decorator"><pre>In [27]:</pre></div><div id="cell-7" class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>plotter <span class="op">=</span> StaticOrbitPlotter(num_points<span class="op">=</span><span class="dv">300</span>, plane<span class="op">=</span>Planes.EARTH_ECLIPTIC, dark<span class="op">=</span>dark)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>plotter.set_body_frame(Earth, juno_date_launch)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>earth_plots_traj, earth_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Earth, juno_date_launch)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>mars_plots_traj, mars_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Mars, juno_date_arrival)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>jupiter_plots_traj, jupiter_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Jupiter, juno_date_arrival)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> body_traj <span class="kw">in</span> [earth_plots_traj[<span class="dv">0</span>], mars_plots_traj[<span class="dv">0</span>], jupiter_plots_traj[<span class="dv">0</span>]]:</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    body_traj.set_linestyle(<span class="st">'dotted'</span>)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> body_pos <span class="kw">in</span> [earth_plots_pos, mars_plots_pos, jupiter_plots_pos]:</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    body_pos.set_markersize(<span class="dv">3</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    body_pos.set_label(<span class="va">None</span>)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Earth'</span>, earth_plots_traj)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Mars'</span>, mars_plots_traj)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Jupiter'</span>, jupiter_plots_traj)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>juno_plots_traj, juno_plots_pos <span class="op">=</span> plotter.plot_trajectory(juno_traj._coordinates, label<span class="op">=</span><span class="st">"Juno cruise"</span>, color<span class="op">=</span>jno_color)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>plotter._ax.legend(title<span class="op">=</span><span class="va">None</span>, loc<span class="op">=</span><span class="st">"upper left"</span>,)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>plt.savefig(path00, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="00_orbits_files/figure-html/cell-7-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="00_orbits_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [24]:</pre></div><div id="cell-9" class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div id="cell-10" class="cell markdown">
+<section id="juno-with-parker-solar-probe" class="level2">
+<h2 class="anchored" data-anchor-id="juno-with-parker-solar-probe">Juno with Parker Solar Probe</h2>
+</section>
+</div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [42]:</pre></div><div id="cell-11" class="cell" data-execution_count="42">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Main dates</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># August 12, 2018: Launch - 3:31 a.m. EDT (7:31 UTC)</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>psp_date_launch <span class="op">=</span> Time(<span class="st">"2018-08-12T10:00"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># November 5, 2018: Perihelion #1 - 10:27 p.m. EST (Nov. 6, 2018 at 03:27 UTC)</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>p1_date <span class="op">=</span> Time(<span class="st">"2018-11-06T03:27"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># January 19, 2019: Aphelion #1</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>a1_date <span class="op">=</span> Time(<span class="st">"2019-01-19T00:00"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [43]:</pre></div><div id="cell-12" class="cell" data-execution_count="43">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>psp_traj <span class="op">=</span> Ephem.from_horizons(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Parker Solar Probe (spacecraft)"</span>,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    epochs<span class="op">=</span>time_range(psp_date_launch, end<span class="op">=</span>p1_date, periods<span class="op">=</span>periods),</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    plane<span class="op">=</span>Planes.EARTH_ECLIPTIC,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>psp_traj_2 <span class="op">=</span> Ephem.from_horizons(</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Parker Solar Probe (spacecraft)"</span>,</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    epochs<span class="op">=</span>time_range(p1_date, end<span class="op">=</span>a1_date, periods<span class="op">=</span>periods),</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    plane<span class="op">=</span>Planes.EARTH_ECLIPTIC,</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [45]:</pre></div><div id="cell-13" class="cell" data-execution_count="45">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>plotter <span class="op">=</span> StaticOrbitPlotter(num_points<span class="op">=</span><span class="dv">300</span>, plane<span class="op">=</span>Planes.EARTH_ECLIPTIC, dark<span class="op">=</span>dark)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>plotter.set_body_frame(Earth, juno_date_launch)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>mercury_plots_traj, mercury_plots_pos <span class="op">=</span> plotter._plot_body_orbit(Mercury, psp_date_launch)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>venus_plots_traj, venus_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Venus, psp_date_launch)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>earth_plots_traj, earth_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Earth, juno_date_launch)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>mars_plots_traj, mars_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Mars, juno_date_arrival)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>jupiter_plots_traj, jupiter_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Jupiter, juno_date_arrival)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> body_traj <span class="kw">in</span> [mercury_plots_traj[<span class="dv">0</span>], venus_plots_traj[<span class="dv">0</span>], earth_plots_traj[<span class="dv">0</span>], mars_plots_traj[<span class="dv">0</span>], jupiter_plots_traj[<span class="dv">0</span>]]:</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    body_traj.set_linestyle(<span class="st">'dotted'</span>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> body_pos <span class="kw">in</span> [mercury_plots_pos, venus_plots_pos, earth_plots_pos, mars_plots_pos, jupiter_plots_pos]:</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    body_pos.set_markersize(<span class="dv">3</span>)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    body_pos.set_label(<span class="va">None</span>)</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Mercury'</span>, mercury_plots_traj)</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Venus'</span>, venus_plots_traj)</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Earth'</span>, earth_plots_traj)</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Mars'</span>, mars_plots_traj)</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Jupiter'</span>, jupiter_plots_traj)</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>juno_plots_traj, juno_plots_pos <span class="op">=</span> plotter.plot_trajectory(juno_traj._coordinates, label<span class="op">=</span><span class="st">"Juno cruise"</span>, color<span class="op">=</span>jno_color)</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>psp_plots_traj, psp_plots_pos <span class="op">=</span> plotter.plot_trajectory(psp_traj._coordinates, label<span class="op">=</span><span class="st">"PSP cruise"</span>, color<span class="op">=</span><span class="st">"red"</span>)</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>psp_plots_traj_2, psp_plots_pos_2 <span class="op">=</span> plotter.plot_trajectory(psp_traj_2._coordinates, color<span class="op">=</span><span class="st">"red"</span>)</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>juno_plots_traj[<span class="dv">0</span>].set_linewidth(<span class="fl">1.5</span>)</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>psp_plots_traj[<span class="dv">0</span>].set_linewidth(<span class="fl">1.5</span>)</span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>psp_plots_traj_2[<span class="dv">0</span>].set_linewidth(<span class="fl">1.5</span>)</span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>plotter._ax.legend(title<span class="op">=</span><span class="va">None</span>, ncols<span class="op">=</span><span class="dv">2</span>, loc<span class="op">=</span><span class="st">"upper left"</span>,)</span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>plt.savefig(path01, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="00_orbits_files/figure-html/cell-12-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="00_orbits_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div></div>
+<div id="cell-14" class="cell markdown">
 <section id="parker-solar-probe" class="level2">
 <h2 class="anchored" data-anchor-id="parker-solar-probe">Parker Solar Probe</h2>
 </section>
 </div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [23]:</pre></div><div id="cell-7" class="cell" data-execution_count="23">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Main dates</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># August 12, 2018: Launch - 3:31 a.m. EDT (7:31 UTC)</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>psp_date_launch <span class="op">=</span> Time(<span class="st">"2018-08-12T10:00"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># November 5, 2018: Perihelion #1 - 10:27 p.m. EST (Nov. 6, 2018 at 03:27 UTC)</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>p1_date <span class="op">=</span> Time(<span class="st">"2018-11-06T03:27"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># January 19, 2019: Aphelion #1</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>a1_date <span class="op">=</span> Time(<span class="st">"2019-01-19T00:00"</span>, scale<span class="op">=</span><span class="st">"utc"</span>).tdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [28]:</pre></div><div id="cell-8" class="cell" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>psp_traj <span class="op">=</span> Ephem.from_horizons(</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Parker Solar Probe (spacecraft)"</span>,</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    epochs<span class="op">=</span>time_range(psp_date_launch, end<span class="op">=</span>p1_date, periods<span class="op">=</span>periods),</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    plane<span class="op">=</span>Planes.EARTH_ECLIPTIC,</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>psp_traj_2 <span class="op">=</span> Ephem.from_horizons(</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Parker Solar Probe (spacecraft)"</span>,</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    epochs<span class="op">=</span>time_range(p1_date, end<span class="op">=</span>a1_date, periods<span class="op">=</span>periods),</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    plane<span class="op">=</span>Planes.EARTH_ECLIPTIC,</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [25]:</pre></div><div id="cell-9" class="cell" data-execution_count="25">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dark <span class="op">=</span> <span class="va">True</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>alpha <span class="op">=</span> <span class="fl">0.77</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [33]:</pre></div><div id="cell-10" class="cell" data-execution_count="33">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>plotter <span class="op">=</span> StaticOrbitPlotter(num_points<span class="op">=</span><span class="dv">300</span>, plane<span class="op">=</span>Planes.EARTH_ECLIPTIC, dark<span class="op">=</span>dark)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plotter.set_body_frame(Earth, juno_date_launch)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>mercury_plots_traj, mercury_plots_pos <span class="op">=</span> plotter._plot_body_orbit(Mercury, psp_date_launch)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>venus_plots_traj, venus_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Venus, psp_date_launch)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>earth_plots_traj, earth_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Earth, juno_date_launch)</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>mars_plots_traj, mars_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Mars, juno_date_arrival)</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>jupiter_plots_traj, jupiter_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Jupiter, juno_date_arrival)</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> body_traj <span class="kw">in</span> [mercury_plots_traj[<span class="dv">0</span>], venus_plots_traj[<span class="dv">0</span>], earth_plots_traj[<span class="dv">0</span>], mars_plots_traj[<span class="dv">0</span>], jupiter_plots_traj[<span class="dv">0</span>]]:</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    body_traj.set_linestyle(<span class="st">'dotted'</span>)</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> body_pos <span class="kw">in</span> [mercury_plots_pos, venus_plots_pos ,earth_plots_pos, mars_plots_pos, jupiter_plots_pos]:</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    body_pos.set_markersize(<span class="dv">3</span>)</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    body_pos.set_label(<span class="va">None</span>)</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Mercury'</span>, mercury_plots_traj)</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Venus'</span>, venus_plots_traj)</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Earth'</span>, earth_plots_traj)</span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Mars'</span>, mars_plots_traj)</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>plotter._set_legend(<span class="st">'Jupiter'</span>, jupiter_plots_traj)</span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>juno_plots_traj, juno_plots_pos <span class="op">=</span> plotter.plot_trajectory(juno_traj._coordinates, label<span class="op">=</span><span class="st">"Juno cruise"</span>, color<span class="op">=</span><span class="st">"white"</span>)</span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>psp_plots_traj, psp_plots_pos <span class="op">=</span> plotter.plot_trajectory(psp_traj._coordinates, label<span class="op">=</span><span class="st">"PSP cruise"</span>, color<span class="op">=</span><span class="st">"red"</span>)</span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>psp_plots_traj_2, psp_plots_pos_2 <span class="op">=</span> plotter.plot_trajectory(psp_traj_2._coordinates, color<span class="op">=</span><span class="st">"red"</span>)</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>juno_plots_traj[<span class="dv">0</span>].set_linewidth(<span class="dv">2</span>)</span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>psp_plots_traj[<span class="dv">0</span>].set_linewidth(<span class="fl">1.5</span>)</span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>psp_plots_traj_2[<span class="dv">0</span>].set_linewidth(<span class="fl">1.5</span>)</span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>plotter._ax.legend(title<span class="op">=</span><span class="va">None</span>, ncols<span class="op">=</span><span class="dv">2</span>, loc<span class="op">=</span><span class="st">"upper left"</span>,)</span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../images/orbits/juno_psp_orbit.svg'</span>, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [32]:</pre></div><div id="cell-11" class="cell" data-execution_count="32">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>plotter <span class="op">=</span> StaticOrbitPlotter(plane<span class="op">=</span>Planes.EARTH_ECLIPTIC, dark<span class="op">=</span>dark)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>mercury_plots_traj, mercury_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Mercury, psp_date_launch)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>venus_plots_traj, venus_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Venus, psp_date_launch)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>earth_plots_traj, earth_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Earth, psp_date_launch)</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>psp_plots_traj, psp_plots_pos <span class="op">=</span> plotter.plot_trajectory(psp_traj._coordinates, label<span class="op">=</span><span class="st">"PSP cruise"</span>, color<span class="op">=</span><span class="st">"red"</span>)</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>psp_plots_traj_2, psp_plots_pos_2 <span class="op">=</span> plotter.plot_trajectory(psp_traj_2._coordinates, label<span class="op">=</span><span class="st">"PSP cruise"</span>, color<span class="op">=</span><span class="st">"red"</span>)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>psp_plots_traj[<span class="dv">0</span>].set_linewidth(<span class="dv">2</span>)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>psp_plots_traj_2[<span class="dv">0</span>].set_linewidth(<span class="dv">2</span>)</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> body_traj <span class="kw">in</span> [mercury_plots_traj[<span class="dv">0</span>], venus_plots_traj[<span class="dv">0</span>], earth_plots_traj[<span class="dv">0</span>]]:</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    body_traj.set_linestyle(<span class="st">'dotted'</span>)</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> body_pos <span class="kw">in</span> [mercury_plots_pos, venus_plots_pos, earth_plots_pos]:</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    body_pos.set_markersize(<span class="dv">3</span>)</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>plt.legend().set_visible(<span class="va">False</span>)</span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../images/orbits/psp_orbit.svg'</span>, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [48]:</pre></div><div id="cell-15" class="cell" data-execution_count="48">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>plotter <span class="op">=</span> StaticOrbitPlotter(plane<span class="op">=</span>Planes.EARTH_ECLIPTIC, dark<span class="op">=</span>dark)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>mercury_plots_traj, mercury_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Mercury, psp_date_launch)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>venus_plots_traj, venus_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Venus, psp_date_launch)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>earth_plots_traj, earth_plots_pos <span class="op">=</span> plotter.plot_body_orbit(Earth, psp_date_launch)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>psp_plots_traj, psp_plots_pos <span class="op">=</span> plotter.plot_trajectory(psp_traj._coordinates, label<span class="op">=</span><span class="st">"PSP cruise"</span>, color<span class="op">=</span><span class="st">"red"</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>psp_plots_traj_2, psp_plots_pos_2 <span class="op">=</span> plotter.plot_trajectory(psp_traj_2._coordinates, label<span class="op">=</span><span class="st">"PSP cruise"</span>, color<span class="op">=</span><span class="st">"red"</span>)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>psp_plots_traj[<span class="dv">0</span>].set_linewidth(<span class="dv">2</span>)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>psp_plots_traj_2[<span class="dv">0</span>].set_linewidth(<span class="dv">2</span>)</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> body_traj <span class="kw">in</span> [mercury_plots_traj[<span class="dv">0</span>], venus_plots_traj[<span class="dv">0</span>], earth_plots_traj[<span class="dv">0</span>]]:</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    body_traj.set_linestyle(<span class="st">'dotted'</span>)</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> body_pos <span class="kw">in</span> [mercury_plots_pos, venus_plots_pos, earth_plots_pos]:</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>    body_pos.set_markersize(<span class="dv">3</span>)</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>plt.legend().set_visible(<span class="va">False</span>)</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>plt.savefig(path02, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="">
+<figure class="figure">
+<p class=""><a href="00_orbits_files/figure-html/cell-13-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="00_orbits_files/figure-html/cell-13-output-1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
 </div></div>
      </main>
 <!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
@@ -734,6 +805,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>  </div> <!-- /content --> 
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom"});</script> 
   
 </body></html>

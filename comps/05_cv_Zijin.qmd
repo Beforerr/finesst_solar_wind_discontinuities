@@ -1,0 +1,33 @@
+---
+title: Curriculum Vitae
+author: Zijin Zhang
+email: zijin@ucla.edu
+address: Earth, Planetary and Space Sciences, University of California, Los Angeles, CA 90095
+format:
+  html: default
+  pdf: default
+format-links: [pdf]
+---
+
+::: {.contact-block}
+{{< meta author >}}
+{{< meta address >}}
+{{< meta email >}}
+:::
+
+## Professional Preparation
+
+**Graduate student in Planetary Science** <br>
+*University of California, Los Angeles* <br>
+[*2022-present*]{.cvdate}
+
+**B.Sc. in Space Physics and B.Eng. in Computer Science** <br>
+*University of Science and Technology of China* <br>
+[*2018-2022*]{.cvdate}
+
+
+## Profile
+
+## Publications
+
+## Presentations
