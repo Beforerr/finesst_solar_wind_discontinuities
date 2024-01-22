@@ -30,161 +30,42 @@ code-links:
     text: Typst
 ---
 
-<!-- # Background -->
+::: {.content-visible when-format="html"}
+# Background
 
 {{< include comps/_00_background.qmd >}} {{< pagebreak >}}
-
-<!-- # Science -->
-
-{{< include comps/_01_science.qmd >}} {{< pagebreak >}}
-
+:::
 
 # Scientific/Technical/Management
 
-::: {.content-visible when-format="html"}
-::: {.callout-note collapse="false"}
-This section describes the proposed research project and should be self-contained without relying on other sections of the proposal, such as the Research Readiness Statement or Budget Narrative. Proposers may include figures and tables as appropriate. This section, excluding citations, may total no more than six (6) pages conforming to formatting requirements detailed above. The S/T/M Section should include the following elements:
+{{< include comps/_01_science.qmd >}} {{< pagebreak >}}
 
--   A well-defined problem with a justification of its scientific significance and a detailed approach for its resolution.
--   A statement describing the relevance of the proposed work to the appropriate SMD Division and a program within that division. If the research is relevant to more than one division/program, please identify the other division(s).
--   A description of the approach to be taken to address the chosen problem. A period of performance for the proposed project describing anticipated accomplishments and major milestones, including planned publications. In cases when the PI already has an ongoing research award from NASA, the research proposed under FINESST may address a similar topic, but the proposal should make clear how the proposed research goes beyond what NASA has already funded or selected for funding.
-:::
+# References and Acknowledgements
+
+::: {#refs}
 :::
 
-::: {.content-visible when-format="html"}
-::: column-margin
--   Content
-    -   [ ] Discuss objectives and their significance.
-    -   [ ] Discuss perceived impact of the work.
-    -   [ ] Discuss relevance of the work to the program element. See V(a)
-    -   [ ] Explain the technical approach and methodology.
-    -   [ ] Discuss potential sources of uncertainty
-    -   [ ] Present mitigation strategy or alternate approach given obstacles
-    -   [ ] Discuss roles of all team members so it’s clear what they are doing
-    -   [ ] Present a work plan, with milestones, management structure
-    -   [ ] Present a data sharing and/or archiving plan in the S/T/M section only if it is required by program element, see Section II.(c). Special
--   Special Content
-    -   [ ] Provide other special requirements of program element, e.g., special statements for participating scientists, team leads, etc.
-:::
-:::
-
-
-## Overview
-
-Parker Solar Probe (PSP) is a NASA mission to study the Sun's corona and inner heliosphere.
-
-PSP timeline:
-
--   2018-08-12: Launch
--   2018-10-03: First Venus flyby
--   2018-11-05: First perihelion
--   2019-01-19: First aphehion
--   ...
-
-::: {.column-margin layout-ncol="2"}
-![Parker Solar Probe orbits](images/PSP_01_orbit.png)
-
-![Juno orbit](https://www.nasa.gov/wp-content/uploads/2023/03/575573main_Juno20110727-3-43_full.jpg)
-
-<!-- ![Multiple satellites orbits](images/paste-1.png) -->
-:::
-
-![Orbits](images/orbits/juno_psp_orbit_v2)
-
-::: column-margin
-![Previous Juno orbit using `poliastro`](https://docs.poliastro.space/en/stable/_images/examples_Going_to_Jupiter_with_Python_using_Jupyter_and_poliastro_24_2.png)
-:::
-
-### Discontinuities observed by different spacecrafts
-
-Juno, Parker Solar Probe, Wind and Stereo.
-
-::: {#fig-ids layout-ncol="2"}
-![A RD detected by PSP at 0.126 AU](./images/examples/fig-psp_id_example)
-
-![A RD detected by Juno at 4 AU](./images/examples/fig-juno_id_example)
-
-![A RD detected by ARTEMIS at 1 AU near Earth](./images/examples/fig-artemis_id_example)
-
-![A RD detected by STEREO at 1 AU at different solar longitudes](./images/examples/fig-stereo_id_example)
-
-Rotational discontinuities (RDs) detected by PSP, Juno, Stereo and near-Earth satellite at different radial distances and solar longitudes.
-:::
-
-::: {.content-visible when-format="html"}
-::: column-margin
-::: {#fig-ids_ref layout-nrow="1"}
-![A RD detected by PSP at 0.126 AU from @liu2022](https://agupubs.onlinelibrary.wiley.com/cms/asset/8e244339-32cf-4703-9101-c1d9b4a3fa7c/%20jgra57047-fig-0002-m.jpg){fig-alt="The properties of a rotational discontinuity (RD) detected at 0.126 AU on 28 January 2020. (a) The magnetic field magnitude and three components in Radial‐Tangential‐Normal (RTN) coordinate system, (b) the magnetic field in local magnetic normal (LMN) coordinate system, (c and d) the proton velocity in RTN and LMN coordinate systems, (e) the proton density, (f) the proton thermal pressure, the magnetic pressure and the sum, (g) the tangential components of the electric field in LMN coordinate system in the RD rest frame, (h) the position, orientation, and motion of the RD, (i–k) the distributions of BL, JM, and J · E across the RD, (l and m) the jump conditions across the RD. In (h), the cyan plane and arrow represent the RD and its motion vector, and the yellow curve shows the PSP orbit. In (j), both the colors and the curve correspond to the values of JM, and two vertical dashed lines indicate the area of |JM|>13max|JM| $\\vert {J}_{M}\\vert > \\frac{1}{3}\\text{max}\\left(\\vert {J}_{M}\\vert \\right)$ whose width is defined as the half thickness of the discontinuity. In (m), the solid lines present the actual upstream and downstream velocities, while the dashed lines show the theoretical downstream velocity to satisfy the Walén relation."}
-
-![A RD detected by Stereos at 1 AU from @malaspina2012](https://agupubs.onlinelibrary.wiley.com/cms/asset/837d691e-c062-4bde-95ec-8b3e7b095dfe/jgra21804-fig-0003.png){fig-alt="2.5 min of Bx, By, and Bz GSE data from STA (darker trace, black online) and STB (lighter trace, red online). STB data are plotted shifted in time to show the DD match between STA and STB, found at a spacecraft separation of ∼7.5 × 103 km. Vertical lines indicate the start and end of the DD as identified using the STA Bx data."}
-
-![A RD detected by ARTEMIS at 1 AU from @artemyev2019](https://agupubs.onlinelibrary.wiley.com/cms/asset/0be15a8d-39e0-4617-8018-239f22962bea/jgra54962-fig-0001-m.jpg){fig-alt="The example of solar wind discontinuities observed by ARTEMIS in 27 March 2012. Panel (a) shows the magnetic field in the local coordinate system and the tangential plasma velocity, vl. Panel (b) shows the electron density and the ion and electron temperatures. Panel (c) shows the ion and electron β, and the current density, jm (the inserted figure shows jm vs. the spatial coordinate rn/di). Panels (d) and (e) show electron flux pitch-angle (α) spectrograms for two energy ranges. Panel (f) shows the electron flux anisotropy as function of energy and time (see text for details)."}
-
-Rotational discontinuities (RDs) detected by PSP, Stereo and near-Earth satellite.
-:::
-:::
-:::
-
-### Occurrence rate of discontinuities
-
-![](https://raw.githubusercontent.com/Beforerr/ids_finder/1b9830d558470d730a3adbb6667b9b2ca66a6425/notebooks/figures/ocr/ocr_time_cleaned.png)
-
-### Model validation
-
-<!-- ![PSP orbits](https://blogs.nasa.gov/parkersolarprobe/wp-content/uploads/sites/274/2021/01/Parker-Orbit7Geometry-scaled.jpg) -->
-
-We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.edu/MSWIM2D/), which models the solar wind propagation in 2D using the BATSRUS MHD solver. [@keebler2022]
-
-::: column-margin
-![Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind](images/paste-3.png){fig-alt="Time-series comparison of MSWIM2D (red) and New Horizons SWAP-observed solar wind (black) for 2012–2019. (a) Proton number density per cubic centimeter, with the highest resolution in gray and the 10 day running average in black. (b) Solar wind bulk flow speed in kilometers per second. (c) Model thermal pressure and New Horizons SWAP total (PUI plus solar wind) pressure. The blue vertical dashed line marks the Pluto flyby on 2015 July 14. Note the dual horizontal axis, providing both date and radial coordinate in astronomical units."}
-:::
-
-### Solar wind properties
-
-![Current sheet thickness](https://beforerr.github.io/ids_finder/figures/thickness/thickness_mn_dist.png)
-
-{{< pagebreak >}}
-
-## Significance of Investigation & Expected Impact
-
-## Science Objectives and Methodology
-
-## Demonstration of Project Approaches
-
-{{< include comps/_01-04_demonstration.html.qmd >}} {{< pagebreak >}}
-<!-- {{< include comps/_01-04_demonstration.qmd >}} {{< pagebreak >}} -->
-
-
-## Relevance to Heliophysics Overarching Goals
-
-This project focuses on investigation of the solar wind discontinuities, the key element of magnetic field turbulence and the primary interface of charged particle acceleration. Thus, the project contributes to NASA Heliophysics' overarching goal to: *"Explore and characterize the physical processes in the space environment from the Sun to the heliopause and throughout the universe”* and its specific objectives to: *"Explore the physical processes at work in the space environment from the Sun to Earth and throughout the solar system"*.
-
-
-## Project Schedule
-
-In this three-year project, each year is devoted to a stated project objective: in the **first year** we will focus on collection and analysis of Juno observations of solar wind discontinuities, supplemented by the solar wind model and observations of $1$AU missions (STEREO, ARTEMIS, WIND); in the **second year** the same analysis of solar wind discontinuities with performed for PSP, with the supplementary dataset from $1$AU missions. In the **third year** we will analyze specific discontinuity characteristics (spatial scales, current density, etc.) for two datasets and compare radial evolution of these characteristics with predictions of expectations from solar wind adiabatic expansion.
-
-#### Management
-
-of this project is fully performed by **FI**, Zijin Zhang, who will also be responsible for the assembly and analysis of the observational dataset, and generation of a combined Juno/solar wind model dataset. Project **PI**, Prof. Vassilis Angelopoulos, and group members Dr. Anton Artemyev and Dr. Chen Shi, will contribute to discussions and the education and training of Zijin Zhang. Expertise of Prof. V. Angelopoulos in spacecraft measurement techniques and data analysis \cite{Angelopoulos19,Angelopoulos11:ARTEMIS}, Dr. A. Artemyev in solar wind discontinuity observation and modeling \citep{Artemyev18:apj,Artemyev19:jgr:solarwind}, and Dr. Chen Shi in solar wind observations and simulations \citep{ChenShi21:a&a,ChenShi22:apj,ChenShi23:apj} guarantees that Z. Zhang will receive all necessary mentorship, advice and support, and thus will successfully complete the thesis project.
-
-
-{{< pagebreak >}}
+**Acknowledgement**: This proposal is the work of the FI (Zijin Zhang). PI (Vassilis Angelopoulos) and group members (Dr. A. Artemyev, Dr. Chen Shi) provide editorial support (clarity and structure).
 
 # Open Science and Data Management Plan (OSDMP)
 
+::: {.content-visible when-format="html"}
 {{< include comps/info/_03_osdmp.qmd >}}
+:::
 {{< include comps/_03_osdmp.qmd >}} {{< pagebreak >}}
 
 # Research Readiness Statement
 
+::: {.content-visible when-format="html"}
 {{< include comps/info/_04_rrs.qmd >}}
+:::
 {{< include comps/_04_rrs.qmd >}} {{< pagebreak >}}
 
 # Biographical Sketches/Curriculum Vitae (CVs)
 
+::: {.content-visible when-format="html"}
 {{< include comps/info/_05_cv.qmd >}}
-<!-- {{< include comps/_05_cv_Zijin.qmd >}} {{< pagebreak >}} -->
+:::
 
 # Current and Pending Support
 
@@ -192,21 +73,17 @@ of this project is fully performed by **FI**, Zijin Zhang, who will also be resp
 
 # Statements of Commitment and Letters of Resource Support
 
-{{< include comps/info/_07_commitment.qmd >}}
-{{< include comps/_07_commitment.qmd >}} {{< pagebreak >}}
+{{< include comps/info/_07_commitment.qmd >}} {{< include comps/_07_commitment.qmd >}} {{< pagebreak >}}
 
 # Mentoring Plan or Agreement
 
+::: {.content-visible when-format="html"}
 {{< include comps/info/_08_mentoring.qmd >}}
-{{< include comps/_08_mentoring.qmd >}} {{< pagebreak >}}
+:::
+ {{< include comps/_08_mentoring.qmd >}} {{< pagebreak >}}
 
 # Budget Narrative (Budget Justification)
 
+::: {.content-visible when-format="html"}
 {{< include comps/info/_09_budget.qmd >}} {{< pagebreak >}}
-
-# References
-
--   [Parker Solar Probe: The Mission](https://parkersolarprobe.jhuapl.edu/The-Mission/index.php)
-
-::: {#refs}
 :::

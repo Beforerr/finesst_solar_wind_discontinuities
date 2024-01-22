@@ -1,0 +1,120 @@
+<!-- # Scientific/Technical/Management Section -->
+## Summary
+
+Rapid variations in interplanetary magnetic fields, commonly recognized as solar wind magnetic discontinuities, embody important localized transient rotations or jumps of the magnetic field. Considered responsible for effective plasma heating, they carry the most intense currents found in the solar wind. Theoretical models suggest that the formation and destruction of discontinuities are closely related to the nonlinear dynamics of Alfvén waves. These nonlinear processes can create significant isolated disturbances to the otherwise adiabatic evolution of the solar wind flow with a frozen interplanetary magnetic field. As such, a comprehensive study of these discontinuities will considerably enhance our understanding of the solar wind heating phenomenon.
+
+Research into discontinuities in the solar wind begin with the onset of the spacecraft era in the 1960s. This field of study has recently seen a significant intensification, thanks to the launch of the Parker Solar Probe (PSP), which enables magnetic field measurements at closer radial distances to the Sun. Though discontinuities are found nearly everywhere in the heliosphere (as shown by Voyager and Ulysses observations), the most in-depth investigations have focused on the inner heliosphere, around $1$ astronomical unit (AU). **The primary aim of this project is to utilize two novel datasets procured from PSP and Juno magnetic field measurements, examining the evolution of discontinuity properties within and far beyond 1 AU, up to Jupiter's orbit**. In particular, we will generate and scrutinize two significant datasets: **the first dataset** will collate $1$ AU measurements from STEREO, near-Earth WIND, and ARTEMIS missions with measurements beyond $1$ AU by Juno; **the second dataset** will amalgamate $1$ AU measurements with those made by PSP within $1$ AU. The scientific objective of this project is to answer the following three queries:
+
+1.  How does the occurrence rate of discontinuity evolve with the radial distance *beyond* $1$ AU?
+
+2.  How does the occurrence rate of discontinuity evolve with the radial distance *within* $1$ AU?
+
+3.  How do various discontinuity characteristics, such as the magnetic field magnitude, current density, spatial scale, etc., evolve through the solar wind propagation from the near-Sun regions to 1AU, and subsequently to 5AU?
+
+To address the first question, we will integrate Juno measurements between $1$ and $5$ AU with those at $1$ AU, thereby distinguishing temporal (correlated with solar activity) and spatial (correlated with radial distance) variations in occurrence rates. The same procedure will be utilized for PSP and $1$ AU measurements to address the second question. To respond to the third question, information of solar wind velocity is requisite - these measurements are available for all missions, except Juno, which does not activate plasma instruments during the cruise to Jupiter. On a global scale, however, the radial plasma speed of the expanding solar wind remains conserved, hence we will use near-Earth solar wind measurements and a Two-Dimensional Outer Heliosphere Solar Wind Modeling (MSWIM2D) of solar wind propagation to reconstruct the solar wind velocity adjacent to Juno's location.
+
+## Significance of Investigation and Expected Impact
+
+Spacecraft investigations of the space plasma environment has revealed that the solar wind magnetic field only on average follows the Parker model of the heliospheric current sheet. Localized transient currents, that can be significantly more intense than the model currents, are carried by various discontinuities observed as strong variations in magnetic field components [@colburn1966; @burlagaMicroScaleStructuresInterplanetary1968; @turnerOrientationsRotationalTangential1971]. Most often such variations present as magnetic field rotation within the plane of two most fluctuating components. 
+As illustrated in @fig-1, these rotations are observed at a multitude of radial distances from the Sun. These discontinuities play an important role in energy dissipation [particle acceleration in the solar wind, see @dmitrukTestParticleEnergization2004; @macbrideTurbulentCascadeAU2008; @osmanIntermittencyLocalHeating2012; @tesseinAssociationSuprathermalParticles2013].
+Moreover, they contribute significantly to magnetic fluctuation spectra [@borovskyContributionStrongDiscontinuities2010; @zhdankinMagneticDiscontinuitiesMagnetohydrodynamic2012; @lionCoherentEventsSpectral2016] and can affect space weather [@tsurutaniReviewInterplanetaryDiscontinuities2011]. However, previous observations of solar wind discontinuities in the deep space rarely were conjugated with solar wind measurements closer to the Sun, and thus did not provide a full picture of the structure and dynamics of discontinuities. 
+Juno magnetic field measurements over six years (2011-2016) and PSP magnetic field and plasma measurements over four years (2019-2023), in combination of STEREO, WIND, and ARTEMIS magnetic field and plasma monitor at $1$ AU during the operation of Juno and PSP, provide a unique breakthrough datasets for the investigation of discontinuities characteristics in both the inner and outer heliosphere.
+
+::: {#fig-1 fig-env="wrapfigure" fig-pos="{r}{0.55\textwidth}"}
+![](figures/schematic.png)
+
+Distribution of occurrence rate of solar wind discontinuities [@sodingRadialLatitudinalDependencies2001].
+:::
+
+Several heliospheric spacecraft missions have yielded statistical information about the properties and potential origins of solar wind discontinuities. For instance, Helios-1 and -2 observations showed an abundance of discontinuities within the Earth's orbit ($<1$ AU from the Sun) \citep{Mariani83}. Similarly, Ulysses detected discontinuities between 1 and 5 AU [@tsurutaniNonlinearElectromagneticWaves1997], while Voyager 1's findings at $39-43$ AU \citep{Burlaga96,Burlaga11} suggested that these discontinuities pervade the entire heliosphere. 
+Combination of Voyager, Ulysses, WIND, and Helios-2 measurements of discontinuities allows to reconstruct the radial variation of their occurrence rate (see @fig-1 and [@sodingRadialLatitudinalDependencies2001]), although measurements at different radial distances were significantly separate in time. Using simultaneous Juno, STEREO, WIND, and ARTEMIS or PSP, STEREO, WIND, and ARTEMIS measurements, we will be able to investigate and quantify the properties of **solar wind discontinuities at different distances from the Sun, both within $1$ AU and up to $5$ AU**.
+
+Ulysses measurements of the high-latitude solar wind at $1-5$ AU showed that the majority of discontinuities resided within the stream-stream interaction regions and/or within Alfvén wave trains \citep{Tsurutani95, Tsurutani&Ho99}. The nonlinear evolution of Alfvén waves (wave steepening) can be the main cause of such discontinuities. The background plasma/magnetic field inhomogeneities and various dissipative processes are key to Alfvén wave nonlinear evolution \citep{Lerche75, Prakash&Diamond99, Medvedev97:prl, Nariyuki14, Yang15}. In hybrid simulations \citep[see][]{Vasquez&Hollweg98, Vasquez&Hollweg01, TenBarge&Howes13} and analytical models \citep[e.g.,][]{Kennel88:jetp, Hada89, Malkov91, Wu&Kennel92, Medvedev97:pop}, this steepening was shown to cause formation of discontinuities in configurations resembling the near-Earth observations. There are models predicting discontinuity formation \citep{Servidio15, Podesta&Roytershteyn17} and destruction \citep{Servidio11,Matthaeus15} due to dissipative processes (e.g., Alfvén wave steepening, magnetic reconnection) in the solar wind. However, efficiency of these processes in realistic expanding solar wind was not yet tested against observations. Regular and long-lasting Juno and PSP observations together with almost permanent near-Earth solar wind monitoring provide a unique opportunity to estimate discontinuity occurrence rates over an unprecedentedly large radial distance range ($\sim 0.1$ AU - $\sim 45$ AU). We will determine the discontinuity occurrence rates for various radial distances and compare this rate with the prediction of the adiabatic expansion model, **to understand if discontinuity formation or destruction dominate the statistics of discontinuities far away from the solar wind acceleration region**.
+
+## Science Objectives and Methodology
+
+The main objective of this research is the examination of how solar wind discontinuities evolve with radial distance. The methodology involves the collection and analysis of two datasets: one that combines $1$ AU solar wind measurements conducted by STEREO, ARTEMIS, and WIND, alongside Juno spacecraft measurements during its voyage from $1$ AU to $5$ AU. The second dataset merges data from the same missions at $1$ AU and includes information from the PSP within the inner heliosphere. This methodology will enable us to explore the following research objectives:
+
+1.  How does the occurrence rate of discontinuity evolve with the radial distance *within* $1$ AU and *beyond* $1$ AU?
+
+2.  How do various discontinuity characteristics, such as the magnetic field magnitude, current density, spatial scale, etc., evolve through the solar wind propagation from the inner heliosphere to outer heliosphere?
+
+In the next sections we briefly demonstrate preliminary results of this project and basic elements of the project methodology. 
+
+## Demonstration of Project Approaches
+
+### Dataset, spacecraft instruments, and solar wind model
+
+In this project we will use datasets of five missions measuring solar wind magnetic field and plasma. Synergistic observations of these missions should advance our understanding of the solar wind discontinuities, their radial distribution and evolution [@velli2020].
+
+::: {#fig-model fig-env="SCfigure"}
+![](figures/juno_model_validation.png){width=75%}
+
+Time-series comparison of MSWIM2D (red) and Juno-observed solar wind magnetic field magnitudes.
+:::
+
+
+#### Juno
+
+We use the following data collected by Juno: magnetic ﬁelds with a $\sim1$ s resolution measured by the Juno Fluxgate Magnetometer (MAG)
+[@connerney2017], the ion bulk velocity $v$, and the plasma
+density $n$ with a hourly resolution from solar wind model (see
+below).
+
+#### Parker Solar Probe (PSP)
+
+We use the following data collected by PSP: magnetic ﬁelds measured by the FIELDS experiment [@bale2016], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution by the Solar Wind Electrons Alphas and Protons (SWEAP) Investigation [@kasper2016].
+
+
+#### ARTEMIS
+
+We use the following data collected by ARTEMIS: magnetic ﬁelds with a
+$\sim 1/5$ s resolution measured by the Fluxgate Magnetometer [@auster2008], the ion bulk velocity $v$, and the plasma density $n$ calculated from velocity distribution by the Electrostatic Analyzer with $\sim 4$ s resolution [@mcfadden2009].
+
+
+#### STEREO
+
+We use the following data collected by STEREO: magnetic ﬁelds with a $\sim1/8$ s resolution by the magnetic ﬁeld experiment [@acuña2008] on In-situ Measurements of Particles and CME Transients (IMPACT) [@luhmann2008], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution by the Plasma and Suprathermal Ion Composition (PLASTIC) [@galvin2008].
+
+#### Wind
+
+We use the following data collected by Wind: magnetic ﬁelds with a $\sim 1/11$ s resolution measured by the Magnetic Field Investigation (MFI) [@lepping1995], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution by the Solar Wind Experiment (SWE) [@ogilvie1995].
+
+#### Solar wind model
+
+June measurements do not include plasma characteristics, and to estimate discontinuity spatial scale (thicknesses) we will use solar wind speed obtained from the model of solar wind propagation. The hourly solar wind model data from the Two-Dimensional Outer
+Heliosphere Solar Wind Modeling (MSWIM2D) [@keebler2022] will be employed to determine the ion bulk velocity $v$ and plasma density $n$ at the location of the Juno mission. Utilizing the BATSRUS MHD solver, this model is capable of simulating the propagation of the solar wind from 1 to 75 astronomical units (AU) in the ecliptic plane, effectively encompassing the region of interest for our study. @fig-model shows comparison of magnetic field magnitudes obtained from MSWIM2D and measured by Juno.
+
+### Determination of discontinuities
+
+We will use @liu2022a method to identify discontinuities in the solar wind. This method has better compatibility for the discontinuities with minor field changes, and is more robust to the situation encountered in the outer heliosphere. For each sampling instant $t$, we define three intervals: the pre-interval $[-1,-1/2]\cdot T+t$, the middle interval $[-1/,1/2]\cdot T+t$, and the post-interval $[1/2,1]\cdot T+t$, in which $T$ are time lags. Let time series of the magnetic field data in these three intervals are labeled ${\bf B}_-$, ${\bf B}_0$, ${\bf B}_+$, respectively. Then for an discontinuity, the following three conditions should be satisfied: (1) $\sigma({\bf B}_0)>2\max\left(\sigma({\bf B}_-, \sigma({\bf B}_+)\right)$, (2) $\sigma\left({\bf B}_-+{\bf B}_+\right)>\sigma({\bf B}_-)+\sigma({\bf B}_+)$, and (3) $|\Delta {\bf B}|>|{\bf B}_{bf}|/10$, in which $\sigma$ and ${\bf B}_{bg}$ represent the standard deviation and the background magnetic field magnitude, and $\Delta {\bf B}={\bf B}(t+T/2)-{\bf B}(t-T/2)$. The first two conditions guarantee that the field changes of the discontinuity identified are large enough to be distinguished from the stochastic fluctuations on magnetic fields, while the third is a supplementary condition to reduce the uncertainty of recognition. We also will use the minimum or maximum variance analysis (MVA) analysis [@sonnerupMinimumMaximumVariance1998; @sonnerupMagnetopauseStructureAttitude1967] to determine the main (most varying) magnetic field component, $B_l$, and medium variation component, $B_m$. @fig-examples shows several examples of solar wind discontinuities detected by different spacecraft.
+
+::: {#fig-examples fig-env="SCfigure"}
+![](figures/fig-ids_examples){width=75%}
+
+Discontinuities detected by PSP, Juno, STEREO and near-Earth ARTEMIS satellite: red, blue, and black lines are $B_l$, $B_m$, and $|{\bf B}|$.
+:::
+
+
+### Discontinuity occurrence rate
+
+The basic approach of this proposal is to use solar wind measurements at 1AU (STEREO, ARTEMIS, WIND) to compare with Juno and PSP measurements and distinguish effects of solar wind temporal variations and effects of spatial (with the radial distance from the Sun) variations of discontinuity occurrence rate and characteristics. The example of such comparison for the occurrence rate is shown in @fig-rate, where we plot number of discontinuities measured per day by different spacecraft missions (for the same temporal resolution of magnetic field data and the same criteria of discontinuity determination). The radial distance of Juno for 2011-2015 is shown in @fig-model, and the number of discontinuities measured by Juno per day coincides with the discontinuity number measured by STEREO, WIND, and ARTEMIS, when Juno is around $1$ AU. This number (occurrence rate) decreases with distance (with time after $\sim 2013$), as Juno moves from $1$ AU to $5$ AU. We will use the similar comparison for discontinuity characteristics and occurrence rate derived for PSP and Juno. 
+
+::: {#fig-rate fig-env="SCfigure"}
+![](figures/ocr_time_cleaned.png){width=45%}
+
+The number of discontinuities measured by Juno per day coincides with the discontinuity number measured by STEREO, WIND, and ARTEMIS, when Juno is around $1$ AU. This number (occurrence rate) decreases with distance (with time after $\sim 2013$), as Juno moves from $1$ AU to $5$ AU. We will use the similar comparison for discontinuity characteristics and occurrence rate derived for PSP and Juno. The radial distance of Juno for 2011-2015 is shown in @fig-model.
+:::
+
+## Relevance to Heliophysics Overarching Goal
+
+This project focuses on investigation of the solar wind discontinuities, the key element of magnetic field turbulence and the primary interface of charged particle acceleration. Thus, the project contributes to NASA Heliophysics' overarching goal to: *"Explore and characterize the physical processes in the space environment from the Sun to the heliopause and throughout the univers"* and its specific objectives to: *"Explore the physical processes at work in the space environment from the Sun to Earth and throughout the solar system"*.
+
+## Project Schedule
+
+This project, spanning three years, assigns each year to a stated objective: in the **first year**, the focus will be on compiling and analyzing Juno's observations of solar wind discontinuities, supported by a solar wind model and supplemental observations from $1$ AU missions (STEREO, ARTEMIS, WIND); in the **second year**, a similar analysis of solar wind discontinuities will be conducted for PSP, using additional data from the $1$ AU missions. In the **third year**, specific discontinuity characteristics, such as spatial scales and current density, will be analyzed for both datasets. The radial evolution of these features will be compared to the expectations predicted from solar wind adiabatic expansion.
+
+
+#### Management
+
+of this project is fully performed by **FI**, Zijin Zhang, who will also be responsible for the assembly and analysis of the observational dataset, and generation of a combined Juno/solar wind model dataset. Project **PI**, Prof. Vassilis Angelopoulos, and group members Dr. Anton Artemyev and Dr. Chen Shi, will contribute to discussions and the education and training of Zijin Zhang. Expertise of Prof. V. Angelopoulos in spacecraft measurement techniques and data analysis \cite{Angelopoulos19,Angelopoulos11:ARTEMIS}, Dr. A. Artemyev in solar wind discontinuity observation and modeling \citep{Artemyev18:apj,Artemyev19:jgr:solarwind}, and Dr. Chen Shi in solar wind observations and simulations \citep{ChenShi21:a&a,ChenShi22:apj,ChenShi23:apj} guarantees that Z. Zhang will receive all necessary mentorship, advice and support, and thus will successfully complete the thesis project.

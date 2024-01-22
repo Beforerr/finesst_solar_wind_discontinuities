@@ -8,21 +8,21 @@ manuscript:
   resources:
     - files/references.bib
     - files/references.qmd
-  notebooks:
-    - notebook: notebooks/00_orbits.ipynb
-    - notebook: notebooks/01_ids_example.ipynb
-    - notebook: notebooks/02_ids_detection.ipynb
 
 format:
   html:
     comments:
       hypothesis: true
-  latex: default
+  latex:
+    cite-method: natbib
   # pdf:
-    # keep-tex: true
+  #   keep-tex: true
   # typst: default
 
-bibliography: files/references.bib
+bibliography: 
+  - files/bibliography/addon_zijin.bib
+  - files/references.bib
+  - files/addon.bib
 
 execute:
   freeze: true
