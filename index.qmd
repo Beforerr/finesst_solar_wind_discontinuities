@@ -33,12 +33,12 @@ code-links:
 ::: {.content-visible when-format="html"}
 # Background
 
-{{< include comps/_00_background.qmd >}} {{< pagebreak >}}
+{{< include sections/_00_background.qmd >}} {{< pagebreak >}}
 :::
 
 # Scientific/Technical/Management
 
-{{< include comps/_01_science.qmd >}} {{< pagebreak >}}
+{{< include sections/_01_science.qmd >}} {{< pagebreak >}}
 
 # References and Acknowledgements
 
@@ -49,41 +49,51 @@ code-links:
 
 # Open Science and Data Management Plan (OSDMP)
 
-::: {.content-visible when-format="html"}
-{{< include comps/info/_03_osdmp.qmd >}}
-:::
-{{< include comps/_03_osdmp.qmd >}} {{< pagebreak >}}
+{{< include sections/info/_03_osdmp.qmd >}}
+{{< include sections/_03_osdmp.qmd >}}
+{{< pagebreak >}}
 
 # Research Readiness Statement
 
-::: {.content-visible when-format="html"}
-{{< include comps/info/_04_rrs.qmd >}}
-:::
-{{< include comps/_04_rrs.qmd >}} {{< pagebreak >}}
+{{< include sections/info/_04_rrs.qmd >}}
+{{< include sections/_04_rrs.qmd >}} 
+{{< pagebreak >}}
 
-# Biographical Sketches/Curriculum Vitae (CVs)
+# Curriculum Vitae (CVs)
 
-::: {.content-visible when-format="html"}
-{{< include comps/info/_05_cv.qmd >}}
+{{< include sections/info/_05_cv.qmd >}}
+
+::: {.content-visible when-format="pdf"}
+\input{sections/05_cv_Vassilis}
 :::
 
 # Current and Pending Support
 
-{{< include comps/info/_06_support.qmd >}} {{< pagebreak >}}
+{{< include sections/info/_06_support.qmd >}}
 
+::: {.content-visible when-format="pdf"}
+\includepdf[pages=1, pagecommand={\section{Current and Pending Statements}}, offset=0 -1cm, width=1.2\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
+\includepdf[pages=2, pagecommand={},width=1.2\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
+
+\includepdf[pages=-, pagecommand={},width=1.2\textwidth]{sections/Zhang NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
+:::
+
+::: {.content-visible when-format="html"}
 # Statements of Commitment and Letters of Resource Support
 
-{{< include comps/info/_07_commitment.qmd >}} {{< include comps/_07_commitment.qmd >}} {{< pagebreak >}}
+{{< include sections/info/_07_commitment.qmd >}}
+:::
 
 # Mentoring Plan or Agreement
 
-::: {.content-visible when-format="html"}
-{{< include comps/info/_08_mentoring.qmd >}}
-:::
- {{< include comps/_08_mentoring.qmd >}} {{< pagebreak >}}
+{{< include sections/info/_08_mentoring.qmd >}}
+{{< include sections/_08_mentoring.qmd >}}
+ {{< pagebreak >}}
 
 # Budget Narrative (Budget Justification)
 
-::: {.content-visible when-format="html"}
-{{< include comps/info/_09_budget.qmd >}} {{< pagebreak >}}
+::: {.content-visible when-format="pdf"}
+\includepdf[pages=-, pagecommand={\section{Budget and Narrative}},offset=0 -1cm, width=1.2\textwidth]{sections/2025 finesst budget.pdf}
 :::
+
+{{< include sections/info/_09_budget.qmd >}}

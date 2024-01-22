@@ -13,16 +13,23 @@ format:
   html:
     comments:
       hypothesis: true
-  latex:
+  pdf:
     cite-method: natbib
+    keep-tex: true
+    include-in-header: 
+      - text: |
+          \usepackage{wrapfig}
+          \usepackage{sidecap}
   # pdf:
   #   keep-tex: true
   # typst: default
 
 bibliography: 
+  - files/bibexport.bib
   - files/bibliography/addon_zijin.bib
   - files/references.bib
   - files/addon.bib
+  # - files/full.bib
 
 execute:
   freeze: true

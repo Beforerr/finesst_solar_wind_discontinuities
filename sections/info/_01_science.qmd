@@ -110,7 +110,7 @@ We are using [Michigan Solar WInd Model 2D (MSWIM2D)](http://csem.engin.umich.ed
 
 ## Demonstration of Project Approaches
 
-{{< include comps/_01-04_demonstration.html.qmd >}} {{< pagebreak >}}
-<!-- {{< include comps/_01-04_demonstration.qmd >}} {{< pagebreak >}} -->
+{{< include sections/_01-04_demonstration.html.qmd >}} {{< pagebreak >}}
+<!-- {{< include sections/_01-04_demonstration.qmd >}} {{< pagebreak >}} -->
 
 

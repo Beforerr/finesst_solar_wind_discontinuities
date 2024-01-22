@@ -1,5 +1,7 @@
+::: {.content-visible when-format="html"}
 ::: {.callout-note collapse="false"}
 
 Current and Pending (C&P) Support has no page limits. FIs must identify, when applicable, any external-to-the-proposing organization funding, e.g., from U.S. federal, U.S. non-federal, and non-U.S. sources or active applications for grants, fellowships etc., particularly those that have overlap with the proposed work. All PIs, regardless of F.5-14 the time devoted to FINESST, likewise must report C&P. There is no template established for reporting this information and if the reviewing Division has a template posted, such templates may be used, but are not required. C&P templates or forms in use by the proposing institution are welcome. To make it clear to NASA when the FI and/or PI have no C&P to report, include a joint statement or separate statements, if applicable, that there is "No C&P funding to report".
 
+:::
 :::

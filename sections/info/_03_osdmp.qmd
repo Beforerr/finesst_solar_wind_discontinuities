@@ -1,6 +1,8 @@
+::: {.content-visible when-format="html"}
 ::: {.callout-note collapse="false"}
 This no-longer than two page section describes how any data, data products and software created will be made public. An OSDMP, or an explanation of why one is not needed given the nature of the work proposed, is required. See Section 3.2.2 for instructions on what to include.
 
 - Length: 2 pages
 - Content: See Section II(c) for content and links to templates.
+:::
 :::
