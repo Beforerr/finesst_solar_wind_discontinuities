@@ -1,14 +1,22 @@
-#### Professional preparation
+<!-- # Research Readiness Statement -->
+I believe I am well-prepared for the proposed research, drawing from extensive academic and experiential learning in Space Science, complemented by mentorship.
 
-Zijin Zhang has taken fundamental physics courses (Electromagnetic Theory, Plasma Physics, etc.) and space physics courses (Introduction to Space Physics, Space Plasma Physics, and Solar System Magnetohydrodynamics, etc.). 
-He has conducted studies about... These courses and previous experience provide a good fundamental understanding of the solar system and plasma physics. 
-He is able to analyze mission data (Juno, PSP and THEMIS) using Python (PySPEDAS, PlanetaryPy, Astropy, Plasmapy), IDL (SPEDAS, CDAS), Julia, and Mathematica. 
+## Professional preparation
 
-#### Graduate study timeline
+My academic background includes core courses in physics and space science at both undergraduate and graduate levels, such as Electromagnetic Theory, Plasma Physics, and Solar System Magnetohydrodynamics. This education forms a solid base for the proposed study on solar wind discontinuities.
 
-i) Degree type: both Master's and Ph.D. degree in space science.
-ii) Admitted date: Sep/2022. 
-iii) Time enrolled in the program: 2 years. 
-iv) Estimated graduation date: Aug/2026.
+In addition to this, my mentors and I have developed a comprehensive plan for my training and research. As part of this plan, I regularly set aside time for self-study to delve deeper into the field and present latest journal articles/review papers to stay updated on the latest research. My mentors provides guidance, support, and resources to help me enhance my research skills, carry out innovative investigations, and present my findings effectively.
 
-#### Research experiences
+As for computer programming and data analysis tools, during my graduate studies, I have become proficient in Python (PySPEDAS, PlanetaryPy, Astropy, Plasmapy), IDL (SPEDAS, CDAS), Julia, and Mathematica. I have used these tools in analyzing mission data from different projects, including Juno, PSP, and THEMIS. I am confident in my ability to utilize these tools effectively for the proposed study—particularly for analyzing discontinuities in the solar wind and sorting through large datasets from several missions.
+
+## Graduate study timeline
+
+I'm enrolled in a combined Master's and Ph.D. program in Space Science at UCLA since September 2022, with an anticipated graduation in August 2026. This timeline aligns well with the duration required for the proposed research.
+
+## Research experiences
+
+My practical research skills stem from undergraduate work in the Wave-particle Interactions Group and an internship at the National Space Science Center. These experiences, including simulating solar wind interactions and processing GNSS data, have sharpened my data analysis and numerical modeling capabilities.
+
+Further, I've engaged in self-directed learning through workshops, conference student days and short summer courses, enhancing my understanding of space weather and plasma dynamics. My roles as a Teaching Assistant and president of the student scientific expedition association have developed my communication, mentoring, and project management skills, essential for collaborative research and dissemination.
+
+Overall, my diverse experiences and proactive learning initiatives provide a strong foundation for conducting advanced analysis and interpretation in space physics.

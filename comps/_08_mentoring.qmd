@@ -4,7 +4,6 @@ Zijin Zhang is a 2nd year PhD student mentored by Prof. Angelopoulos (PI), and i
 - Weekly individual (splinter) meetings with Prof. Angelopoulos (PI), Dr. Chen and Dr. Artemyev. These are mostly to operationally resolve issues of the research plan realization and review the progress and work towards the stated goals. 
 - Weekly updated in group meetings, that serve for quick opinion exchange with other team members (several experts on solar wind discontinuity) on hot-off-the-press results.
 - Splinter discussions with local experts on the observational and theoretical aspects of the project (Prof. Velli: PSP dataset). These one-on-one meetings aim to provide additional training for Mr. Zhang in data analysis techniques and theoretical approaches useful for project realization. 
-\end{itemize}
 
 These research meetings plus presentations in joint inter-departmental (encompassing AOS, P\&A and EPSS department members) space physics student presentations, Journal Club, and weekly seminars form Mr. Zhang's primary research-related day-to-day interactions in the UCLA environment. In addition, Prof. Angelopoulos will encourage Mr. Zhang to attend (at a low rate of 1 per quarter) specialized courses that facilitate in-depth exposure to fundamentals, such as non-linear MHD and kinetic theory, turbulence, kinetic simulations, and instrumentation. In all, Mr. Zhang will be exposed to a combination of formal and informal education through a robust and diverse set of courses, meetings, and seminars at UCLA.
 

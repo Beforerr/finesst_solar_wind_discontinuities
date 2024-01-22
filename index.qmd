@@ -173,12 +173,12 @@ of this project is fully performed by **FI**, Zijin Zhang, who will also be resp
 
 # Open Science and Data Management Plan (OSDMP)
 
-{{< include comps/_03_osdmp.info.qmd >}}
+{{< include comps/info/_03_osdmp.qmd >}}
 {{< include comps/_03_osdmp.qmd >}} {{< pagebreak >}}
 
 # Research Readiness Statement
 
-{{< include comps/_04_rrs.info.qmd >}}
+{{< include comps/info/_04_rrs.qmd >}}
 {{< include comps/_04_rrs.qmd >}} {{< pagebreak >}}
 
 # Biographical Sketches/Curriculum Vitae (CVs)

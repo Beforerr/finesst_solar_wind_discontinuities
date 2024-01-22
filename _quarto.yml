@@ -9,7 +9,6 @@ manuscript:
     - files/references.bib
     - files/references.qmd
   notebooks:
-    - notebook: comps/05_cv_Zijin.qmd
     - notebook: notebooks/00_orbits.ipynb
     - notebook: notebooks/01_ids_example.ipynb
     - notebook: notebooks/02_ids_detection.ipynb
