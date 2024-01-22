@@ -1,0 +1,14 @@
+## Scientific/Technical/Management
+{{< include comps/_01_science.qmd >}} {{< pagebreak >}}
+
+# Open Science and Data Management Plan (OSDMP)
+
+{{< include comps/_03_osdmp.qmd >}} {{< pagebreak >}}
+
+# Research Readiness Statement
+
+{{< include comps/_04_rrs.qmd >}} {{< pagebreak >}}
+
+# Mentoring Plan or Agreement
+
+{{< include comps/_08_mentoring.qmd >}} 
