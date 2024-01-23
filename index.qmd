@@ -33,12 +33,14 @@ code-links:
 ::: {.content-visible when-format="html"}
 # Background
 
-{{< include sections/_00_background.qmd >}} {{< pagebreak >}}
+{{< include sections/_00_background.qmd >}}
+{{< pagebreak >}}
 :::
 
 # Scientific/Technical/Management
 
-{{< include sections/_01_science.qmd >}} {{< pagebreak >}}
+{{< include sections/_01_science.qmd >}}
+{{< pagebreak >}}
 
 # References and Acknowledgements
 
@@ -46,6 +48,8 @@ code-links:
 :::
 
 **Acknowledgement**: This proposal is the work of the FI (Zijin Zhang). PI (Vassilis Angelopoulos) and group members (Dr. A. Artemyev, Dr. Chen Shi) provide editorial support (clarity and structure).
+
+{{< pagebreak >}}
 
 # Open Science and Data Management Plan (OSDMP)
 
@@ -64,25 +68,30 @@ code-links:
 {{< include sections/info/_05_cv.qmd >}}
 
 ::: {.content-visible when-format="pdf"}
+## CV for Principle Investigator
 \input{sections/05_cv_Vassilis}
+\includepdf[pages=1, pagecommand={\subsection{CV for Future Investigator}}, offset=0 -1cm, width=1.2\textwidth]{files/cv_Zijin_clean.pdf} \newpage
 :::
 
-# Current and Pending Support
 
+::: {.content-visible when-format="html"}
+# Current and Pending Support
+:::
 {{< include sections/info/_06_support.qmd >}}
 
+
 ::: {.content-visible when-format="pdf"}
-\includepdf[pages=1, pagecommand={\section{Current and Pending Statements}}, offset=0 -1cm, width=1.2\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
+\includepdf[pages=1, pagecommand={\section{Current and Pending Support}\subsection{Support Statement for PI}}, offset=0 -2cm, width=1.2\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
 \includepdf[pages=2, pagecommand={},width=1.2\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
 
-\includepdf[pages=-, pagecommand={},width=1.2\textwidth]{sections/Zhang NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
+\includepdf[pages=-, pagecommand={\subsection{Support Statement for FI}},width=1.2\textwidth, offset=0 -1cm]{sections/Zhang NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
 :::
 
 ::: {.content-visible when-format="html"}
 # Statements of Commitment and Letters of Resource Support
-
-{{< include sections/info/_07_commitment.qmd >}}
 :::
+{{< include sections/info/_07_commitment.qmd >}}
+
 
 # Mentoring Plan or Agreement
 
@@ -90,10 +99,12 @@ code-links:
 {{< include sections/_08_mentoring.qmd >}}
  {{< pagebreak >}}
 
+::: {.content-visible when-format="html"}
 # Budget Narrative (Budget Justification)
+
+{{< include sections/info/_09_budget.qmd >}}
+:::
 
 ::: {.content-visible when-format="pdf"}
 \includepdf[pages=-, pagecommand={\section{Budget and Narrative}},offset=0 -1cm, width=1.2\textwidth]{sections/2025 finesst budget.pdf}
 :::
-
-{{< include sections/info/_09_budget.qmd >}}

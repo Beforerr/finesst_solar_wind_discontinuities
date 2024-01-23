@@ -10,14 +10,19 @@ examples:
    ipython notebooks/01_ids_example.ipynb 'notebooks/config_examples/examples_artemis.yml'
 
 update: clean sync
+   git commit -am "update"; git push
    cd overleaf; git commit -am "update"; git push
 
-export-all:
-   quarto render _proposal.qmd --to latex -M cite-method:natbib -M bibliography:files/references.bib -M filter:quarto
+export-combined:
+   -quarto render index.qmd --to latex
+   mv _manuscript/index.tex index.tex
+   awk '/\\begin\{document\}/ {flag=1; next} /\\end\{document\}/ {flag=0} flag' index.tex | awk '!/\\maketitle/' > overleaf/index.tex
+   rm index.tex
+
 
 latex-export file:
    quarto render sections/{{file}}.qmd --to latex -M cite-method:natbib -M bibliography:files/references.bib -M filter:quarto -M filter:latex-environment
-   awk '/\\begin\{document\}/ {flag=1; next} /\\bibliography/ {flag=0} flag' sections/{{file}}.tex > overleaf/sections/{{file}}.tex
+   awk '/\\begin\{document\}/ {flag=1; next} /\\end\{document\}/ {flag=0} flag' sections/{{file}}.tex > overleaf/sections/{{file}}.tex
    rm sections/{{file}}.tex
 
 export:

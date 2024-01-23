@@ -13,13 +13,13 @@ format:
   html:
     comments:
       hypothesis: true
-  pdf:
+  latex:
     cite-method: natbib
-    keep-tex: true
     include-in-header: 
       - text: |
           \usepackage{wrapfig}
           \usepackage{sidecap}
+          \usepackage{pdfpages}
   # pdf:
   #   keep-tex: true
   # typst: default
