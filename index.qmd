@@ -39,7 +39,7 @@ code-links:
 
 **Solar wind discontinuity propagation in the inner and outer heliosphere**
 
-**Principle Investigator**: Vassilis Angelopoulos **Future Investigator**: Zijin Zhang (UCLA)
+**PI**: Vassilis Angelopoulos (UCLA)   **FI**: Zijin Zhang (UCLA)
 
 
 # Scientific/Technical/Management
