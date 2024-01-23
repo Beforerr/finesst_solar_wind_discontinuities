@@ -42,10 +42,9 @@ code-links:
 }}}
 
 ```{=latex}
-{\centering{
-  \textbf{PI}: Vassilis Angelopoulos (UCLA)
-  \textbf{FI}: Zijin Zhang (UCLA)
-}}
+\begin{center}
+  \textbf{PI}: Vassilis Angelopoulos (UCLA)  \textbf{FI}: Zijin Zhang (UCLA)
+\end{center}
 ```
 
 # Scientific/Technical/Management
