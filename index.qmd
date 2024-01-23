@@ -41,10 +41,12 @@ code-links:
   Solar wind discontinuity propagation in the inner and outer heliosphere
 }}}
 
-\centering{
+```{=latex}
+{\centering{
   \textbf{PI}: Vassilis Angelopoulos (UCLA)
   \textbf{FI}: Zijin Zhang (UCLA)
-}
+}}
+```
 
 # Scientific/Technical/Management
 
