@@ -1,5 +1,5 @@
 ---
-title: Solar wind discontinuities
+title: Solar wind discontinuity propagation in the inner and outer heliosphere
 subtitle: FINESST23 Proposal
 authors:
   - name: Zijin Zhang
@@ -36,6 +36,11 @@ code-links:
 {{< include sections/_00_background.qmd >}}
 {{< pagebreak >}}
 :::
+
+**Solar wind discontinuity propagation in the inner and outer heliosphere**
+
+**Principle Investigator**: Vassilis Angelopoulos **Future Investigator**: Zijin Zhang (UCLA)
+
 
 # Scientific/Technical/Management
 
