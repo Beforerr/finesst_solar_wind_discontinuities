@@ -72,29 +72,25 @@ Time-series comparison of MSWIM2D (red) and Juno-observed solar wind magnetic fi
 
 #### Juno
 
-We use the following data collected by Juno: magnetic ﬁelds with a $\sim1$ s resolution measured by the Juno Fluxgate Magnetometer (MAG)
-[@connerney2017], the ion bulk velocity $v$, and the plasma
-density $n$ with a hourly resolution from solar wind model (see
-below).
+We use the following data collected by Juno: magnetic ﬁelds with a $16$ Hz resolution measured by the Juno Fluxgate Magnetometer (MAG) [@connerney2017], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution from solar wind model (see below).
 
 #### Parker Solar Probe (PSP)
 
-We use the following data collected by PSP: magnetic ﬁelds measured by the FIELDS experiment [@bale2016], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution by the Solar Wind Electrons Alphas and Protons (SWEAP) Investigation [@kasper2016].
+We use the following data collected by PSP: magnetic ﬁelds with a $\sim 292$ Hz resolution measured by the FIELDS experiment [@bale2016], the ion bulk velocity $v$, and the plasma density $n$ with a $\sim 1$ Hz resolution by the Solar Wind Electrons Alphas and Protons (SWEAP) Investigation [@kasper2016].
 
 
 #### ARTEMIS
 
-We use the following data collected by ARTEMIS: magnetic ﬁelds with a
-$\sim 1/5$ s resolution measured by the Fluxgate Magnetometer [@auster2008], the ion bulk velocity $v$, and the plasma density $n$ calculated from velocity distribution by the Electrostatic Analyzer with $\sim 4$ s resolution [@mcfadden2009].
+We use the following data collected by ARTEMIS: magnetic ﬁelds with a $\sim 5$ Hz resolution measured by the Fluxgate Magnetometer [@auster2008], the ion bulk velocity $v$, and the plasma density $n$ calculated from velocity distribution by the Electrostatic Analyzer with a $\sim 4$ s resolution [@mcfadden2009].
 
 
 #### STEREO
 
-We use the following data collected by STEREO: magnetic ﬁelds with a $\sim1/8$ s resolution by the magnetic ﬁeld experiment [@acuña2008] on In-situ Measurements of Particles and CME Transients (IMPACT) [@luhmann2008], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution by the Plasma and Suprathermal Ion Composition (PLASTIC) [@galvin2008].
+We use the following data collected by STEREO: magnetic ﬁelds with a $\sim 8$ Hz resolution by the magnetic ﬁeld experiment [@acuña2008] on In-situ Measurements of Particles and CME Transients (IMPACT) [@luhmann2008], the ion bulk velocity $v$, and the plasma density $n$ with a minutely resolution by the Plasma and Suprathermal Ion Composition (PLASTIC) [@galvin2008].
 
 #### Wind
 
-We use the following data collected by Wind: magnetic ﬁelds with a $\sim 1/11$ s resolution measured by the Magnetic Field Investigation (MFI) [@lepping1995], the ion bulk velocity $v$, and the plasma density $n$ with a hourly resolution by the Solar Wind Experiment (SWE) [@ogilvie1995].
+We use the following data collected by Wind: magnetic ﬁelds with a $\sim 11$ Hz resolution measured by the Magnetic Field Investigation (MFI) [@lepping1995], the ion bulk velocity $v$, and the plasma density $n$ with a $\sim 1$ Hz resolution by the Solar Wind Experiment (SWE) [@ogilvie1995].
 
 #### Solar wind model
 

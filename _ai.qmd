@@ -1,0 +1,326 @@
+# GPT-Academic Report
+
+\subsection{Significance of Investigation and Anticipated Impact}
+
+Research into the space plasma environment through spacecraft investigations has revealed that the solar wind magnetic field, in general, adheres to Parker's model of the heliospheric current sheet. However, localized transient currents can deviate from these norms, often being much more intense than standard model currents. These aberrations occur due to the existence of various discontinuities, reflected as notable variations in magnetic field components \citep[see][]{Colburn&Sonett66, Burlaga68, Turner&Siscoe71}. Typically, these fluctuations present as rotations within the magnetic field within the plane of the two most fluctuating components.
+
+As illustrated in Figure ~\ref{fig1}, these rotations are observed at a multitude of radial distances from the Sun. These discontinuities are crucial to the process of energy dissipation \citep[or particle acceleration in the solar wind, refer to][]{Dmitruk04, MacBride08, Osman12:solarwind, Tessein13}. Furthermore, their significant contribution to magnetic fluctuation spectra \citep{Borovsky10:solarwind, Zhdankin12, Lion16} implies potential impacts on space weather \citep[as reviewed by][]{Tsurutani11:jastp}. 
+
+Nonetheless, past assessments of solar wind discontinuities in deep space have seldom been coordinated with concurrent measures of solar wind closer to the Sun. This failing in coordination inhibits the complete understanding of both the structure and dynamic behavior of these discontinuities. The magnetic field measurements taken by the Juno spacecraft over a period of six years (2011-2016) and the magnetic field and plasma measurements taken by the PSP over four years (2019-2023), used in combination with the STEREO, WIND, and ARTEMIS magnetic field and plasma monitor at $1$ AU during the operation of Juno and PSP, provide an invaluable dataset for the examination of discontinuity characteristics in both the inner and outer heliosphere.  
+
+\begin{wrapfigure}{r}{0.55\textwidth}
+  \begin{center}
+\includegraphics[width = 0.55\textwidth]{figures/schematic.png}
+  \end{center}
+        \caption{Distribution of occurrence rate of solar wind discontinuities \citep[see][]{Soding01}.}
+        \label{fig1}
+\end{wrapfigure}
+
+Various heliospheric spacecraft missions have yielded statistical data on the characteristics and potential origins of these solar wind discontinuities. For instance, observations from Helios-1 and -2 have detected an abundance of these discontinuities within the Earth's orbit (less than $1$AU away from the Sun) \citep{Mariani83}. Similarly, the Ulysses mission identified discontinuities between $1$ and $5$AU \cite{Tsurutani97}, while Voyager 1's findings at $39-43$AU \citep{Burlaga96,Burlaga11} suggested that these discontinuities pervade the entire heliosphere. 
+
+Combining measurements from Voyager, Ulysses, WIND, and Helios-2, it is possible to reconstruct the radial variation in these discontinuities' occurrence rates (as shown in Figure ~\ref{fig1} and detailed in \citep{Soding01}). However, these measurements were taken at different times, leading to varying radial distances. 
+
+Utilizing concurrent measurements from Juno, STEREO, WIND, ARTEMIS, and PSP, it is anticipated that this research will investigate and quantify the properties of solar wind discontinuities at different distances from the Sun—both within $1AU$ and up to $5$AU.
+
+The data obtained from Ulysses' high-latitude solar wind measurements (from $1-5$ AU) has shown that most discontinuities occur within stream-stream interaction regions and/or within Alfvén wave trains \citep{Tsurutani95, Tsurutani&Ho99}. These discontinuities can be primarily attributed to the non-linear evolution of Alfvén waves, often referred to as wave steepening. Key influencing factors in the non-linear evolution of Alfvén wave include background plasma/magnetic field inconsistencies and varying dissipation processes \citep{Lerche75, Prakash&Diamond99, Medvedev97:prl, Nariyuki14, Yang15}. Both hybrid simulations \citep[see][]{Vasquez&Hollweg98, Vasquez&Hollweg01, TenBarge&Howes13} and analytical models \citep[e.g.,][]{Kennel88:jetp, Hada89, Malkov91, Wu&Kennel92, Medvedev97:pop} have proven that this steepening results in the formation of discontinuities in configurations akin to near-Earth observations. However, the efficiency of these processes in an empirically expanding solar wind hasn't been thoroughly observed. The context provided by regular and prolonged observations by Juno and PSP, coupled with near-permanent near-Earth solar wind monitoring, presents an opportunity to evaluate discontinuity occurrence rates over an unparalleled large radial distance range ($\sim 0.1$ AU -- $\sim 45$AU). In this paper, we aim to analyze the occurrence rates of discontinuity at varying radial distances, comparing these rates with the prediction of the adiabatic expansion model in an effort to elucidate whether the generation or deterioration of discontinuity heavily influences discontinuity statistics significantly distanced from the solar wind acceleration region.
+
+\subsection{Research Aims and Methodology}
+The main objective of this research is the examination of how solar wind discontinuities evolve with radial distance. The methodology involves the collection and analysis of two datasets: one that combines $1$AU solar wind measurements conducted by STEREO, ARTEMIS, and WIND, alongside Juno spacecraft measurements during its voyage from $1$AU to $5$AU. The second dataset merges data from the same missions at $1$AU and includes information from the PSP within the inner heliosphere. This methodology will enable us to explore the three following research objectives:
+
+\begin{itemize}
+  \item The evolvement of discontinuity occurrence rates with radial distance beyond $1$ AU
+  \item The evolvement of discontinuity occurrence rates within $1$ AU 
+  \item The evolution of discontinuity properties, such as magnetic field magnitude, current density, spatial scale, etc., as the solar wind propagates from regions close to the Sun to 1AU, extending to 5AU 
+\end{itemize} 
+
+The following sections will provide a brief overview of the preliminary findings of this research and key elements of the methodology applied.
+
+\subsection{Overview of Research Approaches}
+
+\subsubsection{Dataset, spacecraft instruments, and solar wind model}\label{dataset-spacecraft-instruments-and-solar-wind-model}
+
+For this research, datasets from five separate missions, all measuring solar wind magnetic field and plasma, will be utilized. The collaborative observations from these missions are expected to enhance our understanding of solar wind discontinuities, giving insights into their radial distribution and evolvement \citep{velli2020}.
+
+\begin{SCfigure}
+{\centering \includegraphics[width = 0.75\textwidth]{figures/juno_model_validation.png}}
+\caption{A comparison, depicted as a time-series graph, of MSWIM2D (red) and Juno-observed solar
+wind magnetic field magnitudes}\label{fig:model}
+\end{SCfigure}
+
+\paragraph{Juno}\label{juno}
+
+From Juno, we will be utilizing the following data: magnetic fields with a $\sim 1$s resolution measured by the Juno Fluxgate Magnetometer (MAG) \citep{connerney2017}, the ion bulk velocity \(v\), and the plasma density \(n\) at an hourly resolution from the solar wind model.
+
+\paragraph{Parker Solar Probe (PSP)}\label{parker-solar-probe-psp}
+
+From the PSP, we will be incorporating the following data into our research: magnetic fields measured by the FIELDS experiment \citep{bale2016}, in addition to the ion bulk velocity \(v\), and the plasma
+
+## Polish private_upload/default_user/2024-01-21-19-57-03/main.tex.part-4.tex
+
+The density (\(n\)) data featuring an hourly resolution is obtained from the Solar Wind Electrons Alphas and Protons (SWEAP) Investigation \citep{kasper2016}.
+
+\paragraph{ARTEMIS}\label{artemis}
+
+Data compiled by ARTEMIS consists of the following: a fluxgate magnetometer with approximately a fifth of a second resolution for recording magnetic fields \citep{auster2008}, along with data on the ion bulk velocity (\(v\)) and plasma density (\(n\)). The latter two parameters are derived from the velocity distribution acquired via the Electrostatic Analyzer, which operates with around 4 seconds resolution \citep{mcfadden2009}.
+
+\paragraph{STEREO}\label{stereo}
+
+Data amassed by STEREO comprises magnetic field measurements obtained through the magnetic field experiment, with an approximate resolution of 1/8 seconds \citep{acuña2008}. Additionally, in-situ measurements of particles and CME transients (IMPACT) are undertaken \citep{luhmann2008}. Information on the ion bulk velocity (\(v\)) as well as the plasma density (\(n\))—characterized by an hourly resolution—are gathered by the Plasma and Suprathermal Ion Composition (PLASTIC) tool \citep{galvin2008}.
+
+\paragraph{WIND}\label{wind}
+
+The Wind mission contributes data that includes readings of magnetic fields at roughly 1/11 second resolution, as captured by the Magnetic Field Investigation (MFI) \citep{lepping1995}, along with information on the ion bulk velocity (\(v\)) and the plasma density (\(n\)). These variables are systematized with an hourly resolution by leveraging the Solar Wind Experiment (SWE) \citep{ogilvie1995}.
+
+\paragraph{Solar wind model}\label{solar-wind-model}
+
+June measurements exclude plasma characteristics, provoking a reliance on the solar wind speed model to estimate the spatial scale of discontinuities (thicknesses). The Two-Dimensional Outer Heliosphere Solar Wind Modeling (MSWIM2D) \citep{keebler2022} supplies hourly data for the solar wind model, facilitating the ascertainment of the ion bulk velocity (\(v\)) and plasma density (\(n\)) at the Juno mission's location. The model—a product of the BATSRUS MHD solver—is proficient in simulating solar wind propagation from an extent of 1 to 75 astronomical units (AU) within the ecliptic plane. This range is inclusive of our primary area of interest. Figure \ref{fig:model} specifies the comparative magnitudes of the magnetic field as determined from MSWIM2D and measured by Juno.
+
+\subsubsection{Determination of discontinuities}\label{determination-of-discontinuities}
+
+The method propounded by \citep{liu2022a} will be engaged to identify discontinuities in the solar wind. This methodology exhibits superior compatibility with minor field changes and is more resilient to scenarios prevalent in the outer heliosphere. For each time stamp \(t\), the intervals are defined as follows: the preliminary interval is given by \([-1,-1/2]\cdot T+t\), the central interval by \([-1/2,1/2]\cdot T+t\), and the subsequent interval by \([1/2,1]\cdot T+t\). The intervals signify time lags represented by \(T\). The corresponding series of magnetic field data within these timeframes are denoted as \( {\bf B}_- \), \( {\bf B}_0 \), and \( {\bf B}_+ \) respectively. For a discontinuity to be ascertained, three conditions must be jointly fulfilled: (1)\( \sigma({\bf B}_0)>2\max\left(\sigma({\bf B}_-, \sigma({\bf B}_+)\right)\), (2) \( \sigma\left({\bf B}_-+{\bf B}_+\right)>\sigma({\bf B}_-)+\sigma({\bf B}_+)\), and (3) \( |\Delta {\bf B}|>|{\bf B}_{bf}|/10\). Here, \(\sigma\) and \( {\bf B}_{bg} \) denote the standard deviation and the magnitude of the backdrop magnetic field respectively, with \( \Delta {\bf B}={\bf B}(t+T/2)-{\bf B}(t-T/2) \). The initial two conditions safeguard the identified discontinuity field changes as being sizeable enough to stand out from arbitrary fluctuations in magnetic fields. The third condition serves as a complementary precaution to minimize recognition uncertainty. We will also resort to the Maximum Variance (MVA) analysis \citep{Sonnerup68} for discerning the primary (most variable) magnetic field component (\(B_l\)) and the medium-variation component (\(B_m\)). Figure \ref{fig:examples} manifests several instances of solar wind discontinuities detected by different spacecraft.
+
+## Polish private_upload/default_user/2024-01-21-19-57-03/main.tex.part-5.tex
+
+\begin{SCfigure}
+ \centering
+\includegraphics[width = 0.75\textwidth]{figures/fig-ids_examples}
+\caption{Discontinuities, as identified by PSP, Juno, STEREO, and the near-Earth ARTEMIS satellite, are represented by red, blue, and black lines indicating $B_l$, $B_m$, and $|{\bf B}|$, respectively. \label{fig:examples}}
+\end{SCfigure}
+
+\subsubsection{Rate of Discontinuity Occurrence}\label{discontinuities-occurrence-rate}
+
+At the core of this proposal is an approach that utilizes solar wind measurements taken at 1AU (STEREO, ARTEMIS, WIND) and contrasts these with readings from Juno and PSP. This comparison will assist in distinguishing the effects of temporal variations in the solar wind, and spatial variations in the discontinuity occurrence rate and characteristics as dependent on radial distance from the Sun. An example of such a comparison regarding occurrence rate is depicted in Figure \ref{fig:rate}. In this figure, the number of discontinuities detected daily by various spacecraft missions is plotted (employing the same temporal resolution for magnetic field data and identical criteria for determining discontinuities). The radial distance of Juno from 2011-2015 can be observed in Fig. \ref{fig:model}. The quantity of discontinuities detected daily by Juno aligns with the numbers recorded by STEREO, WIND, and ARTEMIS when Juno is approximately $1$AU from the Sun. This rate of occurrence diminishes with increasing distance (or with time after $\sim 2013$) as Juno travels from $1$AU to $5$AU. This type of comparison will likewise be applied to analyze the discontinuity characteristics and occurrence rates derived for PSP and Juno.
+
+\begin{SCfigure}
+{\centering \includegraphics[width = 0.45\textwidth]{figures/ocr_time_cleaned.png}}
+        \caption{The discontinuity rate measured by Juno aligns with the readings from STEREO, WIND, and ARTEMIS when Juno is approximately $1$AU distant. This rate declines with increasing distance (or time after $\sim 2013$) as Juno transitions from routing at $1$AU to $5$AU. These comparative methodologies will be similarly applied to probe discontinuity characteristics and to calculate occurrence rates deduced for PSP and Juno. The radial journey of Juno from 2011-2015 is shown in Fig. \ref{fig:model}.}
+        \label{fig:rate}
+\end{SCfigure}
+
+\subsection{Relevance to NASA's Heliophysics Overarching Goals}
+This project is centered on the inquiry into solar wind discontinuities. As a crucial component of magnetic field turbulence and the principal interface of charged particle acceleration, this project contributes to NASA's overarching objective in Heliophysics to: {\it "Explore and characterize the physical processes occurring in the space environment from the Sun to the Heliopause and throughout the universe"} and its specific objective: {\it "Analyze the physical processes transpiring in the space environment from the Sun to Earth and across the solar system."}.
+
+\subsection{Project Timeline}
+This project, spanning three years, assigns each year to a pre-determined objective: in the {\bf first year}, the focus will be on compiling and analyzing Juno's observations of solar wind discontinuities, supported by a solar wind model and supplemental observations from $1$AU missions (STEREO, ARTEMIS, WIND); in the {\bf second year}, a similar analysis of solar wind discontinuities will be conducted for PSP, using additional data from the $1$AU missions. In the {\bf third year}, particular discontinuity characteristics, such as spatial scales and current density, will be analyzed for both datasets. The radial evolution of these features will be compared to the expectations forecasted by solar wind adiabatic expansion.
+
+## Polish private_upload/default_user/2024-01-21-19-57-03/main.tex.part-6.tex
+
+\paragraph{Project Management} The management of this project is under the full remit of the {\bf Fellow Investigator (FI)}, Zijin Zhang, who will take responsibility for the collation and analysis of the observational dataset and the creation of a combined Juno/solar wind model dataset. The {\bf Principal Investigator (PI)}, Professor Vassilis Angelopoulos, alongside team members Dr. Anton Artemyev and Dr. Chen Shi, will aid in discussions and in the mentoring and training of Zijin Zhang. The expertise of Prof. V. Angelopoulos in spacecraft measurement techniques and data analysis \cite{Angelopoulos19,Angelopoulos11:ARTEMIS}, Dr. A. Artemyev's proficiency in the observation and modeling of solar wind discontinuities \citep{Artemyev18:apj,Artemyev19:jgr:solarwind}, and Dr. Chen Shi's contribution to techniques about solar wind observations and simulations \citep{ChenShi21:a&a,ChenShi22:apj,ChenShi23:apj} collectively ensure that Z. Zhang will receive all necessary guidance and support, paving the way to the successful completion of the project. 
+
+\newpage
+
+\bibliography{full,addon,files/references}
+
+\smallskip
+\textbf{Acknowledgment}: This proposal is prepared by the Fellow Investigator, Zijin Zhang. The Principal Investigator, Prof. Vassilis Angelopoulos, and group members, Dr. Anton Artemyev and Dr. Chen Shi, have provided editorial assistance in terms of clarity and structure.
+
+\newpage
+
+\section{Open Science and Data Management Plan (OSDMP)}
+This project is targeted to produce two key outputs: a data product encapsulating the statistics of solar wind discontinuities, and a software suite designed for analyzing these phenomena.
+
+\begin{CC}
+\subsection{Data Products: Statistical Analysis of Solar Wind Discontinuities}\label{data-products-statistics-of-solar-wind-discontinuities}
+
+\begin{B}
+
+\paragraph{Product Description}\label{product-description}
+
+We intend to create a broad spectrum of statistics derived from in-situ satellite measurements, including:
+
+\begin{itemize}
+\tightlist
+\item
+  Lists of events in ASCII format.
+\item
+  Parameters of solar wind discontinuities obtained from two datasets: firstly, Juno observations (2011-2015) merged with \(1\) AU observations, and secondly, Parker Solar Probe (PSP) observations also integrated with \(1\) AU observations.
+\item
+  Visual aids such as diagrams presented in PNG format and detailed ASCII tables that offer insights into the velocity and density of the solar wind as reconstructed for the Juno location.
+\end{itemize}
+
+\paragraph{Scientific Significance}\label{scientific-significance}
+
+The availability of this dataset will enable the initial quantification of the evolution of solar wind discontinuity with radial distance.
+
+\paragraph{Data Types and Volume}\label{data-types-and-volume}
+
+The project output will be ASCII tables and graphic files, with an estimated total volume under 10 GB.
+
+\paragraph{Documentation and Delivery}\label{documentation-and-delivery}
+
+Inclusive documentation, covering the criteria for solar wind discontinuity selection and details of spacecraft measurements, will accompany the dataset. The expected timeline for delivery is in the third year of the project.
+
+\paragraph{Archiving Method}\label{archiving-method}
+
+As supporting information, the data products will be published in academic papers focused on the characteristics of solar wind discontinuity at various radial distances. Moreover, the dataset will be made available via the open archive \href{https://zenodo.org/}{Zenodo}.
+
+\end{B}
+
+\subsection{Software: Constructing Modular and Scalable Solutions for Solar Wind Analysis}\label{software-modular-and-scalable-solutions-for-solar-wind-analysis}
+
+\paragraph{Overview of Software}\label{software-overview}
+
+Our work is currently directed towards developing a collection of routines that are both modular and scalable, specifically designed for intensive solar wind analysis and discontinuity identification. These routines are accessible in Python and Interactive Data Language (IDL), enhance performance efficiency as well as adaptability, hence facilitating the analysis of data from a wide range of space missions. The preliminary Python library can be accessed from our \href{https://beforerr.github.io/ids_finder}{project website}.
+
+\paragraph{Scientific Significance}\label{scientific-significance-1}
+
+These advanced routines will not only aid detailed scrutiny of solar wind discontinuities but will also present a comprehensive toolkit for the wider scientific community, advancing the study of magnetic field data collated from manifold space missions.
+
+\paragraph{Modular and Scalable Design}\label{modular-and-scalable-design}
+
+The design of the software is characterized by a modular architecture, which ensures flexible adaptation and
+
+## Polish private_upload/default_user/2024-01-21-19-57-03/main.tex.part-7.tex
+
+In extension, this software's design lends it to analyze data that extends beyond the initial scope of this project. The scalable nature of this tool guarantees efficient performance, even when dealing with large datasets originating from disparate missions.
+
+\paragraph{Data Types and Volume:}\label{data-types-and-volume-1}
+
+The software package will comprise IDL and Python files, which collectively weigh less than 10 MB.
+
+\paragraph{Documentation and Release:}\label{documentation-and-release}
+
+We will offer extensive documentation, inclusive of detailed explanations for each module, usage instructions, and examples. This suite of documentation will guide users in customizing the software for their particular needs. The software is projected to be released within the first year of the project.
+
+\paragraph{Archiving Method:}\label{archiving-method-1}
+
+The Python function will be incorporated into the open-source, Python-based Space Physics Environment Data Analysis System (PySPEDAS). Simultaneously, IDL routines will be appended to the SPEDAS framework \cite{Angelopoulos19}. Both these systems will be available under the terms of the MIT license and will also be uploaded to \href{https://zenodo.org/}{Zenodo}.
+
+\subsection{Roles and Responsibilities of Team Members for Data Management}\label{roles-and-responsibilities-of-team-members-for-data-management}
+
+The Project Field Investigator (FI), guided by the Principal Investigator (PI), will oversee the release and archiving of all datasets produced within this project.
+
+\subsection{Publication of Results}\label{publication-of-results}
+
+We envisage the production of 2-3 peer-reviewed manuscripts for submission to journals, namely J. Geophys. Res. and Geophys. Res. Lett. Each manuscript will feature a supplementary dataset (as outlined in Section 1) to facilitate result reproducibility. Project funds will be allocated to ensure open access publication of these papers.
+
+\newpage
+
+\section{Research Readiness Statement}
+\paragraph{Professional Preparation}\label{professional-preparation}
+
+Zijin Zhang, having completed fundamental physics courses (e.g., Electromagnetic Theory, Plasma Physics) and space physics courses (e.g., Introduction to Space Physics, Space Plasma Physics, Solar System Magnetohydrodynamics), possesses a solid understanding of the solar system and plasma physics. This academic proficiency, coupled with his experience in analyzing mission data (Juno, PSP, and THEMIS) using Python (PySPEDAS, PlanetaryPy, Astropy, Plasmapy), IDL (SPEDAS, CDAS), Julia, and Mathematica, suits him well for future tasks.
+
+\paragraph{Graduate Study Timeline}\label{graduate-study-timeline}
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\tightlist
+\item
+  Degree type: Pursuing both a Master's and a Ph.D. degree in Space Science.
+\item
+  Admission date: Sep 2022.
+\item
+  Duration in the academic program: 2 years to date.
+\item
+  Projected graduation date: Aug 2026.
+\end{enumerate}
+
+\newpage
+
+\section{Curriculum Vitae}
+\subsection{CV for Principal Investigator}
+\begin{center}
+    \textbf{Principal Investigator: Vassilis Angelopoulos} \\
+    Professor\\
+    \small{Earth, Planetary and Space Sciences and Institute of Geophysics and Planetary Physics, UCLA, Los Angeles, CA 90095-1567 \\
+    Telephone:  (310) 794-7090,  E-mail: vassilis@ucla.edu}
+    \end{center}
+    
+    \smallskip
+    \noindent \textbf{Professional Preparation}\\
+    \noindent Ph.D. in Physics, UCLA, 1993; \\
+
+## Polish private_upload/default_user/2024-01-21-19-57-03/main.tex.part-8.tex
+
+\noindent Graduate of Bachelor of Science in Physics from Aristotle University of Thessaloniki, Greece in 1986. 2001.
+
+\smallskip
+
+\noindent \textbf{Professional Appointments}
+\begin{itemize}
+     \item 2007 -- Present: Associate/Full Professor, EPSS/IGPP, UCLA.
+     \item 2008 -- 2015: Former Assistant Professor, Temple University, Philadelphia, PA
+     \item 2002 -- 2007: Served as a Research Scientist (jointly with SSL), Jet Propulsion Laboratory, Pasadena, CA.
+     \item 1995 -- 2007: Was a Research Physicist, Space Sciences Laboratory, University of California, Berkeley.
+     \item 1993 -- 1995: Post-Doctoral Researcher, Applied Physics Laboratory, JHU.
+\end{itemize}
+
+\smallskip
+
+\noindent \textbf{Notable Honors/Awards}
+\begin{itemize}
+    \item 2020: Honored with the UCLA Inaugural Physical Science Centennial Mentorship Award for the significant commitment to and success in mentoring research students from diverse backgrounds.
+    \item 2008: Recipient of the NASA award for successful delivery, launch, and operations of the THEMIS probes.
+    \item 2001: Earned AGU's Macelwane Medal.
+    \item 2000: Awarded COSPAR/Russian Academy of Sciences' Zeldovich Medal.
+    \item 1994: AGU Fred Scarf Award for the best Ph.D. thesis in Space Physics and Aeronomy in 1993.
+\end{itemize}
+
+\noindent \textbf{Teaching Activities:} 
+Have conducted both introductory and advanced courses in plasma physics, space physics, exploration geophysics, space instrumentation and data analysis, in addition to general education courses in planetary science.
+
+\bigskip
+
+\noindent \textbf{Professional Profile}
+Specializing in understanding how particles are accelerated in Earth's magnetosphere, the response of the upper atmosphere and ionosphere to space currents, and the impact on the lunar environment due to its interaction with the solar wind. As the Principal Investigator of NASA’s THEMIS and ARTEMIS missions, led the development of five satellites and twenty ground-based observatories which includes instrument hardware and data analysis software. Currently, leading the scientific analysis phase of these missions at UCLA. Also proposed, supervised the development, and successfully launched two ELFIN CubeSats, training over 250 undergraduates in this project under his group’s mentorship.
+
+\bigskip
+
+\noindent \textbf{Selected Publications}
+
+\begin{itemize}\itemsep-2mm
+     \setlength{\itemindent}{-2em}
+     \setlength{\leftmargin}{0em}
+
+    \item {\bf V. Angelopoulos, et al.}, The ELFIN Mission (2020),  {\em Space Sci. Rev.}, doi:10.1007/s11214-020-00721-7.
+
+    \item {\bf V. Angelopoulos, et al.}, Near-Earth Magnetotail Reconnection Powers Space Storms (2020). {\em Nat. Phys.}, doi:10.1038/s41567-019-0749-4.
+
+    \item {\bf V. Angelopoulos, et al.}, The Space Physics Environment Data Analysis System (SPEDAS)  (2019). {\em Space Sci. Rev.}, doi:10.1007/s11214-018-0576-4.
+
+    \item {\bf V. Angelopoulos, et al.}, Electromagnetic Energy Conversion at Reconnection Fronts (2013). {\em Science, 341}, 1478-1482, doi: 10.1126/science.1236992.
+
+    \item {\bf V. Angelopoulos, et al.}, The ARTEMIS Mission (2010). {\em Space Sci. Rev.}, doi:10.1007/s11214-010-9687-2.
+
+    \item {\bf V. Angelopoulos, et al.}, Tail Reconnection Triggering Substorm Onset, (2008). {\em Science, 321}, 931(5891), doi:10.1007/s11214-010-9687-2.
+\end{itemize}
+
+## Polish private_upload/default_user/2024-01-21-19-57-03/main.tex.part-9.tex
+
+\item {\bf V. Angelopoulos, et al.}, {\em The THEMIS Mission} (2008). Space Sci. Rev., 931(5891). DOI: 10.1007/s 11214-008-9336-1.
+\end{itemize}
+
+\newpage
+\includepdf[pages=1, pagecommand={\subsection{Curriculum Vitae of Future Investigator}}, offset=0 -1cm, width=1.2\textwidth]{files/cv_Zijin_clean.pdf} 
+\newpage
+
+\section{Mentoring Plan or Agreement}
+"Zijin Zhang, a second-year Ph.D. student, is mentored by Professor Angelopoulos (PI) in the intellectually stimulating and supportive environment of the Experimental Space Physics group, which includes Dr. Chen Shi and Dr. Anton Artemyev. Mr. Zhang is preparing to schedule his departmental oral examination, during which he will define his thesis topic based on the subject proposal. He has showcased his independent research abilities and creativity through presentations at various international scientific meetings. The Mentoring Plan for Mr. Zhang includes:
+
+\begin{itemize}
+\tightlist
+\item
+Weekly individual meetings with Prof. Angelopoulos (PI), Dr. Chen, and Dr. Artemyev. These meetings focus predominantly on resolving issues concerning the execution of the research plan, reviewing progress and working towards the defined goals.
+\item
+Weekly updates during group meetings, which serve as a platform for rapid exchange of views with other team members (several experts on solar wind discontinuity) about latest research findings.
+\item
+Focused discussions with local experts on the observational and theoretical aspects of the project (Prof. Velli: PSP dataset). These one-on-one sessions aim to provide additional training to Mr. Zhang, refining his data analysis and theoretical approach skills crucial for the successful execution of the project.
+\end{itemize}
+
+These research meetings, combined with presentations during joint inter-departmental space physics presentations, Journal Club, and weekly seminars, constitute Mr. Zhang's primary research-related daily interactions within UCLA's setting. Besides, Prof. Angelopoulos will encourage Mr. Zhang to attend specialized courses quarterly that facilitate an in-depth understanding of essentials like non-linear MHD and kinetic theory, turbulence, kinetic simulations, and instrumentation. In summary, Mr. Zhang will be exposed to a blend of formal and informal education through a well-rounded and diverse set of courses, meetings, and seminars at UCLA.
+
+Both the PI and FI are committed to the successful completion of the proposed research plan.
+
+Also, the FI will be encouraged to attend meetings at AGU, GEM, and other conferences to gain insights from other instructors and to network with students and early-career scientists from various locations. With substantial computer resources and software support (such as SPEDAS; \citep{Angelopoulos19}), and assistance from local programming staff as well as from instrument teams on the ARTEMIS mission (where Prof. Angelopoulos is an active member), Mr. Zhang will be able to address any questions encountered during his research successfully, using the missions' respective datasets.
+
+Given the supportive research environment, the advisor's commitment, and the advisor's track record of successfully guiding 13 PhD recipients to date, Mr. Zhang is expected to have a rich, varied, and productive research experience."
+
+\newpage
+\includepdf[pages=-, pagecommand={\section{Budget and Narrative \& Current and Pending}},offset=0 -1cm, width=1.2\textwidth]{sections/2025 finesst budget.pdf}
+
+
+\includepdf[pages=-, pagecommand={},width=1.3\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
+
+\includepdf[pages=-, pagecommand={},width=1.3\textwidth]{sections/Zhang NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
+\end{document}
