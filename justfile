@@ -27,20 +27,19 @@ latex-export file:
 
 export:
    quarto pandoc sections/_01_science.qmd -o overleaf/sections/_01_science.tex -f markdown
-   quarto pandoc sections/_03_osdmp.qmd -o overleaf/sections/_03_osdmp.tex -f markdown
-   quarto pandoc sections/_04_rrs.qmd -o overleaf/sections/_04_rrs.tex -f markdown
-   quarto pandoc sections/_07_commitment.qmd -o overleaf/sections/_07_commitment.tex  -f markdown
-   quarto pandoc sections/_08_mentoring.qmd -o overleaf/sections/_08_mentoring.tex  -f markdown
-   quarto pandoc sections/_09_budget.qmd -o overleaf/sections/_09_budget.tex
-
    quarto pandoc sections/_01-04_demonstration.qmd -o overleaf/sections/_01-04_demonstration.tex -f markdown
-
-
+   
    cp files/references.bib overleaf/files/
 
    quarto render sections/_01-04_demonstration.qmd --to latex -M cite-method:natbib -M bibliography:files/references.bib -M filter:quarto
    awk '/\\begin\{document\}/ {flag=1; next} /\\bibliography/ {flag=0} flag' sections/_01-04_demonstration.tex > overleaf/sections/_01-04_demonstration.tex
    rm sections/_01-04_demonstration.tex
+
+export-cv:
+   docx2pdf overleaf/files/Angelopoulos_2pgCV_January_2024.docx
+   pdfcropmargins -v -s -u overleaf/files/Angelopoulos_2pgCV_January_2024.pdf -o overleaf/files/
+   pdfcropmargins -v -s -u overleaf/files/cv_Zijin_clean.pdf -o overleaf/files/
+
 
 sync:
    rsync images/ overleaf/images/ -r
@@ -49,3 +48,4 @@ sync:
 
 clean:
    find . -name '.DS_Store' -type f -delete
+

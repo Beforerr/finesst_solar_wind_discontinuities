@@ -28,6 +28,7 @@ code-links:
     text: Overleaf
   - href: https://typst.app/project/rcdOBrTQmyYMywRvZtZvlQ
     text: Typst
+wrap: preserve
 ---
 
 ::: {.content-visible when-format="html"}
@@ -73,22 +74,23 @@ code-links:
 {{< include sections/_04_rrs.qmd >}} 
 {{< pagebreak >}}
 
+::: {.content-visible when-format="html"}
 # Curriculum Vitae (CVs)
-
 {{< include sections/info/_05_cv.qmd >}}
+:::
 
 ::: {.content-visible when-format="pdf"}
-## CV for Principle Investigator
-\input{sections/05_cv_Vassilis}
-\includepdf[pages=1, pagecommand={\subsection{CV for Future Investigator}}, offset=0 -1cm, width=1.2\textwidth]{files/cv_Zijin_clean.pdf} \newpage
+\includepdf[pages=1,pagecommand={\section{Curriculum Vitae (CVs)}\subsection{CV for Principle Investigator}}, offset=0 -1cm, width=\textwidth]{files/Angelopoulos_2pgCV_January_2024_cropped.pdf}
+\includepdf[pages=2, offset=0 -1cm, width=\textwidth]{files/Angelopoulos_2pgCV_January_2024_cropped.pdf}
+\includepdf[pagecommand={\subsection{CV for Future Investigator}}, width=1\textwidth]{files/cv_Zijin_clean_cropped.pdf}
 :::
+{{< pagebreak >}}
 
 
 ::: {.content-visible when-format="html"}
 # Current and Pending Support
-:::
 {{< include sections/info/_06_support.qmd >}}
-
+:::
 
 ::: {.content-visible when-format="pdf"}
 \includepdf[pages=1, pagecommand={\section{Current and Pending Support}\subsection{Support Statement for PI}}, offset=0 -2cm, width=1.2\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
@@ -107,7 +109,7 @@ code-links:
 
 {{< include sections/info/_08_mentoring.qmd >}}
 {{< include sections/_08_mentoring.qmd >}}
- {{< pagebreak >}}
+{{< pagebreak >}}
 
 ::: {.content-visible when-format="html"}
 # Budget Narrative (Budget Justification)
