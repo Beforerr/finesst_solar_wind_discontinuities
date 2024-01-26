@@ -64,7 +64,7 @@ In the next sections we briefly demonstrate preliminary results of this project 
 In this project we will use datasets of five missions measuring solar wind magnetic field and plasma. Synergistic observations of these missions should advance our understanding of the solar wind discontinuities, their radial distribution and evolution [@velli2020].
 
 ::: {#fig-model fig-env="SCfigure"}
-![](figures/juno_model_validation.png){width=75%}
+![](figures/juno_model_validation){width=75%}
 
 Time-series comparison of MSWIM2D (red) and Juno-observed solar wind magnetic field magnitudes.
 :::
