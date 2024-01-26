@@ -113,7 +113,7 @@ Discontinuities detected by PSP, Juno, STEREO and near-Earth ARTEMIS satellite: 
 The basic approach of this proposal is to use solar wind measurements at 1AU (STEREO, ARTEMIS, WIND) to compare with Juno and PSP measurements and distinguish effects of solar wind temporal variations and effects of spatial (with the radial distance from the Sun) variations of discontinuity occurrence rate and characteristics. The example of such comparison for the occurrence rate is shown in @fig-rate, where we plot number of discontinuities measured per day by different spacecraft missions (for the same temporal resolution of magnetic field data and the same criteria of discontinuity determination). The radial distance of Juno for 2011-2015 is shown in @fig-model, and the number of discontinuities measured by Juno per day coincides with the discontinuity number measured by STEREO, WIND, and ARTEMIS, when Juno is around $1$ AU. This number (occurrence rate) decreases with distance (with time after $\sim 2013$), as Juno moves from $1$ AU to $5$ AU. We will use the similar comparison for discontinuity characteristics and occurrence rate derived for PSP and Juno. 
 
 ::: {#fig-rate fig-env="SCfigure"}
-![](figures/ocr_time_cleaned.png){width=45%}
+![](figures/ocr_time_cleaned){width=45%}
 
 The number of discontinuities measured by Juno per day coincides with the discontinuity number measured by STEREO, WIND, and ARTEMIS, when Juno is around $1$ AU. This number (occurrence rate) decreases with distance (with time after $\sim 2013$), as Juno moves from $1$ AU to $5$ AU. We will use the similar comparison for discontinuity characteristics and occurrence rate derived for PSP and Juno. The radial distance of Juno for 2011-2015 is shown in @fig-model.
 :::
