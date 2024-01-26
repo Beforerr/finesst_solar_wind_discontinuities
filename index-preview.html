@@ -1,49 +1,138 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.4.547">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.547">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="dcterms.date" content="2024-01-22">
 
-<meta name="dcterms.date" content="2024-01-22">
+    <title>Solar wind discontinuity propagation in the inner and outer heliosphere</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+        margin-bottom: 0em;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
 
-<title>Solar wind discontinuity propagation in the inner and outer heliosphere</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
 
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
 
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -57,44 +146,13 @@ div.csl-indent {
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<script async="" src="https://hypothes.is/embed.js"></script>
+     <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     document.body.classList.add('hypothesis-enabled');
   });
-</script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta name="citation_title" content="Solar wind discontinuity propagation in the inner and outer heliosphere">
+</script>   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script> 
+      <meta name="citation_title" content="Solar wind discontinuity propagation in the inner and outer heliosphere">
 <meta name="citation_author" content="Zijin Zhang">
 <meta name="citation_author" content="Anton V. Artemyev">
 <meta name="citation_author" content="Vassilis Angelopoulos">
@@ -321,9 +379,16 @@ window.Quarto = {
 <meta name="citation_reference" content="citation_title=Alfvénic versus non-Alfvénic turbulence in the inner heliosphere as observed by Parker Solar Probe;,citation_author=C. Shi;,citation_author=M. Velli;,citation_author=O. Panasenco;,citation_author=A. Tenerani;,citation_author=V. Réville;,citation_author=S. D. Bale;,citation_author=J. Kasper;,citation_author=K. Korreck;,citation_author=J. W. Bonnell;,citation_author=T. Dudok de Wit;,citation_author=D. M. Malaspina;,citation_author=K. Goetz;,citation_author=P. R. Harvey;,citation_author=R. J. MacDowall;,citation_author=M. Pulupa;,citation_author=A. W. Case;,citation_author=D. Larson;,citation_author=J. L. Verniero;,citation_author=R. Livi;,citation_author=M. Stevens;,citation_author=P. Whittlesey;,citation_author=M. Maksimovic;,citation_author=M. Moncuquet;,citation_publication_date=2021-06;,citation_cover_date=2021-06;,citation_year=2021;,citation_fulltext_html_url=https://arxiv.org/abs/2101.00830;,citation_doi=10.1051/0004-6361/202039818;,citation_volume=650;">
 </head>
 
-<body>
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
 
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+            <a href="./index.qmd" class="btn btn-primary quarto-download-embed" download="index.qmd">Download Source</a>
+          </div>
+
+     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Solar wind discontinuity propagation in the inner and outer heliosphere</h1>
@@ -393,7 +458,7 @@ window.Quarto = {
               </div>
       </div>
       <div class="quarto-title-meta-column-end quarto-other-formats-target">
-      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.tex"><i class="bi bi-file"></i>LaTeX</a></p></div></div></div>
+      </div>
     </div>
 
 
@@ -441,18 +506,13 @@ window.Quarto = {
   <li><a href="#mentoring-plan-or-agreement" id="toc-mentoring-plan-or-agreement" class="nav-link" data-scroll-target="#mentoring-plan-or-agreement">Mentoring Plan or Agreement</a></li>
   <li><a href="#budget-narrative-budget-justification" id="toc-budget-narrative-budget-justification" class="nav-link" data-scroll-target="#budget-narrative-budget-justification">Budget Narrative (Budget Justification)</a></li>
   </ul>
-<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="notebooks/02_ids_detection-preview.html"><i class="bi bi-journal-code"></i>Discontinuities detection</a></li><li><a href="notebooks/01_ids_example-preview.html"><i class="bi bi-journal-code"></i>Examples of discontinuities</a></li><li><a href="notebooks/00_orbits-preview.html"><i class="bi bi-journal-code"></i>Orbits</a></li></ul></div></nav>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
 </div>
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-
-
-  
-
-
-<section id="background" class="level1">
+       <section id="background" class="level1">
 <h1>Background</h1>
 <p>Future Investigators in NASA Earth and Space Science and Technology (FINESST) is a program element in Research Opportunities in Space and Earth Sciences (ROSES).</p>
 <ul>
@@ -826,11 +886,11 @@ Note
 <div style="page-break-after: always;"></div>
 </section>
 </section>
-<section id="curriculum-vitae-cvs" class="level1 page-columns page-full">
+<section id="curriculum-vitae-cvs" class="level1">
 <h1>Curriculum Vitae (CVs)</h1>
 <p>The PI’s and FI’s Curriculum Vitae (CV) or resume are <strong>mandatory</strong>.</p>
 
-<div class="no-row-height column-margin column-container"><div class="">
+<div class="no-row-height"><div class="">
 <ul>
 <li>Length restriction
 <ul class="task-list">
@@ -909,10 +969,10 @@ Note
 <p>The above research environment and the advisor’s commitment and recent heritage in successfully advising 13 PhD recipients thus far warrant a rich, diverse and productive research experience for Mr.&nbsp;Zhang.</p>
 <div style="page-break-after: always;"></div>
 </section>
-<section id="budget-narrative-budget-justification" class="level1 page-columns page-full">
+<section id="budget-narrative-budget-justification" class="level1">
 <h1>Budget Narrative (Budget Justification)</h1>
 
-<div class="no-row-height column-margin column-container"><div class="">
+<div class="no-row-height"><div class="">
 <ul>
 <li>General
 <ul class="task-list">
@@ -930,10 +990,8 @@ Note
 <span class="glightbox-desc lightbox-desc-4">Figure&nbsp;4: The number of discontinuities measured by Juno per day coincides with the discontinuity number measured by STEREO, WIND, and ARTEMIS, when Juno is around <span class="math inline">\(1\)</span> AU. This number (occurrence rate) decreases with distance (with time after <span class="math inline">\(\sim 2013\)</span>), as Juno moves from <span class="math inline">\(1\)</span> AU to <span class="math inline">\(5\)</span> AU. We will use the similar comparison for discontinuity characteristics and occurrence rate derived for PSP and Juno. The radial distance of Juno for 2011-2015 is shown in <a href="#fig-model" class="quarto-xref">Figure&nbsp;2</a>.</span>
 </div>
 </section>
-
-</main>
-<!-- /main column -->
-<script id="quarto-html-after-body" type="application/javascript">
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -1319,9 +1377,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-</div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox","closeEffect":"zoom"});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
@@ -1345,9 +1401,6 @@ window.onload = () => {
   });
 
 };
-          </script>
-
-
-
-
+          </script> 
+  
 </body></html>
