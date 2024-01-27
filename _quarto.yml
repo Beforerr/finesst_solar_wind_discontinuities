@@ -22,11 +22,11 @@ format:
           \usepackage{pdfpages}
 
 bibliography: 
-  - ../research.bib
   - files/bibexport.bib
   - files/bibliography/addon_zijin.bib
   - files/references.bib
   - files/addon.bib
+  - ../research.bib
   # - files/full.bib
 
 execute:
