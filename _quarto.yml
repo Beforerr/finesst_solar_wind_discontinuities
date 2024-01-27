@@ -20,11 +20,9 @@ format:
           \usepackage{wrapfig}
           \usepackage{sidecap}
           \usepackage{pdfpages}
-  # pdf:
-  #   keep-tex: true
-  # typst: default
 
 bibliography: 
+  - ../research.bib
   - files/bibexport.bib
   - files/bibliography/addon_zijin.bib
   - files/references.bib

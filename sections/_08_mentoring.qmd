@@ -1,15 +1,19 @@
-Zijin Zhang is a 2nd year PhD student mentored by Prof. Angelopoulos (PI), and in the supportive and intellectually dynamic environment of the Experimental Space Physics group that includes Dr. Chen Shi and and Dr. Anton Artemyev. He is about to schedule his department oral exam, defining his thesis topic on the subject proposal. He has demonstrated independent research capabilities and creative work through the presentations in several international science meetings. The Mentoring Plan for Mr. Zhang includes:
+Zijin Zhang is a second-year PhD student under the mentorship of Prof. Angelopoulos in the stimulating and intellectually vibrant environment of the Experimental Space Physics group. This group includes notable scholars such as Dr. Anton Artemyev and Dr. Chen Shi. Zhang is preparing to schedule his departmental oral exam, a significant step in defining his thesis topic. He has already showcased his independent research skills and creativity through presentations at several international scientific meetings.
 
+The mentoring plan for Mr. Zhang is comprehensive and includes:
 
-- Weekly individual (splinter) meetings with Prof. Angelopoulos (PI), Dr. Chen and Dr. Artemyev. These are mostly to operationally resolve issues of the research plan realization and review the progress and work towards the stated goals. 
-- Weekly updated in group meetings, that serve for quick opinion exchange with other team members (several experts on solar wind discontinuity) on hot-off-the-press results.
-- Splinter discussions with local experts on the observational and theoretical aspects of the project (Prof. Velli: PSP dataset). These one-on-one meetings aim to provide additional training for Mr. Zhang in data analysis techniques and theoretical approaches useful for project realization. 
+- Regular one-on-one meetings with Prof. Angelopoulos, Dr. Chen, and Dr. Artemyev. These sessions focus on the operational aspects of his research plan, progress reviews, and goal alignment.
 
-These research meetings plus presentations in joint inter-departmental (encompassing AOS, P\&A and EPSS department members) space physics student presentations, Journal Club, and weekly seminars form Mr. Zhang's primary research-related day-to-day interactions in the UCLA environment. In addition, Prof. Angelopoulos will encourage Mr. Zhang to attend (at a low rate of 1 per quarter) specialized courses that facilitate in-depth exposure to fundamentals, such as non-linear MHD and kinetic theory, turbulence, kinetic simulations, and instrumentation. In all, Mr. Zhang will be exposed to a combination of formal and informal education through a robust and diverse set of courses, meetings, and seminars at UCLA.
+- Weekly updates in group meetings, which foster rapid exchange of ideas and feedback on the latest results with other experts specializing in solar wind discontinuity.
 
-The PI and the FI are committed to the completion of the proposed research plan.
+- Targeted discussions with local experts on both observational and theoretical facets of his project, like those with Prof. Velli regarding the PSP dataset. These personalized sessions are designed to enhance Mr. Zhang's skills in data analysis and theoretical methodologies essential for his research.
 
-The FI will also be encouraged to attend meetings at AGU, GEM, and other meetings in order to be exposed to experiences from other instructors, and to network with students and early career scientists at those locations.
-With significant computer resources and software (such as SPEDAS; \citep{Angelopoulos19}) support from local programming staff, as well as from instrument teams on the ARTEMIS mission (in which Prof. Angelopoulos is an active member), Mr. Zhang will be able to address successfully any questions encountered during his research using the missions’ respective datasets.
+Additionally, Mr. Zhang's engagement in the UCLA academic milieu includes participating in inter-departmental space physics student presentations, Journal Club, and weekly seminars. These interactions, integral to his day-to-day academic life, are complemented by Prof. Angelopoulos's encouragement to attend specialized courses. These courses, taken at a manageable pace of one per quarter, cover essential topics such as non-linear MHD, kinetic theory, turbulence, kinetic simulations, and instrumentation.
 
-The above research environment and the advisor’s commitment and recent heritage in successfully advising 13 PhD recipients thus far warrant a rich, diverse and productive research experience for Mr. Zhang.
+The proposed plan ensures that Mr. Zhang will benefit from a blend of formal education and practical experience, supported by a diverse array of courses, meetings, and seminars at UCLA.
+
+Prof. Angelopoulos, along with the Faculty Investigator (FI), is dedicated to the successful completion of the proposed research. Mr. Zhang will also be encouraged to participate in conferences like AGU and GEM, broadening his exposure to different instructional styles and networking opportunities with peers and early career scientists.
+
+With substantial computational resources and software support (e.g., SPEDAS; [@Angelopoulos19; @grimesSpacePhysicsEnvironment2022]) from the local programming staff and ARTEMIS mission teams—where Prof. Angelopoulos plays an active role—Mr. Zhang is well-equipped to tackle any research challenges using the missions' datasets.
+
+Overall, the nurturing research environment and Prof. Angelopoulos's proven track record of successfully mentoring 13 PhD recipients to date ensure a rich, diverse, and productive research experience for Mr. Zhang.
