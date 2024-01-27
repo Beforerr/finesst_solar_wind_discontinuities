@@ -34,7 +34,6 @@ export-cv:
 clean:
    find . -name '.DS_Store' -type f -delete
 
-
 # Not used anymore
 
 latex-export file:

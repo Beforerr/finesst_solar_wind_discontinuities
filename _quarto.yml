@@ -23,10 +23,9 @@ format:
 
 bibliography: 
   - files/bibexport.bib
-  - files/bibliography/addon_zijin.bib
-  - files/references.bib
   - files/addon.bib
-  - ../research.bib
+  - files/references.bib
+  - files/bibliography/research.bib
   # - files/full.bib
 
 execute:
