@@ -29,7 +29,7 @@ export-combined:
 export-cv:
    docx2pdf overleaf/files/Angelopoulos_2pgCV_January_2024.docx
    pdfcropmargins -v -s -u overleaf/files/Angelopoulos_2pgCV_January_2024.pdf -o overleaf/files/
-   pdfcropmargins -v -s -u overleaf/files/cv_Zijin_clean.pdf -o overleaf/files/
+   pdfcropmargins -v -s -u overleaf/files/cv/cv_Zijin_clean.pdf -o overleaf/files/cv
 
 clean:
    find . -name '.DS_Store' -type f -delete

@@ -80,9 +80,9 @@ wrap: preserve
 :::
 
 ::: {.content-visible when-format="pdf"}
-\includepdf[pages=1,pagecommand={\section{Curriculum Vitae (CVs)}\subsection{CV for Principle Investigator}}, offset=0 -1cm, width=\textwidth]{files/Angelopoulos_2pgCV_January_2024_cropped.pdf}
-\includepdf[pages=2, offset=0 -1cm, width=\textwidth]{files/Angelopoulos_2pgCV_January_2024_cropped.pdf}
-\includepdf[pagecommand={\subsection{CV for Future Investigator}}, width=1\textwidth]{files/cv_Zijin_clean_cropped.pdf}
+\includepdf[pages=1,pagecommand={\section{Curriculum Vitae (CVs)}\subsection{CV for Principle Investigator}}, offset=0 -1cm, width=\textwidth]{files/cv/Angelopoulos_2pgCV_January_2024_cropped.pdf}
+\includepdf[pages=2, offset=0 -1cm, width=\textwidth]{files/cv/Angelopoulos_2pgCV_January_2024_cropped.pdf}
+\includepdf[pagecommand={\subsection{CV for Future Investigator}}, offset=0 -1cm,width=1\textwidth]{files/cv/cv_Zijin_clean_cropped.pdf}
 :::
 {{< pagebreak >}}
 
