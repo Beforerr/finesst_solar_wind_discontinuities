@@ -13,7 +13,7 @@ Our approach seeks to dissect this puzzle by leveraging the unprecedented opport
 
 2.  How does the occurrence rate of discontinuities evolve with radial distance *within* $1$ AU?
 
-3.  How do various discontinuity characteristics, such as the magnetic field magnitude, current density, spatial scale, etc., evolve through the solar wind propagation from the near-Sun regions to 1AU, and subsequently to 5AU?
+3.  How do various discontinuity characteristics, such as the magnetic field magnitude, current density, spatial scale, etc., evolve through the solar wind propagation from the near-Sun regions to 1 AU, and subsequently to 5 AU?
 
 <!-- To address the first question, we will integrate Juno measurements between $1$ and $5$ AU with those at $1$ AU, thereby distinguishing temporal (correlated with solar activity) and spatial (correlated with radial distance) variations in occurrence rates. The same procedure will be utilized for PSP and $1$ AU measurements to address the second question. To respond to the third question, information of solar wind velocity is requisite - these measurements are available for all missions, except Juno, which does not activate plasma instruments during the cruise to Jupiter. On a global scale, however, the radial plasma speed of the expanding solar wind remains conserved, hence we will use near-Earth solar wind measurements and a Two-Dimensional Outer Heliosphere Solar Wind Modeling (MSWIM2D) of solar wind propagation to reconstruct the solar wind velocity adjacent to Juno's location. -->
 
@@ -45,7 +45,7 @@ Ulysses measurements of the high-latitude solar wind at $1-5$ AU showed that the
 
 <!-- This project focuses on investigation of the solar wind discontinuities, the key element of magnetic field turbulence and the primary interface of charged particle acceleration. Thus, the project contributes to NASA Heliophysics' overarching goal to: *"Explore and characterize the physical processes in the space environment from the Sun to the heliopause and throughout the universe"* and its specific objectives to: *"Explore the physical processes at work in the space environment from the Sun to Earth and throughout the solar system"*. -->
 
-This project directly aligns with NASA Heliophysics' goal to "*Explore and characterize physical processes in the space environment, from the Sun to the heliopause and beyond*". By focusing on solar wind discontinuities — the key element of magnetic field turbulence and the primary interface of charged particle acceleration — our research directly addresses the goal to "*Explore the physical processes from the Sun to Earth and throughout the solar system*." This research will not only answer fundamental questions about the solar wind's evolution but also shed light on broader phenomena critical to our understanding of the heliosphere.
+This project directly aligns with NASA Heliophysics' goal to "*Explore and characterize physical processes in the space environment from the Sun to the heliopause and throughout the universe*". By focusing on solar wind discontinuities — the key element of magnetic field turbulence and the primary interface of charged particle acceleration — our research directly addresses the goal to "*Explore the physical processes from the Sun to Earth and throughout the solar system*." This research will not only answer fundamental questions about the solar wind's evolution but also shed light on broader phenomena critical to our understanding of the heliosphere.
 
 ## Science Objectives and Methodology
 
