@@ -1,0 +1,7 @@
+name: poliastro
+channels:
+  - conda-forge
+dependencies: 
+  - poliastro
+  - jupyter
+  - matplotlib<3.8 # poliastro related problem, AttributeError: '_process_plot_var_args' object has no attribute 'prop_cycler'

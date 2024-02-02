@@ -34,6 +34,9 @@ export-cv:
 clean:
    find . -name '.DS_Store' -type f -delete
 
+env-create:
+  micromamba env create -f environment.yml
+
 # Not used anymore
 
 latex-export file:
