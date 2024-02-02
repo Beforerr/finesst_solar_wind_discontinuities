@@ -93,8 +93,8 @@ wrap: preserve
 :::
 
 ::: {.content-visible when-format="pdf"}
-\includepdf[pages=1, pagecommand={\section{Current and Pending Support}\subsection{Support Statement for PI}}, offset=0 -2cm, width=\textwidth]{files/support/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-02-01.pdf}
-\includepdf[pages=2, pagecommand={},width=\textwidth]{files/support/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-02-01.pdf}
+\includepdf[pages=1, pagecommand={\section{Current and Pending Support}\subsection{Support Statement for PI}}, width=\textwidth, offset=0 -1.1cm]{files/support/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-02-01_cropped.pdf}
+\includepdf[pages=2, pagecommand={},width=\textwidth]{files/support/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-02-01_cropped.pdf}
 
 \includepdf[pages=-, pagecommand={\subsection{Support Statement for FI}},width=1.2\textwidth, offset=0 -0.5cm]{sections/Zhang NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
 :::
