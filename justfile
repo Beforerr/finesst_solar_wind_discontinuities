@@ -16,7 +16,6 @@ update-overleaf: sync-overleaf clean
    cd overleaf; git add .; git commit -am "update"; git push
 
 sync-overleaf:
-   rsync images/ overleaf/images/ -r
    rsync figures/ overleaf/figures/ -r
    rsync files/ overleaf/files/ -r
 
@@ -30,6 +29,7 @@ export-cv:
    docx2pdf overleaf/files/Angelopoulos_2pgCV_January_2024.docx
    pdfcropmargins -v -s -u overleaf/files/Angelopoulos_2pgCV_January_2024.pdf -o overleaf/files/
    pdfcropmargins -v -s -u overleaf/files/cv/cv_Zijin_clean.pdf -o overleaf/files/cv
+   pdf-crop-margins -v -s -u overleaf/files/Angelopoulos\ NASA\ Current_And_Pending__Work_Effort\ 3_0_0\ 2024-02-01.pdf -o overleaf/files/
 
 clean:
    find . -name '.DS_Store' -type f -delete
