@@ -82,7 +82,7 @@ wrap: preserve
 ::: {.content-visible when-format="pdf"}
 \includepdf[pages=1,pagecommand={\section{Curriculum Vitae (CVs)}\subsection{CV for Principle Investigator}}, offset=0 -1cm, width=\textwidth]{files/cv/Angelopoulos_2pgCV_January_2024_cropped.pdf}
 \includepdf[pages=2, offset=0 -1cm, width=\textwidth]{files/cv/Angelopoulos_2pgCV_January_2024_cropped.pdf}
-\includepdf[pagecommand={\subsection{CV for Future Investigator}}, offset=0 -1cm,width=1\textwidth]{files/cv/cv_Zijin_clean_cropped.pdf}
+\includepdf[pagecommand={\subsection{CV for Future Investigator}}, offset=0 -0.5cm,width=1\textwidth]{files/cv/cv_Zijin_clean_cropped.pdf}
 :::
 {{< pagebreak >}}
 
@@ -93,12 +93,8 @@ wrap: preserve
 :::
 
 ::: {.content-visible when-format="pdf"}
-\includepdf[pages=1, pagecommand={\section{Current and Pending Support}\subsection{Support Statement for PI}}, offset=0 -2cm, width=1.2\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
-\includepdf[pages=2, pagecommand={},width=1.2\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
-
-\includepdf[pages=1, pagecommand={\section{Current and Pending Support}\subsection{Support Statement for PI}}, offset=0 -2cm, width=\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-02-01.pdf}
-\includepdf[pages=2, pagecommand={},width=\textwidth]{sections/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-02-01.pdf}
-
+\includepdf[pages=1, pagecommand={\section{Current and Pending Support}\subsection{Support Statement for PI}}, offset=0 -2cm, width=\textwidth]{files/support/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-02-01.pdf}
+\includepdf[pages=2, pagecommand={},width=\textwidth]{files/support/Angelopoulos NASA Current_And_Pending__Work_Effort 3_0_0 2024-02-01.pdf}
 
 \includepdf[pages=-, pagecommand={\subsection{Support Statement for FI}},width=1.2\textwidth, offset=0 -0.5cm]{sections/Zhang NASA Current_And_Pending__Work_Effort 3_0_0 2024-01-19.pdf}
 :::
