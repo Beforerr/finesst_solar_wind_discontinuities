@@ -24,10 +24,7 @@ Answering these questions is vital for understanding the processes of solar wind
 Spacecraft investigations of the space plasma environment have revealed that the solar wind magnetic field follows the Parker model of the heliospheric current sheet only on average. Localized transient currents, that can be significantly more intense than the model currents, are carried by various discontinuities observed as strong variations in magnetic field components [@colburn1966; @burlagaMicroScaleStructuresInterplanetary1968; @turnerOrientationsRotationalTangential1971]. Most often such variations are manifested as magnetic field rotations within the plane of two most fluctuating components. 
 As illustrated in @fig-1, these discontinuities are observed at a multitude of radial distances from the Sun. These discontinuities play an important role in energy dissipation [particle acceleration in the solar wind, see @dmitrukTestParticleEnergization2004; @macbrideTurbulentCascadeAU2008; @osmanIntermittencyLocalHeating2012; @tesseinAssociationSuprathermalParticles2013]. 
 Moreover, they contribute significantly to the magnetic fluctuation spectra [@borovskyContributionStrongDiscontinuities2010; @zhdankinMagneticDiscontinuitiesMagnetohydrodynamic2012; @lionCoherentEventsSpectral2016] and can affect space weather [@tsurutaniReviewInterplanetaryDiscontinuities2011]. 
-Previous observations of solar wind discontinuities in the outer heliosphere were rarely in conjunction with measurements closer to the Sun. Thus it is presently
-unclear whether their frequency and properties are the result of
-solar variability or due to the natural evolution of the discontinuities during their propagation
-and interaction with the ambient solar wind.
+Previous observations of solar wind discontinuities in the outer heliosphere were rarely in conjunction with measurements closer to the Sun. Thus it is presently unclear whether their frequency and properties are the result of solar variability or due to the natural evolution of the discontinuities during their propagation and interaction with the ambient solar wind.
 Juno magnetic field measurements over five years (2011-2016) and PSP magnetic field and plasma measurements over four years (2019-2023), in combination of STEREO, WIND, and ARTEMIS magnetic field and plasma monitor at $1$ AU during the operation of Juno and PSP, provide the unique datasets needed to address this question by examining the discontinuity characteristics at two radial distances simultaneously in the context of both the inner and in the outer heliosphere.
 
 ::: {#fig-1 fig-env="wrapfigure" fig-pos="{r}{0.55\textwidth}"}
@@ -94,8 +91,7 @@ We use the following data collected by Wind: magnetic ﬁelds with a $\sim 11$ H
 
 #### Solar wind model
 
-June measurements do not include plasma characteristics, and to estimate discontinuity spatial scale (thicknesses) we will use solar wind speed obtained from the model of solar wind propagation. The hourly solar wind model data from the Two-Dimensional Outer
-Heliosphere Solar Wind Modeling (MSWIM2D) [@keebler2022] will be employed to determine the ion bulk velocity $v$ and plasma density $n$ at the location of the Juno mission. Utilizing the BATSRUS MHD solver, this model is capable of simulating the propagation of the solar wind from 1 to 75 astronomical units (AU) in the ecliptic plane, effectively encompassing the region of interest for our study. @fig-model shows comparison of magnetic field magnitudes obtained from MSWIM2D and measured by Juno.
+June measurements do not include plasma characteristics, and to estimate discontinuity spatial scale (thicknesses) we will use solar wind speed obtained from the model of solar wind propagation. The hourly solar wind model data from the Two-Dimensional Outer Heliosphere Solar Wind Modeling (MSWIM2D) [@keebler2022] will be employed to determine the ion bulk velocity $v$ and plasma density $n$ at the location of the Juno mission. Utilizing the BATSRUS MHD solver, this model is capable of simulating the propagation of the solar wind from 1 to 75 astronomical units (AU) in the ecliptic plane, effectively encompassing the region of interest for our study. @fig-model shows comparison of magnetic field magnitudes obtained from MSWIM2D and measured by Juno.
 
 ### Determination of discontinuities
 
