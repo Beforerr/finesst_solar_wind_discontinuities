@@ -4,6 +4,9 @@ preview:
 publish:
    quarto publish gh-pages --no-render --no-prompt
 
+ensure-env:
+   git clone https://git@git.overleaf.com/656949cbd97a7857413f247c overleaf
+
 examples:
    ipython notebooks/01_ids_example.ipynb 'notebooks/config_examples/examples_psp.yml'
    ipython notebooks/01_ids_example.ipynb 'notebooks/config_examples/examples_stereo.yml'
